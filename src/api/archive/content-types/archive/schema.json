@@ -107,7 +107,7 @@
     "production_date": {
       "type": "date"
     },
-    "buy_date": {
+    "purchase_date": {
       "type": "date"
     },
     "sex": {
@@ -126,7 +126,7 @@
     "seasoning_date": {
       "type": "date"
     },
-    "buy_price": {
+    "purchase_price_kg": {
       "type": "decimal"
     }
   }
