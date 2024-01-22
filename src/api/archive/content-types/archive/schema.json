@@ -88,6 +88,46 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::sector.sector"
+    },
+    "producer": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::producer.producer"
+    },
+    "distributors": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::distributor.distributor"
+    },
+    "race": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::race.race"
+    },
+    "production_date": {
+      "type": "date"
+    },
+    "buy_date": {
+      "type": "date"
+    },
+    "sex": {
+      "type": "enumeration",
+      "enum": [
+        "MALE",
+        "FEMALE"
+      ]
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "weight": {
+      "type": "float"
+    },
+    "seasoning_date": {
+      "type": "date"
+    },
+    "buy_price": {
+      "type": "decimal"
     }
   }
 }

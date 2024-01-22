@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "distributors",
+  "info": {
+    "singularName": "distributor",
+    "pluralName": "distributors",
+    "displayName": "Distributore"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "address": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "vat_number": {
+      "type": "string"
+    }
+  }
+}
