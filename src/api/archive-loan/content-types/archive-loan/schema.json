@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "archive_loans",
+  "info": {
+    "singularName": "archive-loan",
+    "pluralName": "archive-loans",
+    "displayName": "Archivio - Prestiti",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "note_in": {
+      "type": "text"
+    },
+    "note_out": {
+      "type": "text"
+    },
+    "date_in": {
+      "type": "date"
+    },
+    "date_out": {
+      "type": "date"
+    },
+    "archive": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::archive.archive",
+      "inversedBy": "archive_loans"
+    },
+    "loan": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::loan.loan",
+      "inversedBy": "archive_loans"
+    },
+    "created_by_user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "created_archive_loans"
+    },
+    "updated_by_user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "updated_archive_loans"
+    }
+  }
+}

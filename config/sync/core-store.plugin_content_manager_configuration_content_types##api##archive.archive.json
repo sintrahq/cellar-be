@@ -1,0 +1,773 @@
+{
+  "key": "plugin_content_manager_configuration_content_types::api::archive.archive",
+  "value": {
+    "uid": "api::archive.archive",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "description",
+      "defaultSortBy": "id",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "description": {
+        "edit": {
+          "label": "description",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "description",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "t_1s": {
+        "edit": {
+          "label": "t_1s",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "name"
+        },
+        "list": {
+          "label": "t_1s",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "t_2s": {
+        "edit": {
+          "label": "t_2s",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "name"
+        },
+        "list": {
+          "label": "t_2s",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "conservation_status_details": {
+        "edit": {
+          "label": "conservation_status_details",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "conservation_status_details",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "fantasy_details": {
+        "edit": {
+          "label": "fantasy_details",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "fantasy_details",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "value": {
+        "edit": {
+          "label": "value",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "value",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "folders": {
+        "edit": {
+          "label": "folders",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "name"
+        },
+        "list": {
+          "label": "folders",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "images": {
+        "edit": {
+          "label": "images",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "images",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "is_mock": {
+        "edit": {
+          "label": "is_mock",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "is_mock",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "year": {
+        "edit": {
+          "label": "year",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "year",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "inventory": {
+        "edit": {
+          "label": "inventory",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "inventory",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "links_to": {
+        "edit": {
+          "label": "links_to",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "description"
+        },
+        "list": {
+          "label": "links_to",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "links_from": {
+        "edit": {
+          "label": "links_from",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "description"
+        },
+        "list": {
+          "label": "links_from",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "archive_loans": {
+        "edit": {
+          "label": "archive_loans",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "note_in"
+        },
+        "list": {
+          "label": "archive_loans",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "materials": {
+        "edit": {
+          "label": "materials",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "name"
+        },
+        "list": {
+          "label": "materials",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "techniques": {
+        "edit": {
+          "label": "techniques",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "name"
+        },
+        "list": {
+          "label": "techniques",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "suit": {
+        "edit": {
+          "label": "suit",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "name"
+        },
+        "list": {
+          "label": "suit",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "colors": {
+        "edit": {
+          "label": "colors",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "name"
+        },
+        "list": {
+          "label": "colors",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "lookbooks_to": {
+        "edit": {
+          "label": "lookbooks_to",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "description"
+        },
+        "list": {
+          "label": "lookbooks_to",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "lookbooks_from": {
+        "edit": {
+          "label": "lookbooks_from",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "description"
+        },
+        "list": {
+          "label": "lookbooks_from",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "note": {
+        "edit": {
+          "label": "note",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "note",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "label": {
+        "edit": {
+          "label": "label",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "label",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "is_imported": {
+        "edit": {
+          "label": "is_imported",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "is_imported",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "size": {
+        "edit": {
+          "label": "size",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "size",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "created_by_user": {
+        "edit": {
+          "label": "created_by_user",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "username"
+        },
+        "list": {
+          "label": "created_by_user",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updated_by_user": {
+        "edit": {
+          "label": "updated_by_user",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "username"
+        },
+        "list": {
+          "label": "updated_by_user",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "apartment": {
+        "edit": {
+          "label": "apartment",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "name"
+        },
+        "list": {
+          "label": "apartment",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "brand": {
+        "edit": {
+          "label": "brand",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "name"
+        },
+        "list": {
+          "label": "brand",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "fantasy": {
+        "edit": {
+          "label": "fantasy",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "name"
+        },
+        "list": {
+          "label": "fantasy",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "place": {
+        "edit": {
+          "label": "place",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "name"
+        },
+        "list": {
+          "label": "place",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "shelf": {
+        "edit": {
+          "label": "shelf",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "name"
+        },
+        "list": {
+          "label": "shelf",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "box": {
+        "edit": {
+          "label": "box",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "name"
+        },
+        "list": {
+          "label": "box",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "sector": {
+        "edit": {
+          "label": "sector",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "name"
+        },
+        "list": {
+          "label": "sector",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "season": {
+        "edit": {
+          "label": "season",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "name"
+        },
+        "list": {
+          "label": "season",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "conservation_status": {
+        "edit": {
+          "label": "conservation_status",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "name"
+        },
+        "list": {
+          "label": "conservation_status",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "mainColor": {
+        "edit": {
+          "label": "mainColor",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "name"
+        },
+        "list": {
+          "label": "mainColor",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "mainMaterial": {
+        "edit": {
+          "label": "mainMaterial",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "name"
+        },
+        "list": {
+          "label": "mainMaterial",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "quantity": {
+        "edit": {
+          "label": "quantity",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "quantity",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "object_description": {
+        "edit": {
+          "label": "object_description",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "object_description",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "details": {
+        "edit": {
+          "label": "details",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "name"
+        },
+        "list": {
+          "label": "details",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "external_links": {
+        "edit": {
+          "label": "external_links",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "external_links",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "createdAt": {
+        "edit": {
+          "label": "createdAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "createdAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedAt": {
+        "edit": {
+          "label": "updatedAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "updatedAt",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "inventory",
+        "images",
+        "description",
+        "t_1s",
+        "t_2s",
+        "createdAt"
+      ],
+      "edit": [
+        [
+          {
+            "name": "images",
+            "size": 6
+          },
+          {
+            "name": "inventory",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "description",
+            "size": 6
+          },
+          {
+            "name": "label",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "conservation_status_details",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "fantasy_details",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "year",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "size",
+            "size": 6
+          },
+          {
+            "name": "value",
+            "size": 4
+          }
+        ],
+        [
+          {
+            "name": "note",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "is_imported",
+            "size": 4
+          },
+          {
+            "name": "is_mock",
+            "size": 4
+          },
+          {
+            "name": "quantity",
+            "size": 4
+          }
+        ],
+        [
+          {
+            "name": "object_description",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "external_links",
+            "size": 12
+          }
+        ]
+      ],
+      "editRelations": [
+        "t_1s",
+        "t_2s",
+        "folders",
+        "links_to",
+        "links_from",
+        "archive_loans",
+        "materials",
+        "techniques",
+        "suit",
+        "colors",
+        "lookbooks_to",
+        "lookbooks_from",
+        "created_by_user",
+        "updated_by_user",
+        "apartment",
+        "place",
+        "shelf",
+        "sector",
+        "box",
+        "mainColor",
+        "mainMaterial",
+        "details"
+      ]
+    }
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

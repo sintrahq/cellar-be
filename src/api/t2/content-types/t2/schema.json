@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "t2s",
+  "info": {
+    "singularName": "t2",
+    "pluralName": "t2s",
+    "displayName": "Tipologia 2 livello",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "t_1": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::t1.t1",
+      "inversedBy": "t_2s"
+    }
+  }
+}

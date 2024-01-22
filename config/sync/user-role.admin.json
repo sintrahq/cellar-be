@@ -1,0 +1,307 @@
+{
+  "name": "admin",
+  "description": "admin",
+  "type": "admin",
+  "permissions": [
+    {
+      "action": "api::apartment.apartment.find"
+    },
+    {
+      "action": "api::apartment.apartment.findOne"
+    },
+    {
+      "action": "api::archive-loan.archive-loan.create"
+    },
+    {
+      "action": "api::archive-loan.archive-loan.delete"
+    },
+    {
+      "action": "api::archive-loan.archive-loan.find"
+    },
+    {
+      "action": "api::archive-loan.archive-loan.findOne"
+    },
+    {
+      "action": "api::archive-loan.archive-loan.update"
+    },
+    {
+      "action": "api::archive.archive.create"
+    },
+    {
+      "action": "api::archive.archive.delete"
+    },
+    {
+      "action": "api::archive.archive.find"
+    },
+    {
+      "action": "api::archive.archive.findOne"
+    },
+    {
+      "action": "api::archive.archive.update"
+    },
+    {
+      "action": "api::box.box.find"
+    },
+    {
+      "action": "api::box.box.findOne"
+    },
+    {
+      "action": "api::brand.brand.find"
+    },
+    {
+      "action": "api::brand.brand.findOne"
+    },
+    {
+      "action": "api::color.color.find"
+    },
+    {
+      "action": "api::color.color.findOne"
+    },
+    {
+      "action": "api::configuration.configuration.delete"
+    },
+    {
+      "action": "api::configuration.configuration.find"
+    },
+    {
+      "action": "api::configuration.configuration.update"
+    },
+    {
+      "action": "api::conservation-status.conservation-status.find"
+    },
+    {
+      "action": "api::conservation-status.conservation-status.findOne"
+    },
+    {
+      "action": "api::detail.detail.find"
+    },
+    {
+      "action": "api::detail.detail.findOne"
+    },
+    {
+      "action": "api::fantasy.fantasy.find"
+    },
+    {
+      "action": "api::fantasy.fantasy.findOne"
+    },
+    {
+      "action": "api::filters.filters.getAllFilters"
+    },
+    {
+      "action": "api::folder.folder.create"
+    },
+    {
+      "action": "api::folder.folder.delete"
+    },
+    {
+      "action": "api::folder.folder.find"
+    },
+    {
+      "action": "api::folder.folder.findOne"
+    },
+    {
+      "action": "api::folder.folder.update"
+    },
+    {
+      "action": "api::loan.loan.create"
+    },
+    {
+      "action": "api::loan.loan.delete"
+    },
+    {
+      "action": "api::loan.loan.find"
+    },
+    {
+      "action": "api::loan.loan.findOne"
+    },
+    {
+      "action": "api::loan.loan.update"
+    },
+    {
+      "action": "api::material.material.find"
+    },
+    {
+      "action": "api::material.material.findOne"
+    },
+    {
+      "action": "api::place.place.find"
+    },
+    {
+      "action": "api::place.place.findOne"
+    },
+    {
+      "action": "api::season.season.find"
+    },
+    {
+      "action": "api::season.season.findOne"
+    },
+    {
+      "action": "api::sector.sector.find"
+    },
+    {
+      "action": "api::sector.sector.findOne"
+    },
+    {
+      "action": "api::shelf.shelf.find"
+    },
+    {
+      "action": "api::shelf.shelf.findOne"
+    },
+    {
+      "action": "api::st1.st1.create"
+    },
+    {
+      "action": "api::st1.st1.delete"
+    },
+    {
+      "action": "api::st1.st1.find"
+    },
+    {
+      "action": "api::st1.st1.findOne"
+    },
+    {
+      "action": "api::st1.st1.update"
+    },
+    {
+      "action": "api::suit.suit.create"
+    },
+    {
+      "action": "api::suit.suit.delete"
+    },
+    {
+      "action": "api::suit.suit.find"
+    },
+    {
+      "action": "api::suit.suit.findOne"
+    },
+    {
+      "action": "api::suit.suit.update"
+    },
+    {
+      "action": "api::t1.t1.create"
+    },
+    {
+      "action": "api::t1.t1.delete"
+    },
+    {
+      "action": "api::t1.t1.find"
+    },
+    {
+      "action": "api::t1.t1.findOne"
+    },
+    {
+      "action": "api::t1.t1.update"
+    },
+    {
+      "action": "api::t2.t2.create"
+    },
+    {
+      "action": "api::t2.t2.delete"
+    },
+    {
+      "action": "api::t2.t2.find"
+    },
+    {
+      "action": "api::t2.t2.findOne"
+    },
+    {
+      "action": "api::t2.t2.update"
+    },
+    {
+      "action": "api::t3.t3.create"
+    },
+    {
+      "action": "api::t3.t3.delete"
+    },
+    {
+      "action": "api::t3.t3.find"
+    },
+    {
+      "action": "api::t3.t3.findOne"
+    },
+    {
+      "action": "api::t3.t3.update"
+    },
+    {
+      "action": "api::t4.t4.create"
+    },
+    {
+      "action": "api::t4.t4.delete"
+    },
+    {
+      "action": "api::t4.t4.find"
+    },
+    {
+      "action": "api::t4.t4.findOne"
+    },
+    {
+      "action": "api::t4.t4.update"
+    },
+    {
+      "action": "api::technique.technique.find"
+    },
+    {
+      "action": "api::technique.technique.findOne"
+    },
+    {
+      "action": "plugin::upload.content-api.destroy"
+    },
+    {
+      "action": "plugin::upload.content-api.find"
+    },
+    {
+      "action": "plugin::upload.content-api.findOne"
+    },
+    {
+      "action": "plugin::upload.content-api.upload"
+    },
+    {
+      "action": "plugin::users-permissions.auth.callback"
+    },
+    {
+      "action": "plugin::users-permissions.auth.connect"
+    },
+    {
+      "action": "plugin::users-permissions.auth.emailConfirmation"
+    },
+    {
+      "action": "plugin::users-permissions.auth.forgotPassword"
+    },
+    {
+      "action": "plugin::users-permissions.auth.register"
+    },
+    {
+      "action": "plugin::users-permissions.auth.resetPassword"
+    },
+    {
+      "action": "plugin::users-permissions.auth.sendEmailConfirmation"
+    },
+    {
+      "action": "plugin::users-permissions.permissions.getPermissions"
+    },
+    {
+      "action": "plugin::users-permissions.role.createRole"
+    },
+    {
+      "action": "plugin::users-permissions.role.deleteRole"
+    },
+    {
+      "action": "plugin::users-permissions.role.find"
+    },
+    {
+      "action": "plugin::users-permissions.role.findOne"
+    },
+    {
+      "action": "plugin::users-permissions.role.updateRole"
+    },
+    {
+      "action": "plugin::users-permissions.user.find"
+    },
+    {
+      "action": "plugin::users-permissions.user.findOne"
+    },
+    {
+      "action": "plugin::users-permissions.user.me"
+    }
+  ]
+}

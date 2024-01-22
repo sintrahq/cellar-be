@@ -1,0 +1,93 @@
+{
+  "kind": "collectionType",
+  "collectionName": "archives",
+  "info": {
+    "singularName": "archive",
+    "pluralName": "archives",
+    "displayName": "Archivio",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "description": {
+      "type": "string"
+    },
+    "t_1s": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::t1.t1"
+    },
+    "t_2s": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::t2.t2"
+    },
+    "folders": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::folder.folder",
+      "inversedBy": "archives"
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "is_mock": {
+      "type": "boolean",
+      "default": false
+    },
+    "archive_loans": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::archive-loan.archive-loan",
+      "mappedBy": "archive"
+    },
+    "note": {
+      "type": "text"
+    },
+    "created_by_user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "created_archives"
+    },
+    "updated_by_user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "updated_archives"
+    },
+    "apartment": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::apartment.apartment"
+    },
+    "place": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::place.place"
+    },
+    "shelf": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::shelf.shelf"
+    },
+    "box": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::box.box"
+    },
+    "sector": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::sector.sector"
+    }
+  }
+}

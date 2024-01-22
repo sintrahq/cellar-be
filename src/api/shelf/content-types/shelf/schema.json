@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "shelves",
+  "info": {
+    "singularName": "shelf",
+    "pluralName": "shelves",
+    "displayName": "Scaffali",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "isPriorityItem": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "loans",
+  "info": {
+    "singularName": "loan",
+    "pluralName": "loans",
+    "displayName": "Prestiti",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "date_in": {
+      "type": "date"
+    },
+    "date_out": {
+      "type": "date"
+    },
+    "note": {
+      "type": "text"
+    },
+    "reference": {
+      "type": "string"
+    },
+    "archive_loans": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::archive-loan.archive-loan",
+      "mappedBy": "loan"
+    },
+    "identifier": {
+      "type": "string"
+    },
+    "created_by_user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "created_loans"
+    },
+    "updated_by_user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "updated_loans"
+    }
+  }
+}

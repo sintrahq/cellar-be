@@ -1,0 +1,57 @@
+{
+  "kind": "collectionType",
+  "collectionName": "folders",
+  "info": {
+    "singularName": "folder",
+    "pluralName": "folders",
+    "displayName": "Cartelle",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "archives": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::archive.archive",
+      "mappedBy": "folders"
+    },
+    "is_image_folder": {
+      "type": "boolean",
+      "required": true
+    },
+    "created_by_user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "created_folders"
+    },
+    "updated_by_user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "updated_folders"
+    },
+    "is_visible_to_editor": {
+      "type": "boolean",
+      "default": false
+    },
+    "is_visible_to_viewer": {
+      "type": "boolean",
+      "default": false
+    },
+    "is_visible_to_collaborator": {
+      "type": "boolean"
+    },
+    "identifier": {
+      "type": "integer"
+    }
+  }
+}

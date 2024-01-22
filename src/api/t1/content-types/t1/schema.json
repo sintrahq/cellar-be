@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "t1s",
+  "info": {
+    "singularName": "t1",
+    "pluralName": "t1s",
+    "displayName": "Tipologia 1 livello",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "t_2s": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::t2.t2",
+      "mappedBy": "t_1"
+    },
+    "code": {
+      "type": "string"
+    },
+    "inventory_counter": {
+      "type": "integer"
+    }
+  }
+}

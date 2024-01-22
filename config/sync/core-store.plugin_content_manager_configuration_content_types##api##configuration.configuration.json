@@ -1,0 +1,125 @@
+{
+  "key": "plugin_content_manager_configuration_content_types::api::configuration.configuration",
+  "value": {
+    "uid": "api::configuration.configuration",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "id",
+      "defaultSortBy": "id",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "archive_tooltip_properties": {
+        "edit": {
+          "label": "archive_tooltip_properties",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "archive_tooltip_properties",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "folder_identifier": {
+        "edit": {
+          "label": "folder_identifier",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "folder_identifier",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "loan_identifier": {
+        "edit": {
+          "label": "loan_identifier",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "loan_identifier",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "createdAt": {
+        "edit": {
+          "label": "createdAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "createdAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedAt": {
+        "edit": {
+          "label": "updatedAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "updatedAt",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "createdAt",
+        "updatedAt",
+        "folder_identifier"
+      ],
+      "edit": [
+        [
+          {
+            "name": "archive_tooltip_properties",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "folder_identifier",
+            "size": 4
+          },
+          {
+            "name": "loan_identifier",
+            "size": 4
+          }
+        ]
+      ],
+      "editRelations": []
+    }
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

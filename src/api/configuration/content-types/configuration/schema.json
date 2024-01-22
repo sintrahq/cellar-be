@@ -1,0 +1,23 @@
+{
+  "kind": "singleType",
+  "collectionName": "configurations",
+  "info": {
+    "singularName": "configuration",
+    "pluralName": "configurations",
+    "displayName": "Configurazioni",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "folder_identifier": {
+      "type": "integer",
+      "default": 46
+    },
+    "loan_identifier": {
+      "type": "integer"
+    }
+  }
+}

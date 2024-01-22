@@ -1,0 +1,208 @@
+{
+  "key": "plugin_content_manager_configuration_content_types::api::archive-loan.archive-loan",
+  "value": {
+    "uid": "api::archive-loan.archive-loan",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "date_out",
+      "defaultSortBy": "note_in",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "note_in": {
+        "edit": {
+          "label": "note_in",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "note_in",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "note_out": {
+        "edit": {
+          "label": "note_out",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "note_out",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "date_in": {
+        "edit": {
+          "label": "date_in",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "date_in",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "date_out": {
+        "edit": {
+          "label": "date_out",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "date_out",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "archive": {
+        "edit": {
+          "label": "archive",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "description"
+        },
+        "list": {
+          "label": "archive",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "loan": {
+        "edit": {
+          "label": "loan",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "name"
+        },
+        "list": {
+          "label": "loan",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "created_by_user": {
+        "edit": {
+          "label": "created_by_user",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "username"
+        },
+        "list": {
+          "label": "created_by_user",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updated_by_user": {
+        "edit": {
+          "label": "updated_by_user",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "username"
+        },
+        "list": {
+          "label": "updated_by_user",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "createdAt": {
+        "edit": {
+          "label": "createdAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "createdAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedAt": {
+        "edit": {
+          "label": "updatedAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "updatedAt",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "note_in",
+        "note_out",
+        "date_in"
+      ],
+      "edit": [
+        [
+          {
+            "name": "date_out",
+            "size": 4
+          },
+          {
+            "name": "note_out",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "date_in",
+            "size": 4
+          },
+          {
+            "name": "note_in",
+            "size": 6
+          }
+        ]
+      ],
+      "editRelations": [
+        "archive",
+        "loan",
+        "created_by_user",
+        "updated_by_user"
+      ]
+    }
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

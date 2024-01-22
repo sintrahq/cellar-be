@@ -1,0 +1,230 @@
+{
+  "key": "plugin_content_manager_configuration_content_types::api::folder.folder",
+  "value": {
+    "uid": "api::folder.folder",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "name",
+      "defaultSortBy": "name",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "name": {
+        "edit": {
+          "label": "name",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "name",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "archives": {
+        "edit": {
+          "label": "archives",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "description"
+        },
+        "list": {
+          "label": "archives",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "is_image_folder": {
+        "edit": {
+          "label": "is_image_folder",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "is_image_folder",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "created_by_user": {
+        "edit": {
+          "label": "created_by_user",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "username"
+        },
+        "list": {
+          "label": "created_by_user",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updated_by_user": {
+        "edit": {
+          "label": "updated_by_user",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "username"
+        },
+        "list": {
+          "label": "updated_by_user",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "is_visible_to_editor": {
+        "edit": {
+          "label": "is_visible_to_editor",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "is_visible_to_editor",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "is_visible_to_viewer": {
+        "edit": {
+          "label": "is_visible_to_viewer",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "is_visible_to_viewer",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "is_visible_to_collaborator": {
+        "edit": {
+          "label": "is_visible_to_collaborator",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "is_visible_to_collaborator",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "identifier": {
+        "edit": {
+          "label": "identifier",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "identifier",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "createdAt": {
+        "edit": {
+          "label": "createdAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "createdAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedAt": {
+        "edit": {
+          "label": "updatedAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "updatedAt",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "name",
+        "archives",
+        "is_image_folder"
+      ],
+      "edit": [
+        [
+          {
+            "name": "name",
+            "size": 6
+          },
+          {
+            "name": "is_image_folder",
+            "size": 4
+          }
+        ],
+        [
+          {
+            "name": "is_visible_to_editor",
+            "size": 4
+          },
+          {
+            "name": "is_visible_to_viewer",
+            "size": 4
+          },
+          {
+            "name": "is_visible_to_collaborator",
+            "size": 4
+          }
+        ],
+        [
+          {
+            "name": "identifier",
+            "size": 4
+          }
+        ]
+      ],
+      "editRelations": [
+        "archives",
+        "created_by_user",
+        "updated_by_user"
+      ]
+    }
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}
