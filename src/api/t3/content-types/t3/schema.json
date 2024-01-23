@@ -4,10 +4,11 @@
   "info": {
     "singularName": "t3",
     "pluralName": "t3s",
-    "displayName": "Tipologia 3 livello"
+    "displayName": "Tipologia 3 livello",
+    "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
