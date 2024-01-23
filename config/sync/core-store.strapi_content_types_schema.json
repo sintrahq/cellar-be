@@ -3561,10 +3561,11 @@
       "info": {
         "singularName": "t3",
         "pluralName": "t3s",
-        "displayName": "Tipologia 3 livello"
+        "displayName": "Tipologia 3 livello",
+        "description": ""
       },
       "options": {
-        "draftAndPublish": true
+        "draftAndPublish": false
       },
       "pluginOptions": {},
       "attributes": {
@@ -3588,12 +3589,6 @@
         },
         "updatedAt": {
           "type": "datetime"
-        },
-        "publishedAt": {
-          "type": "datetime",
-          "configurable": false,
-          "writable": true,
-          "visible": false
         },
         "createdBy": {
           "type": "relation",
@@ -3621,10 +3616,11 @@
         "info": {
           "singularName": "t3",
           "pluralName": "t3s",
-          "displayName": "Tipologia 3 livello"
+          "displayName": "Tipologia 3 livello",
+          "description": ""
         },
         "options": {
-          "draftAndPublish": true
+          "draftAndPublish": false
         },
         "pluginOptions": {},
         "attributes": {
@@ -3661,10 +3657,11 @@
       "info": {
         "singularName": "t4",
         "pluralName": "t4s",
-        "displayName": "Tipologia 4 livello"
+        "displayName": "Tipologia 4 livello",
+        "description": ""
       },
       "options": {
-        "draftAndPublish": true
+        "draftAndPublish": false
       },
       "pluginOptions": {},
       "attributes": {
@@ -3682,12 +3679,6 @@
         },
         "updatedAt": {
           "type": "datetime"
-        },
-        "publishedAt": {
-          "type": "datetime",
-          "configurable": false,
-          "writable": true,
-          "visible": false
         },
         "createdBy": {
           "type": "relation",
@@ -3715,10 +3706,11 @@
         "info": {
           "singularName": "t4",
           "pluralName": "t4s",
-          "displayName": "Tipologia 4 livello"
+          "displayName": "Tipologia 4 livello",
+          "description": ""
         },
         "options": {
-          "draftAndPublish": true
+          "draftAndPublish": false
         },
         "pluginOptions": {},
         "attributes": {

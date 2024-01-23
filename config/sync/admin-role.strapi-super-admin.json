@@ -814,12 +814,6 @@
       "conditions": []
     },
     {
-      "action": "plugin::content-manager.explorer.publish",
-      "subject": "api::t3.t3",
-      "properties": {},
-      "conditions": []
-    },
-    {
       "action": "plugin::content-manager.explorer.read",
       "subject": "api::t3.t3",
       "properties": {
@@ -856,12 +850,6 @@
     },
     {
       "action": "plugin::content-manager.explorer.delete",
-      "subject": "api::t4.t4",
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.publish",
       "subject": "api::t4.t4",
       "properties": {},
       "conditions": []
