@@ -292,7 +292,7 @@
           "placeholder": "",
           "visible": true,
           "editable": true,
-          "mainField": "address"
+          "mainField": "name"
         },
         "list": {
           "label": "producer",
@@ -307,7 +307,7 @@
           "placeholder": "",
           "visible": true,
           "editable": true,
-          "mainField": "address"
+          "mainField": "name"
         },
         "list": {
           "label": "distributor",
@@ -473,12 +473,6 @@
       }
     },
     "layouts": {
-      "list": [
-        "id",
-        "description",
-        "t_1s",
-        "t_2s"
-      ],
       "edit": [
         [
           {
@@ -559,7 +553,14 @@
         "sector",
         "producer",
         "race",
-        "distributor"
+        "distributor",
+        "sex"
+      ],
+      "list": [
+        "id",
+        "description",
+        "t_1s",
+        "t_2s"
       ]
     }
   },

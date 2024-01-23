@@ -8,7 +8,7 @@
       "searchable": true,
       "pageSize": 10,
       "mainField": "name",
-      "defaultSortBy": "address",
+      "defaultSortBy": "name",
       "defaultSortOrder": "ASC"
     },
     "metadatas": {
@@ -227,7 +227,7 @@
       "editRelations": [],
       "list": [
         "id",
-        "address",
+        "name",
         "email",
         "phone"
       ]
