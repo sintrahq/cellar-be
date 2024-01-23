@@ -3,7 +3,7 @@
   "value": {
     "sizeOptimization": true,
     "responsiveDimensions": true,
-    "autoOrientation": true
+    "autoOrientation": false
   },
   "type": "object",
   "environment": null,

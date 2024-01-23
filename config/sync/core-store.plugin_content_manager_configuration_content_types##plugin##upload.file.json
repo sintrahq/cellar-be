@@ -295,6 +295,9 @@
         "alternativeText",
         "caption"
       ],
+      "editRelations": [
+        "folder"
+      ],
       "edit": [
         [
           {
@@ -372,17 +375,14 @@
         ],
         [
           {
-            "name": "placeholder",
+            "name": "folderPath",
             "size": 6
           },
           {
-            "name": "folderPath",
+            "name": "placeholder",
             "size": 6
           }
         ]
-      ],
-      "editRelations": [
-        "folder"
       ]
     }
   },

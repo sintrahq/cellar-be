@@ -272,7 +272,7 @@
           "placeholder": "",
           "visible": true,
           "editable": true,
-          "mainField": "note_in"
+          "mainField": "id"
         },
         "list": {
           "label": "created_archive_loans",
@@ -287,7 +287,7 @@
           "placeholder": "",
           "visible": true,
           "editable": true,
-          "mainField": "note_in"
+          "mainField": "id"
         },
         "list": {
           "label": "updated_archive_loans",
@@ -325,6 +325,23 @@
       }
     },
     "layouts": {
+      "list": [
+        "id",
+        "username",
+        "email",
+        "confirmed"
+      ],
+      "editRelations": [
+        "role",
+        "created_loans",
+        "updated_loans",
+        "created_archives",
+        "updated_archives",
+        "created_folders",
+        "updated_folders",
+        "created_archive_loans",
+        "updated_archive_loans"
+      ],
       "edit": [
         [
           {
@@ -362,24 +379,6 @@
             "size": 6
           }
         ]
-      ],
-      "editRelations": [
-        "role",
-        "created_loans",
-        "updated_loans",
-        "created_archives",
-        "updated_archives",
-        "created_folders",
-        "updated_folders",
-        "created_archive_loans",
-        "updated_archive_loans"
-      ],
-      "list": [
-        "id",
-        "username",
-        "email",
-        "role",
-        "confirmed"
       ]
     }
   },

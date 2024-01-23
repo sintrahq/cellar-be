@@ -78,6 +78,13 @@
       }
     },
     "layouts": {
+      "list": [
+        "id",
+        "isPriorityItem",
+        "name",
+        "createdAt"
+      ],
+      "editRelations": [],
       "edit": [
         [
           {
@@ -89,12 +96,6 @@
             "size": 6
           }
         ]
-      ],
-      "editRelations": [],
-      "list": [
-        "id",
-        "name",
-        "isPriorityItem"
       ]
     }
   },

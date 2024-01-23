@@ -97,7 +97,7 @@
           "placeholder": "",
           "visible": true,
           "editable": true,
-          "mainField": "note_in"
+          "mainField": "id"
         },
         "list": {
           "label": "archive_loans",
@@ -179,21 +179,22 @@
       }
     },
     "layouts": {
+      "list": [
+        "id",
+        "name",
+        "date_in",
+        "date_out"
+      ],
+      "editRelations": [
+        "archive_loans",
+        "created_by_user",
+        "updated_by_user"
+      ],
       "edit": [
         [
           {
-            "name": "identifier",
-            "size": 6
-          },
-          {
             "name": "name",
             "size": 6
-          }
-        ],
-        [
-          {
-            "name": "date_out",
-            "size": 4
           },
           {
             "name": "date_in",
@@ -202,27 +203,24 @@
         ],
         [
           {
+            "name": "date_out",
+            "size": 4
+          },
+          {
             "name": "note",
             "size": 6
-          },
+          }
+        ],
+        [
           {
             "name": "reference",
             "size": 6
+          },
+          {
+            "name": "identifier",
+            "size": 6
           }
         ]
-      ],
-      "editRelations": [
-        "archive_loans",
-        "created_by_user",
-        "updated_by_user"
-      ],
-      "list": [
-        "id",
-        "identifier",
-        "name",
-        "date_in",
-        "date_out",
-        "createdAt"
       ]
     }
   },

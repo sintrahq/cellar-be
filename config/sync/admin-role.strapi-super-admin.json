@@ -7,7 +7,10 @@
       "action": "plugin::content-manager.explorer.create",
       "subject": "api::apartment.apartment",
       "properties": {
-        "fields": ["name", "isPriorityItem"]
+        "fields": [
+          "name",
+          "isPriorityItem"
+        ]
       },
       "conditions": []
     },
@@ -21,7 +24,10 @@
       "action": "plugin::content-manager.explorer.read",
       "subject": "api::apartment.apartment",
       "properties": {
-        "fields": ["name", "isPriorityItem"]
+        "fields": [
+          "name",
+          "isPriorityItem"
+        ]
       },
       "conditions": []
     },
@@ -29,7 +35,10 @@
       "action": "plugin::content-manager.explorer.update",
       "subject": "api::apartment.apartment",
       "properties": {
-        "fields": ["name", "isPriorityItem"]
+        "fields": [
+          "name",
+          "isPriorityItem"
+        ]
       },
       "conditions": []
     },
@@ -98,44 +107,30 @@
           "description",
           "t_1s",
           "t_2s",
-          "conservation_status_details",
-          "fantasy_details",
-          "value",
+          "t_3s",
+          "t_4s",
           "folders",
           "images",
           "is_mock",
-          "year",
-          "inventory",
-          "links_to",
-          "links_from",
           "archive_loans",
-          "materials",
-          "techniques",
-          "suit",
-          "colors",
-          "lookbooks_to",
-          "lookbooks_from",
           "note",
-          "label",
-          "is_imported",
-          "size",
           "created_by_user",
           "updated_by_user",
           "apartment",
-          "brand",
-          "fantasy",
           "place",
           "shelf",
           "box",
           "sector",
-          "season",
-          "conservation_status",
-          "mainColor",
-          "mainMaterial",
-          "quantity",
-          "object_description",
-          "details",
-          "external_links"
+          "producer",
+          "distributor",
+          "race",
+          "production_date",
+          "purchase_date",
+          "price",
+          "weight",
+          "seasoning_date",
+          "purchase_price_kg",
+          "sex"
         ]
       },
       "conditions": []
@@ -154,44 +149,30 @@
           "description",
           "t_1s",
           "t_2s",
-          "conservation_status_details",
-          "fantasy_details",
-          "value",
+          "t_3s",
+          "t_4s",
           "folders",
           "images",
           "is_mock",
-          "year",
-          "inventory",
-          "links_to",
-          "links_from",
           "archive_loans",
-          "materials",
-          "techniques",
-          "suit",
-          "colors",
-          "lookbooks_to",
-          "lookbooks_from",
           "note",
-          "label",
-          "is_imported",
-          "size",
           "created_by_user",
           "updated_by_user",
           "apartment",
-          "brand",
-          "fantasy",
           "place",
           "shelf",
           "box",
           "sector",
-          "season",
-          "conservation_status",
-          "mainColor",
-          "mainMaterial",
-          "quantity",
-          "object_description",
-          "details",
-          "external_links"
+          "producer",
+          "distributor",
+          "race",
+          "production_date",
+          "purchase_date",
+          "price",
+          "weight",
+          "seasoning_date",
+          "purchase_price_kg",
+          "sex"
         ]
       },
       "conditions": []
@@ -204,44 +185,30 @@
           "description",
           "t_1s",
           "t_2s",
-          "conservation_status_details",
-          "fantasy_details",
-          "value",
+          "t_3s",
+          "t_4s",
           "folders",
           "images",
           "is_mock",
-          "year",
-          "inventory",
-          "links_to",
-          "links_from",
           "archive_loans",
-          "materials",
-          "techniques",
-          "suit",
-          "colors",
-          "lookbooks_to",
-          "lookbooks_from",
           "note",
-          "label",
-          "is_imported",
-          "size",
           "created_by_user",
           "updated_by_user",
           "apartment",
-          "brand",
-          "fantasy",
           "place",
           "shelf",
           "box",
           "sector",
-          "season",
-          "conservation_status",
-          "mainColor",
-          "mainMaterial",
-          "quantity",
-          "object_description",
-          "details",
-          "external_links"
+          "producer",
+          "distributor",
+          "race",
+          "production_date",
+          "purchase_date",
+          "price",
+          "weight",
+          "seasoning_date",
+          "purchase_price_kg",
+          "sex"
         ]
       },
       "conditions": []
@@ -249,120 +216,61 @@
     {
       "action": "plugin::content-manager.explorer.create",
       "subject": "api::box.box",
-      "properties": {
-        "fields": ["name", "isPriorityItem"]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.delete",
-      "subject": "api::box.box",
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.read",
-      "subject": "api::box.box",
-      "properties": {
-        "fields": ["name", "isPriorityItem"]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.update",
-      "subject": "api::box.box",
-      "properties": {
-        "fields": ["name", "isPriorityItem"]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.create",
-      "subject": "api::brand.brand",
-      "properties": {
-        "fields": ["name", "isPriorityItem"]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.delete",
-      "subject": "api::brand.brand",
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.read",
-      "subject": "api::brand.brand",
-      "properties": {
-        "fields": ["name", "isPriorityItem"]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.update",
-      "subject": "api::brand.brand",
-      "properties": {
-        "fields": ["name", "isPriorityItem"]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.create",
-      "subject": "api::color.color",
-      "properties": {
-        "fields": ["name", "isPriorityItem"]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.delete",
-      "subject": "api::color.color",
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.read",
-      "subject": "api::color.color",
-      "properties": {
-        "fields": ["name", "isPriorityItem"]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.update",
-      "subject": "api::color.color",
-      "properties": {
-        "fields": ["name", "isPriorityItem"]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.create",
-      "subject": "api::configuration.configuration",
       "properties": {
         "fields": [
-          "archive_tooltip_properties",
-          "folder_identifier",
-          "loan_identifier"
+          "name",
+          "isPriorityItem"
         ]
       },
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.delete",
-      "subject": "api::configuration.configuration",
+      "subject": "api::box.box",
       "properties": {},
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.read",
-      "subject": "api::configuration.configuration",
+      "subject": "api::box.box",
       "properties": {
         "fields": [
-          "archive_tooltip_properties",
-          "folder_identifier",
-          "loan_identifier"
+          "name",
+          "isPriorityItem"
         ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::box.box",
+      "properties": {
+        "fields": [
+          "name",
+          "isPriorityItem"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::configuration.configuration",
+      "properties": {
+        "fields": []
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::configuration.configuration",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::configuration.configuration",
+      "properties": {
+        "fields": []
       },
       "conditions": []
     },
@@ -370,101 +278,58 @@
       "action": "plugin::content-manager.explorer.update",
       "subject": "api::configuration.configuration",
       "properties": {
+        "fields": []
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::distributor.distributor",
+      "properties": {
         "fields": [
-          "archive_tooltip_properties",
-          "folder_identifier",
-          "loan_identifier"
+          "address",
+          "email",
+          "phone",
+          "vat_number"
         ]
       },
       "conditions": []
     },
     {
-      "action": "plugin::content-manager.explorer.create",
-      "subject": "api::conservation-status.conservation-status",
-      "properties": {
-        "fields": ["name", "isPriorityItem"]
-      },
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::distributor.distributor",
+      "properties": {},
       "conditions": []
     },
     {
-      "action": "plugin::content-manager.explorer.delete",
-      "subject": "api::conservation-status.conservation-status",
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::distributor.distributor",
       "properties": {},
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.read",
-      "subject": "api::conservation-status.conservation-status",
+      "subject": "api::distributor.distributor",
       "properties": {
-        "fields": ["name", "isPriorityItem"]
+        "fields": [
+          "address",
+          "email",
+          "phone",
+          "vat_number"
+        ]
       },
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.update",
-      "subject": "api::conservation-status.conservation-status",
+      "subject": "api::distributor.distributor",
       "properties": {
-        "fields": ["name", "isPriorityItem"]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.create",
-      "subject": "api::detail.detail",
-      "properties": {
-        "fields": ["name", "isPriorityItem"]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.delete",
-      "subject": "api::detail.detail",
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.read",
-      "subject": "api::detail.detail",
-      "properties": {
-        "fields": ["name", "isPriorityItem"]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.update",
-      "subject": "api::detail.detail",
-      "properties": {
-        "fields": ["name", "isPriorityItem"]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.create",
-      "subject": "api::fantasy.fantasy",
-      "properties": {
-        "fields": ["name", "isPriorityItem"]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.delete",
-      "subject": "api::fantasy.fantasy",
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.read",
-      "subject": "api::fantasy.fantasy",
-      "properties": {
-        "fields": ["name", "isPriorityItem"]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.update",
-      "subject": "api::fantasy.fantasy",
-      "properties": {
-        "fields": ["name", "isPriorityItem"]
+        "fields": [
+          "address",
+          "email",
+          "phone",
+          "vat_number"
+        ]
       },
       "conditions": []
     },
@@ -590,39 +455,12 @@
     },
     {
       "action": "plugin::content-manager.explorer.create",
-      "subject": "api::material.material",
-      "properties": {
-        "fields": ["name", "isPriorityItem"]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.delete",
-      "subject": "api::material.material",
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.read",
-      "subject": "api::material.material",
-      "properties": {
-        "fields": ["name", "isPriorityItem"]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.update",
-      "subject": "api::material.material",
-      "properties": {
-        "fields": ["name", "isPriorityItem"]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.create",
       "subject": "api::place.place",
       "properties": {
-        "fields": ["name", "isPriorityItem"]
+        "fields": [
+          "name",
+          "isPriorityItem"
+        ]
       },
       "conditions": []
     },
@@ -636,7 +474,10 @@
       "action": "plugin::content-manager.explorer.read",
       "subject": "api::place.place",
       "properties": {
-        "fields": ["name", "isPriorityItem"]
+        "fields": [
+          "name",
+          "isPriorityItem"
+        ]
       },
       "conditions": []
     },
@@ -644,37 +485,106 @@
       "action": "plugin::content-manager.explorer.update",
       "subject": "api::place.place",
       "properties": {
-        "fields": ["name", "isPriorityItem"]
+        "fields": [
+          "name",
+          "isPriorityItem"
+        ]
       },
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.create",
-      "subject": "api::season.season",
+      "subject": "api::producer.producer",
       "properties": {
-        "fields": ["name", "isPriorityItem"]
+        "fields": [
+          "address",
+          "email",
+          "phone",
+          "vat_number"
+        ]
       },
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.delete",
-      "subject": "api::season.season",
+      "subject": "api::producer.producer",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::producer.producer",
       "properties": {},
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.read",
-      "subject": "api::season.season",
+      "subject": "api::producer.producer",
       "properties": {
-        "fields": ["name", "isPriorityItem"]
+        "fields": [
+          "address",
+          "email",
+          "phone",
+          "vat_number"
+        ]
       },
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.update",
-      "subject": "api::season.season",
+      "subject": "api::producer.producer",
       "properties": {
-        "fields": ["name", "isPriorityItem"]
+        "fields": [
+          "address",
+          "email",
+          "phone",
+          "vat_number"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::race.race",
+      "properties": {
+        "fields": [
+          "name",
+          "seasoning_months"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::race.race",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::race.race",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::race.race",
+      "properties": {
+        "fields": [
+          "name",
+          "seasoning_months"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::race.race",
+      "properties": {
+        "fields": [
+          "name",
+          "seasoning_months"
+        ]
       },
       "conditions": []
     },
@@ -682,7 +592,10 @@
       "action": "plugin::content-manager.explorer.create",
       "subject": "api::sector.sector",
       "properties": {
-        "fields": ["isPriorityItem", "name"]
+        "fields": [
+          "isPriorityItem",
+          "name"
+        ]
       },
       "conditions": []
     },
@@ -696,7 +609,10 @@
       "action": "plugin::content-manager.explorer.read",
       "subject": "api::sector.sector",
       "properties": {
-        "fields": ["isPriorityItem", "name"]
+        "fields": [
+          "isPriorityItem",
+          "name"
+        ]
       },
       "conditions": []
     },
@@ -704,7 +620,52 @@
       "action": "plugin::content-manager.explorer.update",
       "subject": "api::sector.sector",
       "properties": {
-        "fields": ["isPriorityItem", "name"]
+        "fields": [
+          "isPriorityItem",
+          "name"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::sex.sex",
+      "properties": {
+        "fields": [
+          "name"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::sex.sex",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::sex.sex",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::sex.sex",
+      "properties": {
+        "fields": [
+          "name"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::sex.sex",
+      "properties": {
+        "fields": [
+          "name"
+        ]
       },
       "conditions": []
     },
@@ -712,7 +673,10 @@
       "action": "plugin::content-manager.explorer.create",
       "subject": "api::shelf.shelf",
       "properties": {
-        "fields": ["name", "isPriorityItem"]
+        "fields": [
+          "name",
+          "isPriorityItem"
+        ]
       },
       "conditions": []
     },
@@ -726,7 +690,10 @@
       "action": "plugin::content-manager.explorer.read",
       "subject": "api::shelf.shelf",
       "properties": {
-        "fields": ["name", "isPriorityItem"]
+        "fields": [
+          "name",
+          "isPriorityItem"
+        ]
       },
       "conditions": []
     },
@@ -734,67 +701,10 @@
       "action": "plugin::content-manager.explorer.update",
       "subject": "api::shelf.shelf",
       "properties": {
-        "fields": ["name", "isPriorityItem"]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.create",
-      "subject": "api::st1.st1",
-      "properties": {
-        "fields": ["name", "completis"]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.delete",
-      "subject": "api::st1.st1",
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.read",
-      "subject": "api::st1.st1",
-      "properties": {
-        "fields": ["name", "completis"]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.update",
-      "subject": "api::st1.st1",
-      "properties": {
-        "fields": ["name", "completis"]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.create",
-      "subject": "api::suit.suit",
-      "properties": {
-        "fields": ["name", "s_t_1", "archives"]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.delete",
-      "subject": "api::suit.suit",
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.read",
-      "subject": "api::suit.suit",
-      "properties": {
-        "fields": ["name", "s_t_1", "archives"]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.update",
-      "subject": "api::suit.suit",
-      "properties": {
-        "fields": ["name", "s_t_1", "archives"]
+        "fields": [
+          "name",
+          "isPriorityItem"
+        ]
       },
       "conditions": []
     },
@@ -802,7 +712,12 @@
       "action": "plugin::content-manager.explorer.create",
       "subject": "api::t1.t1",
       "properties": {
-        "fields": ["name", "t_2s", "code", "inventory_counter"]
+        "fields": [
+          "name",
+          "t_2s",
+          "code",
+          "inventory_counter"
+        ]
       },
       "conditions": []
     },
@@ -816,7 +731,12 @@
       "action": "plugin::content-manager.explorer.read",
       "subject": "api::t1.t1",
       "properties": {
-        "fields": ["name", "t_2s", "code", "inventory_counter"]
+        "fields": [
+          "name",
+          "t_2s",
+          "code",
+          "inventory_counter"
+        ]
       },
       "conditions": []
     },
@@ -824,7 +744,12 @@
       "action": "plugin::content-manager.explorer.update",
       "subject": "api::t1.t1",
       "properties": {
-        "fields": ["name", "t_2s", "code", "inventory_counter"]
+        "fields": [
+          "name",
+          "t_2s",
+          "code",
+          "inventory_counter"
+        ]
       },
       "conditions": []
     },
@@ -832,7 +757,11 @@
       "action": "plugin::content-manager.explorer.create",
       "subject": "api::t2.t2",
       "properties": {
-        "fields": ["name", "t_1"]
+        "fields": [
+          "name",
+          "t_1",
+          "t_3s"
+        ]
       },
       "conditions": []
     },
@@ -846,7 +775,11 @@
       "action": "plugin::content-manager.explorer.read",
       "subject": "api::t2.t2",
       "properties": {
-        "fields": ["name", "t_1"]
+        "fields": [
+          "name",
+          "t_1",
+          "t_3s"
+        ]
       },
       "conditions": []
     },
@@ -854,7 +787,11 @@
       "action": "plugin::content-manager.explorer.update",
       "subject": "api::t2.t2",
       "properties": {
-        "fields": ["name", "t_1"]
+        "fields": [
+          "name",
+          "t_1",
+          "t_3s"
+        ]
       },
       "conditions": []
     },
@@ -862,7 +799,11 @@
       "action": "plugin::content-manager.explorer.create",
       "subject": "api::t3.t3",
       "properties": {
-        "fields": ["name", "t_2"]
+        "fields": [
+          "name",
+          "t_2",
+          "t_4s"
+        ]
       },
       "conditions": []
     },
@@ -873,10 +814,20 @@
       "conditions": []
     },
     {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::t3.t3",
+      "properties": {},
+      "conditions": []
+    },
+    {
       "action": "plugin::content-manager.explorer.read",
       "subject": "api::t3.t3",
       "properties": {
-        "fields": ["name", "t_2"]
+        "fields": [
+          "name",
+          "t_2",
+          "t_4s"
+        ]
       },
       "conditions": []
     },
@@ -884,7 +835,11 @@
       "action": "plugin::content-manager.explorer.update",
       "subject": "api::t3.t3",
       "properties": {
-        "fields": ["name", "t_2"]
+        "fields": [
+          "name",
+          "t_2",
+          "t_4s"
+        ]
       },
       "conditions": []
     },
@@ -892,7 +847,10 @@
       "action": "plugin::content-manager.explorer.create",
       "subject": "api::t4.t4",
       "properties": {
-        "fields": ["name"]
+        "fields": [
+          "name",
+          "t_3"
+        ]
       },
       "conditions": []
     },
@@ -903,48 +861,30 @@
       "conditions": []
     },
     {
-      "action": "plugin::content-manager.explorer.read",
+      "action": "plugin::content-manager.explorer.publish",
       "subject": "api::t4.t4",
-      "properties": {
-        "fields": ["name"]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.update",
-      "subject": "api::t4.t4",
-      "properties": {
-        "fields": ["name"]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.create",
-      "subject": "api::technique.technique",
-      "properties": {
-        "fields": ["name", "isPriorityItem"]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.delete",
-      "subject": "api::technique.technique",
       "properties": {},
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.read",
-      "subject": "api::technique.technique",
+      "subject": "api::t4.t4",
       "properties": {
-        "fields": ["name", "isPriorityItem"]
+        "fields": [
+          "name",
+          "t_3"
+        ]
       },
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.update",
-      "subject": "api::technique.technique",
+      "subject": "api::t4.t4",
       "properties": {
-        "fields": ["name", "isPriorityItem"]
+        "fields": [
+          "name",
+          "t_3"
+        ]
       },
       "conditions": []
     },

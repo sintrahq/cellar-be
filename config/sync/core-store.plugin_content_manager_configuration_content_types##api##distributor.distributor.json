@@ -1,14 +1,14 @@
 {
-  "key": "plugin_content_manager_configuration_content_types::api::brand.brand",
+  "key": "plugin_content_manager_configuration_content_types::api::distributor.distributor",
   "value": {
-    "uid": "api::brand.brand",
+    "uid": "api::distributor.distributor",
     "settings": {
       "bulkable": true,
       "filterable": true,
       "searchable": true,
       "pageSize": 10,
-      "mainField": "name",
-      "defaultSortBy": "name",
+      "mainField": "address",
+      "defaultSortBy": "address",
       "defaultSortOrder": "ASC"
     },
     "metadatas": {
@@ -20,30 +20,58 @@
           "sortable": true
         }
       },
-      "name": {
+      "address": {
         "edit": {
-          "label": "name",
+          "label": "address",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "name",
+          "label": "address",
           "searchable": true,
           "sortable": true
         }
       },
-      "isPriorityItem": {
+      "email": {
         "edit": {
-          "label": "isPriorityItem",
+          "label": "email",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "isPriorityItem",
+          "label": "email",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "phone": {
+        "edit": {
+          "label": "phone",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "phone",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "vat_number": {
+        "edit": {
+          "label": "vat_number",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "vat_number",
           "searchable": true,
           "sortable": true
         }
@@ -78,23 +106,34 @@
       }
     },
     "layouts": {
+      "list": [
+        "id",
+        "address",
+        "email",
+        "phone"
+      ],
+      "editRelations": [],
       "edit": [
         [
           {
-            "name": "name",
+            "name": "address",
             "size": 6
           },
           {
-            "name": "isPriorityItem",
-            "size": 4
+            "name": "email",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "phone",
+            "size": 6
+          },
+          {
+            "name": "vat_number",
+            "size": 6
           }
         ]
-      ],
-      "editRelations": [],
-      "list": [
-        "id",
-        "name",
-        "isPriorityItem"
       ]
     }
   },

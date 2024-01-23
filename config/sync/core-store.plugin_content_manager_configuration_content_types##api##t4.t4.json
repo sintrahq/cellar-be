@@ -6,7 +6,7 @@
       "bulkable": true,
       "filterable": true,
       "searchable": true,
-      "pageSize": 100,
+      "pageSize": 10,
       "mainField": "name",
       "defaultSortBy": "name",
       "defaultSortOrder": "ASC"
@@ -30,6 +30,21 @@
         },
         "list": {
           "label": "name",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "t_3": {
+        "edit": {
+          "label": "t_3",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "name"
+        },
+        "list": {
+          "label": "t_3",
           "searchable": true,
           "sortable": true
         }
@@ -64,6 +79,15 @@
       }
     },
     "layouts": {
+      "list": [
+        "id",
+        "name",
+        "t_3",
+        "createdAt"
+      ],
+      "editRelations": [
+        "t_3"
+      ],
       "edit": [
         [
           {
@@ -71,9 +95,7 @@
             "size": 6
           }
         ]
-      ],
-      "editRelations": [],
-      "list": ["id", "name"]
+      ]
     }
   },
   "type": "object",

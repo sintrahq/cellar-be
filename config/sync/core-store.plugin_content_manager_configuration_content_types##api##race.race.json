@@ -1,7 +1,7 @@
 {
-  "key": "plugin_content_manager_configuration_content_types::api::fantasy.fantasy",
+  "key": "plugin_content_manager_configuration_content_types::api::race.race",
   "value": {
-    "uid": "api::fantasy.fantasy",
+    "uid": "api::race.race",
     "settings": {
       "bulkable": true,
       "filterable": true,
@@ -34,16 +34,16 @@
           "sortable": true
         }
       },
-      "isPriorityItem": {
+      "seasoning_months": {
         "edit": {
-          "label": "isPriorityItem",
+          "label": "seasoning_months",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "isPriorityItem",
+          "label": "seasoning_months",
           "searchable": true,
           "sortable": true
         }
@@ -81,8 +81,10 @@
       "list": [
         "id",
         "name",
-        "isPriorityItem"
+        "seasoning_months",
+        "createdAt"
       ],
+      "editRelations": [],
       "edit": [
         [
           {
@@ -90,12 +92,11 @@
             "size": 6
           },
           {
-            "name": "isPriorityItem",
+            "name": "seasoning_months",
             "size": 4
           }
         ]
-      ],
-      "editRelations": []
+      ]
     }
   },
   "type": "object",

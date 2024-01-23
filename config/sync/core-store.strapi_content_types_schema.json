@@ -530,7 +530,11 @@
         },
         "type": {
           "type": "enumeration",
-          "enum": ["read-only", "full-access", "custom"],
+          "enum": [
+            "read-only",
+            "full-access",
+            "custom"
+          ],
           "configurable": false,
           "required": true,
           "default": "read-only"
@@ -627,7 +631,11 @@
           },
           "type": {
             "type": "enumeration",
-            "enum": ["read-only", "full-access", "custom"],
+            "enum": [
+              "read-only",
+              "full-access",
+              "custom"
+            ],
             "configurable": false,
             "required": true,
             "default": "read-only"
@@ -904,7 +912,9 @@
       "indexes": [
         {
           "name": "upload_files_folder_path_index",
-          "columns": ["folder_path"],
+          "columns": [
+            "folder_path"
+          ],
           "type": null
         }
       ],
@@ -1097,12 +1107,16 @@
       "indexes": [
         {
           "name": "upload_folders_path_id_index",
-          "columns": ["path_id"],
+          "columns": [
+            "path_id"
+          ],
           "type": "unique"
         },
         {
           "name": "upload_folders_path_index",
-          "columns": ["path"],
+          "columns": [
+            "path"
+          ],
           "type": "unique"
         }
       ],
@@ -1893,14 +1907,15 @@
           "relation": "oneToMany",
           "target": "api::t2.t2"
         },
-        "conservation_status_details": {
-          "type": "string"
+        "t_3s": {
+          "type": "relation",
+          "relation": "oneToMany",
+          "target": "api::t3.t3"
         },
-        "fantasy_details": {
-          "type": "string"
-        },
-        "value": {
-          "type": "integer"
+        "t_4s": {
+          "type": "relation",
+          "relation": "oneToMany",
+          "target": "api::t4.t4"
         },
         "folders": {
           "type": "relation",
@@ -1912,31 +1927,13 @@
           "type": "media",
           "multiple": true,
           "required": false,
-          "allowedTypes": ["images"]
+          "allowedTypes": [
+            "images"
+          ]
         },
         "is_mock": {
           "type": "boolean",
           "default": false
-        },
-        "year": {
-          "type": "string"
-        },
-        "inventory": {
-          "type": "string",
-          "required": false,
-          "unique": true
-        },
-        "links_to": {
-          "type": "relation",
-          "relation": "manyToMany",
-          "target": "api::archive.archive",
-          "inversedBy": "links_from"
-        },
-        "links_from": {
-          "type": "relation",
-          "relation": "manyToMany",
-          "target": "api::archive.archive",
-          "inversedBy": "links_to"
         },
         "archive_loans": {
           "type": "relation",
@@ -1944,51 +1941,8 @@
           "target": "api::archive-loan.archive-loan",
           "mappedBy": "archive"
         },
-        "materials": {
-          "type": "relation",
-          "relation": "oneToMany",
-          "target": "api::material.material"
-        },
-        "techniques": {
-          "type": "relation",
-          "relation": "oneToMany",
-          "target": "api::technique.technique"
-        },
-        "suit": {
-          "type": "relation",
-          "relation": "manyToOne",
-          "target": "api::suit.suit",
-          "inversedBy": "archives"
-        },
-        "colors": {
-          "type": "relation",
-          "relation": "oneToMany",
-          "target": "api::color.color"
-        },
-        "lookbooks_to": {
-          "type": "relation",
-          "relation": "manyToMany",
-          "target": "api::archive.archive",
-          "inversedBy": "lookbooks_from"
-        },
-        "lookbooks_from": {
-          "type": "relation",
-          "relation": "manyToMany",
-          "target": "api::archive.archive",
-          "inversedBy": "lookbooks_to"
-        },
         "note": {
           "type": "text"
-        },
-        "label": {
-          "type": "text"
-        },
-        "is_imported": {
-          "type": "boolean",
-          "default": false
-        },
-        "size": {
-          "type": "string"
         },
         "created_by_user": {
           "type": "relation",
@@ -2006,16 +1960,6 @@
           "type": "relation",
           "relation": "oneToOne",
           "target": "api::apartment.apartment"
-        },
-        "brand": {
-          "type": "relation",
-          "relation": "oneToOne",
-          "target": "api::brand.brand"
-        },
-        "fantasy": {
-          "type": "relation",
-          "relation": "oneToOne",
-          "target": "api::fantasy.fantasy"
         },
         "place": {
           "type": "relation",
@@ -2037,40 +1981,43 @@
           "relation": "oneToOne",
           "target": "api::sector.sector"
         },
-        "season": {
+        "producer": {
           "type": "relation",
           "relation": "oneToOne",
-          "target": "api::season.season"
+          "target": "api::producer.producer"
         },
-        "conservation_status": {
+        "distributor": {
           "type": "relation",
           "relation": "oneToOne",
-          "target": "api::conservation-status.conservation-status"
+          "target": "api::distributor.distributor"
         },
-        "mainColor": {
+        "race": {
           "type": "relation",
           "relation": "oneToOne",
-          "target": "api::color.color"
+          "target": "api::race.race"
         },
-        "mainMaterial": {
+        "production_date": {
+          "type": "date"
+        },
+        "purchase_date": {
+          "type": "date"
+        },
+        "price": {
+          "type": "decimal"
+        },
+        "weight": {
+          "type": "float"
+        },
+        "seasoning_date": {
+          "type": "date"
+        },
+        "purchase_price_kg": {
+          "type": "decimal"
+        },
+        "sex": {
           "type": "relation",
           "relation": "oneToOne",
-          "target": "api::material.material"
-        },
-        "quantity": {
-          "type": "integer",
-          "min": 0
-        },
-        "object_description": {
-          "type": "text"
-        },
-        "details": {
-          "type": "relation",
-          "relation": "oneToMany",
-          "target": "api::detail.detail"
-        },
-        "external_links": {
-          "type": "json"
+          "target": "api::sex.sex"
         },
         "createdAt": {
           "type": "datetime"
@@ -2125,14 +2072,15 @@
             "relation": "oneToMany",
             "target": "api::t2.t2"
           },
-          "conservation_status_details": {
-            "type": "string"
+          "t_3s": {
+            "type": "relation",
+            "relation": "oneToMany",
+            "target": "api::t3.t3"
           },
-          "fantasy_details": {
-            "type": "string"
-          },
-          "value": {
-            "type": "integer"
+          "t_4s": {
+            "type": "relation",
+            "relation": "oneToMany",
+            "target": "api::t4.t4"
           },
           "folders": {
             "type": "relation",
@@ -2144,31 +2092,13 @@
             "type": "media",
             "multiple": true,
             "required": false,
-            "allowedTypes": ["images"]
+            "allowedTypes": [
+              "images"
+            ]
           },
           "is_mock": {
             "type": "boolean",
             "default": false
-          },
-          "year": {
-            "type": "string"
-          },
-          "inventory": {
-            "type": "string",
-            "required": false,
-            "unique": true
-          },
-          "links_to": {
-            "type": "relation",
-            "relation": "manyToMany",
-            "target": "api::archive.archive",
-            "inversedBy": "links_from"
-          },
-          "links_from": {
-            "type": "relation",
-            "relation": "manyToMany",
-            "target": "api::archive.archive",
-            "inversedBy": "links_to"
           },
           "archive_loans": {
             "type": "relation",
@@ -2176,51 +2106,8 @@
             "target": "api::archive-loan.archive-loan",
             "mappedBy": "archive"
           },
-          "materials": {
-            "type": "relation",
-            "relation": "oneToMany",
-            "target": "api::material.material"
-          },
-          "techniques": {
-            "type": "relation",
-            "relation": "oneToMany",
-            "target": "api::technique.technique"
-          },
-          "suit": {
-            "type": "relation",
-            "relation": "manyToOne",
-            "target": "api::suit.suit",
-            "inversedBy": "archives"
-          },
-          "colors": {
-            "type": "relation",
-            "relation": "oneToMany",
-            "target": "api::color.color"
-          },
-          "lookbooks_to": {
-            "type": "relation",
-            "relation": "manyToMany",
-            "target": "api::archive.archive",
-            "inversedBy": "lookbooks_from"
-          },
-          "lookbooks_from": {
-            "type": "relation",
-            "relation": "manyToMany",
-            "target": "api::archive.archive",
-            "inversedBy": "lookbooks_to"
-          },
           "note": {
             "type": "text"
-          },
-          "label": {
-            "type": "text"
-          },
-          "is_imported": {
-            "type": "boolean",
-            "default": false
-          },
-          "size": {
-            "type": "string"
           },
           "created_by_user": {
             "type": "relation",
@@ -2238,16 +2125,6 @@
             "type": "relation",
             "relation": "oneToOne",
             "target": "api::apartment.apartment"
-          },
-          "brand": {
-            "type": "relation",
-            "relation": "oneToOne",
-            "target": "api::brand.brand"
-          },
-          "fantasy": {
-            "type": "relation",
-            "relation": "oneToOne",
-            "target": "api::fantasy.fantasy"
           },
           "place": {
             "type": "relation",
@@ -2269,40 +2146,43 @@
             "relation": "oneToOne",
             "target": "api::sector.sector"
           },
-          "season": {
+          "producer": {
             "type": "relation",
             "relation": "oneToOne",
-            "target": "api::season.season"
+            "target": "api::producer.producer"
           },
-          "conservation_status": {
+          "distributor": {
             "type": "relation",
             "relation": "oneToOne",
-            "target": "api::conservation-status.conservation-status"
+            "target": "api::distributor.distributor"
           },
-          "mainColor": {
+          "race": {
             "type": "relation",
             "relation": "oneToOne",
-            "target": "api::color.color"
+            "target": "api::race.race"
           },
-          "mainMaterial": {
+          "production_date": {
+            "type": "date"
+          },
+          "purchase_date": {
+            "type": "date"
+          },
+          "price": {
+            "type": "decimal"
+          },
+          "weight": {
+            "type": "float"
+          },
+          "seasoning_date": {
+            "type": "date"
+          },
+          "purchase_price_kg": {
+            "type": "decimal"
+          },
+          "sex": {
             "type": "relation",
             "relation": "oneToOne",
-            "target": "api::material.material"
-          },
-          "quantity": {
-            "type": "integer",
-            "min": 0
-          },
-          "object_description": {
-            "type": "text"
-          },
-          "details": {
-            "type": "relation",
-            "relation": "oneToMany",
-            "target": "api::detail.detail"
-          },
-          "external_links": {
-            "type": "json"
+            "target": "api::sex.sex"
           }
         },
         "kind": "collectionType"
@@ -2534,170 +2414,6 @@
       "actions": {},
       "lifecycles": {}
     },
-    "api::brand.brand": {
-      "kind": "collectionType",
-      "collectionName": "brands",
-      "info": {
-        "singularName": "brand",
-        "pluralName": "brands",
-        "displayName": "Marchi",
-        "description": ""
-      },
-      "options": {
-        "draftAndPublish": false
-      },
-      "pluginOptions": {},
-      "attributes": {
-        "name": {
-          "type": "string"
-        },
-        "isPriorityItem": {
-          "type": "boolean",
-          "default": false
-        },
-        "createdAt": {
-          "type": "datetime"
-        },
-        "updatedAt": {
-          "type": "datetime"
-        },
-        "createdBy": {
-          "type": "relation",
-          "relation": "oneToOne",
-          "target": "admin::user",
-          "configurable": false,
-          "writable": false,
-          "visible": false,
-          "useJoinTable": false,
-          "private": true
-        },
-        "updatedBy": {
-          "type": "relation",
-          "relation": "oneToOne",
-          "target": "admin::user",
-          "configurable": false,
-          "writable": false,
-          "visible": false,
-          "useJoinTable": false,
-          "private": true
-        }
-      },
-      "__schema__": {
-        "collectionName": "brands",
-        "info": {
-          "singularName": "brand",
-          "pluralName": "brands",
-          "displayName": "Marchi",
-          "description": ""
-        },
-        "options": {
-          "draftAndPublish": false
-        },
-        "pluginOptions": {},
-        "attributes": {
-          "name": {
-            "type": "string"
-          },
-          "isPriorityItem": {
-            "type": "boolean",
-            "default": false
-          }
-        },
-        "kind": "collectionType"
-      },
-      "modelType": "contentType",
-      "modelName": "brand",
-      "connection": "default",
-      "uid": "api::brand.brand",
-      "apiName": "brand",
-      "globalId": "Brand",
-      "actions": {},
-      "lifecycles": {}
-    },
-    "api::color.color": {
-      "kind": "collectionType",
-      "collectionName": "colors",
-      "info": {
-        "singularName": "color",
-        "pluralName": "colors",
-        "displayName": "Colori",
-        "description": ""
-      },
-      "options": {
-        "draftAndPublish": false
-      },
-      "pluginOptions": {},
-      "attributes": {
-        "name": {
-          "type": "string",
-          "required": true,
-          "unique": true
-        },
-        "isPriorityItem": {
-          "type": "boolean",
-          "default": false
-        },
-        "createdAt": {
-          "type": "datetime"
-        },
-        "updatedAt": {
-          "type": "datetime"
-        },
-        "createdBy": {
-          "type": "relation",
-          "relation": "oneToOne",
-          "target": "admin::user",
-          "configurable": false,
-          "writable": false,
-          "visible": false,
-          "useJoinTable": false,
-          "private": true
-        },
-        "updatedBy": {
-          "type": "relation",
-          "relation": "oneToOne",
-          "target": "admin::user",
-          "configurable": false,
-          "writable": false,
-          "visible": false,
-          "useJoinTable": false,
-          "private": true
-        }
-      },
-      "__schema__": {
-        "collectionName": "colors",
-        "info": {
-          "singularName": "color",
-          "pluralName": "colors",
-          "displayName": "Colori",
-          "description": ""
-        },
-        "options": {
-          "draftAndPublish": false
-        },
-        "pluginOptions": {},
-        "attributes": {
-          "name": {
-            "type": "string",
-            "required": true,
-            "unique": true
-          },
-          "isPriorityItem": {
-            "type": "boolean",
-            "default": false
-          }
-        },
-        "kind": "collectionType"
-      },
-      "modelType": "contentType",
-      "modelName": "color",
-      "connection": "default",
-      "uid": "api::color.color",
-      "apiName": "color",
-      "globalId": "Color",
-      "actions": {},
-      "lifecycles": {}
-    },
     "api::configuration.configuration": {
       "kind": "singleType",
       "collectionName": "configurations",
@@ -2712,16 +2428,6 @@
       },
       "pluginOptions": {},
       "attributes": {
-        "archive_tooltip_properties": {
-          "type": "json"
-        },
-        "folder_identifier": {
-          "type": "integer",
-          "default": 46
-        },
-        "loan_identifier": {
-          "type": "integer"
-        },
         "createdAt": {
           "type": "datetime"
         },
@@ -2761,18 +2467,7 @@
           "draftAndPublish": false
         },
         "pluginOptions": {},
-        "attributes": {
-          "archive_tooltip_properties": {
-            "type": "json"
-          },
-          "folder_identifier": {
-            "type": "integer",
-            "default": 46
-          },
-          "loan_identifier": {
-            "type": "integer"
-          }
-        },
+        "attributes": {},
         "kind": "singleType"
       },
       "modelType": "contentType",
@@ -2784,32 +2479,42 @@
       "actions": {},
       "lifecycles": {}
     },
-    "api::conservation-status.conservation-status": {
+    "api::distributor.distributor": {
       "kind": "collectionType",
-      "collectionName": "conservation_statuses",
+      "collectionName": "distributors",
       "info": {
-        "singularName": "conservation-status",
-        "pluralName": "conservation-statuses",
-        "displayName": "Stato di conservazione",
-        "description": ""
+        "singularName": "distributor",
+        "pluralName": "distributors",
+        "displayName": "Distributore"
       },
       "options": {
-        "draftAndPublish": false
+        "draftAndPublish": true
       },
       "pluginOptions": {},
       "attributes": {
-        "name": {
+        "address": {
           "type": "string"
         },
-        "isPriorityItem": {
-          "type": "boolean",
-          "default": false
+        "email": {
+          "type": "email"
+        },
+        "phone": {
+          "type": "string"
+        },
+        "vat_number": {
+          "type": "string"
         },
         "createdAt": {
           "type": "datetime"
         },
         "updatedAt": {
           "type": "datetime"
+        },
+        "publishedAt": {
+          "type": "datetime",
+          "configurable": false,
+          "writable": true,
+          "visible": false
         },
         "createdBy": {
           "type": "relation",
@@ -2833,194 +2538,38 @@
         }
       },
       "__schema__": {
-        "collectionName": "conservation_statuses",
+        "collectionName": "distributors",
         "info": {
-          "singularName": "conservation-status",
-          "pluralName": "conservation-statuses",
-          "displayName": "Stato di conservazione",
-          "description": ""
+          "singularName": "distributor",
+          "pluralName": "distributors",
+          "displayName": "Distributore"
         },
         "options": {
-          "draftAndPublish": false
+          "draftAndPublish": true
         },
         "pluginOptions": {},
         "attributes": {
-          "name": {
+          "address": {
             "type": "string"
           },
-          "isPriorityItem": {
-            "type": "boolean",
-            "default": false
+          "email": {
+            "type": "email"
+          },
+          "phone": {
+            "type": "string"
+          },
+          "vat_number": {
+            "type": "string"
           }
         },
         "kind": "collectionType"
       },
       "modelType": "contentType",
-      "modelName": "conservation-status",
+      "modelName": "distributor",
       "connection": "default",
-      "uid": "api::conservation-status.conservation-status",
-      "apiName": "conservation-status",
-      "globalId": "ConservationStatus",
-      "actions": {},
-      "lifecycles": {}
-    },
-    "api::detail.detail": {
-      "kind": "collectionType",
-      "collectionName": "details",
-      "info": {
-        "singularName": "detail",
-        "pluralName": "details",
-        "displayName": "Dettagli",
-        "description": ""
-      },
-      "options": {
-        "draftAndPublish": false
-      },
-      "pluginOptions": {},
-      "attributes": {
-        "name": {
-          "type": "string"
-        },
-        "isPriorityItem": {
-          "type": "boolean",
-          "default": false
-        },
-        "createdAt": {
-          "type": "datetime"
-        },
-        "updatedAt": {
-          "type": "datetime"
-        },
-        "createdBy": {
-          "type": "relation",
-          "relation": "oneToOne",
-          "target": "admin::user",
-          "configurable": false,
-          "writable": false,
-          "visible": false,
-          "useJoinTable": false,
-          "private": true
-        },
-        "updatedBy": {
-          "type": "relation",
-          "relation": "oneToOne",
-          "target": "admin::user",
-          "configurable": false,
-          "writable": false,
-          "visible": false,
-          "useJoinTable": false,
-          "private": true
-        }
-      },
-      "__schema__": {
-        "collectionName": "details",
-        "info": {
-          "singularName": "detail",
-          "pluralName": "details",
-          "displayName": "Dettagli",
-          "description": ""
-        },
-        "options": {
-          "draftAndPublish": false
-        },
-        "pluginOptions": {},
-        "attributes": {
-          "name": {
-            "type": "string"
-          },
-          "isPriorityItem": {
-            "type": "boolean",
-            "default": false
-          }
-        },
-        "kind": "collectionType"
-      },
-      "modelType": "contentType",
-      "modelName": "detail",
-      "connection": "default",
-      "uid": "api::detail.detail",
-      "apiName": "detail",
-      "globalId": "Detail",
-      "actions": {},
-      "lifecycles": {}
-    },
-    "api::fantasy.fantasy": {
-      "kind": "collectionType",
-      "collectionName": "fantasies",
-      "info": {
-        "singularName": "fantasy",
-        "pluralName": "fantasies",
-        "displayName": "Fantasie",
-        "description": ""
-      },
-      "options": {
-        "draftAndPublish": false
-      },
-      "pluginOptions": {},
-      "attributes": {
-        "name": {
-          "type": "string"
-        },
-        "isPriorityItem": {
-          "type": "boolean",
-          "default": false
-        },
-        "createdAt": {
-          "type": "datetime"
-        },
-        "updatedAt": {
-          "type": "datetime"
-        },
-        "createdBy": {
-          "type": "relation",
-          "relation": "oneToOne",
-          "target": "admin::user",
-          "configurable": false,
-          "writable": false,
-          "visible": false,
-          "useJoinTable": false,
-          "private": true
-        },
-        "updatedBy": {
-          "type": "relation",
-          "relation": "oneToOne",
-          "target": "admin::user",
-          "configurable": false,
-          "writable": false,
-          "visible": false,
-          "useJoinTable": false,
-          "private": true
-        }
-      },
-      "__schema__": {
-        "collectionName": "fantasies",
-        "info": {
-          "singularName": "fantasy",
-          "pluralName": "fantasies",
-          "displayName": "Fantasie",
-          "description": ""
-        },
-        "options": {
-          "draftAndPublish": false
-        },
-        "pluginOptions": {},
-        "attributes": {
-          "name": {
-            "type": "string"
-          },
-          "isPriorityItem": {
-            "type": "boolean",
-            "default": false
-          }
-        },
-        "kind": "collectionType"
-      },
-      "modelType": "contentType",
-      "modelName": "fantasy",
-      "connection": "default",
-      "uid": "api::fantasy.fantasy",
-      "apiName": "fantasy",
-      "globalId": "Fantasy",
+      "uid": "api::distributor.distributor",
+      "apiName": "distributor",
+      "globalId": "Distributor",
       "actions": {},
       "lifecycles": {}
     },
@@ -3314,86 +2863,6 @@
       "actions": {},
       "lifecycles": {}
     },
-    "api::material.material": {
-      "kind": "collectionType",
-      "collectionName": "materials",
-      "info": {
-        "singularName": "material",
-        "pluralName": "materials",
-        "displayName": "Materiali",
-        "description": ""
-      },
-      "options": {
-        "draftAndPublish": false
-      },
-      "pluginOptions": {},
-      "attributes": {
-        "name": {
-          "type": "string"
-        },
-        "isPriorityItem": {
-          "type": "boolean",
-          "default": false
-        },
-        "createdAt": {
-          "type": "datetime"
-        },
-        "updatedAt": {
-          "type": "datetime"
-        },
-        "createdBy": {
-          "type": "relation",
-          "relation": "oneToOne",
-          "target": "admin::user",
-          "configurable": false,
-          "writable": false,
-          "visible": false,
-          "useJoinTable": false,
-          "private": true
-        },
-        "updatedBy": {
-          "type": "relation",
-          "relation": "oneToOne",
-          "target": "admin::user",
-          "configurable": false,
-          "writable": false,
-          "visible": false,
-          "useJoinTable": false,
-          "private": true
-        }
-      },
-      "__schema__": {
-        "collectionName": "materials",
-        "info": {
-          "singularName": "material",
-          "pluralName": "materials",
-          "displayName": "Materiali",
-          "description": ""
-        },
-        "options": {
-          "draftAndPublish": false
-        },
-        "pluginOptions": {},
-        "attributes": {
-          "name": {
-            "type": "string"
-          },
-          "isPriorityItem": {
-            "type": "boolean",
-            "default": false
-          }
-        },
-        "kind": "collectionType"
-      },
-      "modelType": "contentType",
-      "modelName": "material",
-      "connection": "default",
-      "uid": "api::material.material",
-      "apiName": "material",
-      "globalId": "Material",
-      "actions": {},
-      "lifecycles": {}
-    },
     "api::place.place": {
       "kind": "collectionType",
       "collectionName": "places",
@@ -3474,32 +2943,42 @@
       "actions": {},
       "lifecycles": {}
     },
-    "api::season.season": {
+    "api::producer.producer": {
       "kind": "collectionType",
-      "collectionName": "seasons",
+      "collectionName": "producers",
       "info": {
-        "singularName": "season",
-        "pluralName": "seasons",
-        "displayName": "Stagioni",
-        "description": ""
+        "singularName": "producer",
+        "pluralName": "producers",
+        "displayName": "Produttore"
       },
       "options": {
-        "draftAndPublish": false
+        "draftAndPublish": true
       },
       "pluginOptions": {},
       "attributes": {
-        "name": {
+        "address": {
           "type": "string"
         },
-        "isPriorityItem": {
-          "type": "boolean",
-          "default": false
+        "email": {
+          "type": "email"
+        },
+        "phone": {
+          "type": "string"
+        },
+        "vat_number": {
+          "type": "string"
         },
         "createdAt": {
           "type": "datetime"
         },
         "updatedAt": {
           "type": "datetime"
+        },
+        "publishedAt": {
+          "type": "datetime",
+          "configurable": false,
+          "writable": true,
+          "visible": false
         },
         "createdBy": {
           "type": "relation",
@@ -3523,34 +3002,120 @@
         }
       },
       "__schema__": {
-        "collectionName": "seasons",
+        "collectionName": "producers",
         "info": {
-          "singularName": "season",
-          "pluralName": "seasons",
-          "displayName": "Stagioni",
-          "description": ""
+          "singularName": "producer",
+          "pluralName": "producers",
+          "displayName": "Produttore"
         },
         "options": {
-          "draftAndPublish": false
+          "draftAndPublish": true
+        },
+        "pluginOptions": {},
+        "attributes": {
+          "address": {
+            "type": "string"
+          },
+          "email": {
+            "type": "email"
+          },
+          "phone": {
+            "type": "string"
+          },
+          "vat_number": {
+            "type": "string"
+          }
+        },
+        "kind": "collectionType"
+      },
+      "modelType": "contentType",
+      "modelName": "producer",
+      "connection": "default",
+      "uid": "api::producer.producer",
+      "apiName": "producer",
+      "globalId": "Producer",
+      "actions": {},
+      "lifecycles": {}
+    },
+    "api::race.race": {
+      "kind": "collectionType",
+      "collectionName": "races",
+      "info": {
+        "singularName": "race",
+        "pluralName": "races",
+        "displayName": "Razza"
+      },
+      "options": {
+        "draftAndPublish": true
+      },
+      "pluginOptions": {},
+      "attributes": {
+        "name": {
+          "type": "string"
+        },
+        "seasoning_months": {
+          "type": "integer"
+        },
+        "createdAt": {
+          "type": "datetime"
+        },
+        "updatedAt": {
+          "type": "datetime"
+        },
+        "publishedAt": {
+          "type": "datetime",
+          "configurable": false,
+          "writable": true,
+          "visible": false
+        },
+        "createdBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        },
+        "updatedBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        }
+      },
+      "__schema__": {
+        "collectionName": "races",
+        "info": {
+          "singularName": "race",
+          "pluralName": "races",
+          "displayName": "Razza"
+        },
+        "options": {
+          "draftAndPublish": true
         },
         "pluginOptions": {},
         "attributes": {
           "name": {
             "type": "string"
           },
-          "isPriorityItem": {
-            "type": "boolean",
-            "default": false
+          "seasoning_months": {
+            "type": "integer"
           }
         },
         "kind": "collectionType"
       },
       "modelType": "contentType",
-      "modelName": "season",
+      "modelName": "race",
       "connection": "default",
-      "uid": "api::season.season",
-      "apiName": "season",
-      "globalId": "Season",
+      "uid": "api::race.race",
+      "apiName": "race",
+      "globalId": "Race",
       "actions": {},
       "lifecycles": {}
     },
@@ -3634,6 +3199,82 @@
       "actions": {},
       "lifecycles": {}
     },
+    "api::sex.sex": {
+      "kind": "collectionType",
+      "collectionName": "sexs",
+      "info": {
+        "singularName": "sex",
+        "pluralName": "sexs",
+        "displayName": "Sesso"
+      },
+      "options": {
+        "draftAndPublish": true
+      },
+      "pluginOptions": {},
+      "attributes": {
+        "name": {
+          "type": "string"
+        },
+        "createdAt": {
+          "type": "datetime"
+        },
+        "updatedAt": {
+          "type": "datetime"
+        },
+        "publishedAt": {
+          "type": "datetime",
+          "configurable": false,
+          "writable": true,
+          "visible": false
+        },
+        "createdBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        },
+        "updatedBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        }
+      },
+      "__schema__": {
+        "collectionName": "sexs",
+        "info": {
+          "singularName": "sex",
+          "pluralName": "sexs",
+          "displayName": "Sesso"
+        },
+        "options": {
+          "draftAndPublish": true
+        },
+        "pluginOptions": {},
+        "attributes": {
+          "name": {
+            "type": "string"
+          }
+        },
+        "kind": "collectionType"
+      },
+      "modelType": "contentType",
+      "modelName": "sex",
+      "connection": "default",
+      "uid": "api::sex.sex",
+      "apiName": "sex",
+      "globalId": "Sex",
+      "actions": {},
+      "lifecycles": {}
+    },
     "api::shelf.shelf": {
       "kind": "collectionType",
       "collectionName": "shelves",
@@ -3711,186 +3352,6 @@
       "uid": "api::shelf.shelf",
       "apiName": "shelf",
       "globalId": "Shelf",
-      "actions": {},
-      "lifecycles": {}
-    },
-    "api::st1.st1": {
-      "kind": "collectionType",
-      "collectionName": "st1s",
-      "info": {
-        "singularName": "st1",
-        "pluralName": "st1s",
-        "displayName": "Tipologia completi 1 livello",
-        "description": ""
-      },
-      "options": {
-        "draftAndPublish": false
-      },
-      "pluginOptions": {},
-      "attributes": {
-        "name": {
-          "type": "string"
-        },
-        "completis": {
-          "type": "relation",
-          "relation": "oneToMany",
-          "target": "api::suit.suit",
-          "mappedBy": "s_t_1"
-        },
-        "createdAt": {
-          "type": "datetime"
-        },
-        "updatedAt": {
-          "type": "datetime"
-        },
-        "createdBy": {
-          "type": "relation",
-          "relation": "oneToOne",
-          "target": "admin::user",
-          "configurable": false,
-          "writable": false,
-          "visible": false,
-          "useJoinTable": false,
-          "private": true
-        },
-        "updatedBy": {
-          "type": "relation",
-          "relation": "oneToOne",
-          "target": "admin::user",
-          "configurable": false,
-          "writable": false,
-          "visible": false,
-          "useJoinTable": false,
-          "private": true
-        }
-      },
-      "__schema__": {
-        "collectionName": "st1s",
-        "info": {
-          "singularName": "st1",
-          "pluralName": "st1s",
-          "displayName": "Tipologia completi 1 livello",
-          "description": ""
-        },
-        "options": {
-          "draftAndPublish": false
-        },
-        "pluginOptions": {},
-        "attributes": {
-          "name": {
-            "type": "string"
-          },
-          "completis": {
-            "type": "relation",
-            "relation": "oneToMany",
-            "target": "api::suit.suit",
-            "mappedBy": "s_t_1"
-          }
-        },
-        "kind": "collectionType"
-      },
-      "modelType": "contentType",
-      "modelName": "st1",
-      "connection": "default",
-      "uid": "api::st1.st1",
-      "apiName": "st1",
-      "globalId": "St1",
-      "actions": {},
-      "lifecycles": {}
-    },
-    "api::suit.suit": {
-      "kind": "collectionType",
-      "collectionName": "suits",
-      "info": {
-        "singularName": "suit",
-        "pluralName": "suits",
-        "displayName": "Completi",
-        "description": ""
-      },
-      "options": {
-        "draftAndPublish": false
-      },
-      "pluginOptions": {},
-      "attributes": {
-        "name": {
-          "type": "string"
-        },
-        "s_t_1": {
-          "type": "relation",
-          "relation": "manyToOne",
-          "target": "api::st1.st1",
-          "inversedBy": "completis"
-        },
-        "archives": {
-          "type": "relation",
-          "relation": "oneToMany",
-          "target": "api::archive.archive",
-          "mappedBy": "suit"
-        },
-        "createdAt": {
-          "type": "datetime"
-        },
-        "updatedAt": {
-          "type": "datetime"
-        },
-        "createdBy": {
-          "type": "relation",
-          "relation": "oneToOne",
-          "target": "admin::user",
-          "configurable": false,
-          "writable": false,
-          "visible": false,
-          "useJoinTable": false,
-          "private": true
-        },
-        "updatedBy": {
-          "type": "relation",
-          "relation": "oneToOne",
-          "target": "admin::user",
-          "configurable": false,
-          "writable": false,
-          "visible": false,
-          "useJoinTable": false,
-          "private": true
-        }
-      },
-      "__schema__": {
-        "collectionName": "suits",
-        "info": {
-          "singularName": "suit",
-          "pluralName": "suits",
-          "displayName": "Completi",
-          "description": ""
-        },
-        "options": {
-          "draftAndPublish": false
-        },
-        "pluginOptions": {},
-        "attributes": {
-          "name": {
-            "type": "string"
-          },
-          "s_t_1": {
-            "type": "relation",
-            "relation": "manyToOne",
-            "target": "api::st1.st1",
-            "inversedBy": "completis"
-          },
-          "archives": {
-            "type": "relation",
-            "relation": "oneToMany",
-            "target": "api::archive.archive",
-            "mappedBy": "suit"
-          }
-        },
-        "kind": "collectionType"
-      },
-      "modelType": "contentType",
-      "modelName": "suit",
-      "connection": "default",
-      "uid": "api::suit.suit",
-      "apiName": "suit",
-      "globalId": "Suit",
       "actions": {},
       "lifecycles": {}
     },
@@ -4019,6 +3480,12 @@
           "target": "api::t1.t1",
           "inversedBy": "t_2s"
         },
+        "t_3s": {
+          "type": "relation",
+          "relation": "oneToMany",
+          "target": "api::t3.t3",
+          "mappedBy": "t_2"
+        },
         "createdAt": {
           "type": "datetime"
         },
@@ -4069,6 +3536,12 @@
             "relation": "manyToOne",
             "target": "api::t1.t1",
             "inversedBy": "t_2s"
+          },
+          "t_3s": {
+            "type": "relation",
+            "relation": "oneToMany",
+            "target": "api::t3.t3",
+            "mappedBy": "t_2"
           }
         },
         "kind": "collectionType"
@@ -4088,29 +3561,39 @@
       "info": {
         "singularName": "t3",
         "pluralName": "t3s",
-        "displayName": "Tipologia 3 livello",
-        "description": ""
+        "displayName": "Tipologia 3 livello"
       },
       "options": {
-        "draftAndPublish": false
+        "draftAndPublish": true
       },
       "pluginOptions": {},
       "attributes": {
         "name": {
-          "type": "string",
-          "required": true,
-          "unique": false
+          "type": "string"
         },
         "t_2": {
           "type": "relation",
           "relation": "manyToOne",
-          "target": "api::t2.t2"
+          "target": "api::t2.t2",
+          "inversedBy": "t_3s"
+        },
+        "t_4s": {
+          "type": "relation",
+          "relation": "oneToMany",
+          "target": "api::t4.t4",
+          "mappedBy": "t_3"
         },
         "createdAt": {
           "type": "datetime"
         },
         "updatedAt": {
           "type": "datetime"
+        },
+        "publishedAt": {
+          "type": "datetime",
+          "configurable": false,
+          "writable": true,
+          "visible": false
         },
         "createdBy": {
           "type": "relation",
@@ -4138,23 +3621,27 @@
         "info": {
           "singularName": "t3",
           "pluralName": "t3s",
-          "displayName": "Tipologia 3 livello",
-          "description": ""
+          "displayName": "Tipologia 3 livello"
         },
         "options": {
-          "draftAndPublish": false
+          "draftAndPublish": true
         },
         "pluginOptions": {},
         "attributes": {
           "name": {
-            "type": "string",
-            "required": true,
-            "unique": false
+            "type": "string"
           },
           "t_2": {
             "type": "relation",
             "relation": "manyToOne",
-            "target": "api::t2.t2"
+            "target": "api::t2.t2",
+            "inversedBy": "t_3s"
+          },
+          "t_4s": {
+            "type": "relation",
+            "relation": "oneToMany",
+            "target": "api::t4.t4",
+            "mappedBy": "t_3"
           }
         },
         "kind": "collectionType"
@@ -4174,22 +3661,33 @@
       "info": {
         "singularName": "t4",
         "pluralName": "t4s",
-        "displayName": "Tipologia 4 livello",
-        "description": ""
+        "displayName": "Tipologia 4 livello"
       },
       "options": {
-        "draftAndPublish": false
+        "draftAndPublish": true
       },
       "pluginOptions": {},
       "attributes": {
         "name": {
           "type": "string"
         },
+        "t_3": {
+          "type": "relation",
+          "relation": "manyToOne",
+          "target": "api::t3.t3",
+          "inversedBy": "t_4s"
+        },
         "createdAt": {
           "type": "datetime"
         },
         "updatedAt": {
           "type": "datetime"
+        },
+        "publishedAt": {
+          "type": "datetime",
+          "configurable": false,
+          "writable": true,
+          "visible": false
         },
         "createdBy": {
           "type": "relation",
@@ -4217,16 +3715,21 @@
         "info": {
           "singularName": "t4",
           "pluralName": "t4s",
-          "displayName": "Tipologia 4 livello",
-          "description": ""
+          "displayName": "Tipologia 4 livello"
         },
         "options": {
-          "draftAndPublish": false
+          "draftAndPublish": true
         },
         "pluginOptions": {},
         "attributes": {
           "name": {
             "type": "string"
+          },
+          "t_3": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "api::t3.t3",
+            "inversedBy": "t_4s"
           }
         },
         "kind": "collectionType"
@@ -4237,86 +3740,6 @@
       "uid": "api::t4.t4",
       "apiName": "t4",
       "globalId": "T4",
-      "actions": {},
-      "lifecycles": {}
-    },
-    "api::technique.technique": {
-      "kind": "collectionType",
-      "collectionName": "techniques",
-      "info": {
-        "singularName": "technique",
-        "pluralName": "techniques",
-        "displayName": "Tecniche",
-        "description": ""
-      },
-      "options": {
-        "draftAndPublish": false
-      },
-      "pluginOptions": {},
-      "attributes": {
-        "name": {
-          "type": "string"
-        },
-        "isPriorityItem": {
-          "type": "boolean",
-          "default": false
-        },
-        "createdAt": {
-          "type": "datetime"
-        },
-        "updatedAt": {
-          "type": "datetime"
-        },
-        "createdBy": {
-          "type": "relation",
-          "relation": "oneToOne",
-          "target": "admin::user",
-          "configurable": false,
-          "writable": false,
-          "visible": false,
-          "useJoinTable": false,
-          "private": true
-        },
-        "updatedBy": {
-          "type": "relation",
-          "relation": "oneToOne",
-          "target": "admin::user",
-          "configurable": false,
-          "writable": false,
-          "visible": false,
-          "useJoinTable": false,
-          "private": true
-        }
-      },
-      "__schema__": {
-        "collectionName": "techniques",
-        "info": {
-          "singularName": "technique",
-          "pluralName": "techniques",
-          "displayName": "Tecniche",
-          "description": ""
-        },
-        "options": {
-          "draftAndPublish": false
-        },
-        "pluginOptions": {},
-        "attributes": {
-          "name": {
-            "type": "string"
-          },
-          "isPriorityItem": {
-            "type": "boolean",
-            "default": false
-          }
-        },
-        "kind": "collectionType"
-      },
-      "modelType": "contentType",
-      "modelName": "technique",
-      "connection": "default",
-      "uid": "api::technique.technique",
-      "apiName": "technique",
-      "globalId": "Technique",
       "actions": {},
       "lifecycles": {}
     }

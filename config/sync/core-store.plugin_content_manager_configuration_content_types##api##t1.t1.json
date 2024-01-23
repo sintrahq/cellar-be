@@ -6,7 +6,7 @@
       "bulkable": true,
       "filterable": true,
       "searchable": true,
-      "pageSize": 100,
+      "pageSize": 10,
       "mainField": "name",
       "defaultSortBy": "name",
       "defaultSortOrder": "ASC"
@@ -107,14 +107,23 @@
       }
     },
     "layouts": {
+      "list": [
+        "id",
+        "name",
+        "t_2s",
+        "code"
+      ],
+      "editRelations": [
+        "t_2s"
+      ],
       "edit": [
         [
           {
-            "name": "code",
+            "name": "name",
             "size": 6
           },
           {
-            "name": "name",
+            "name": "code",
             "size": 6
           }
         ],
@@ -124,16 +133,6 @@
             "size": 4
           }
         ]
-      ],
-      "editRelations": [
-        "t_2s"
-      ],
-      "list": [
-        "id",
-        "name",
-        "t_2s",
-        "code",
-        "inventory_counter"
       ]
     }
   },

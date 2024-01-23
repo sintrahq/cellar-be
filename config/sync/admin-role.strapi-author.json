@@ -5,6 +5,53 @@
   "permissions": [
     {
       "action": "plugin::content-manager.explorer.create",
+      "subject": "api::apartment.apartment",
+      "properties": {
+        "fields": [
+          "name",
+          "isPriorityItem"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::apartment.apartment",
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::apartment.apartment",
+      "properties": {
+        "fields": [
+          "name",
+          "isPriorityItem"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::apartment.apartment",
+      "properties": {
+        "fields": [
+          "name",
+          "isPriorityItem"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
       "subject": "api::archive-loan.archive-loan",
       "properties": {
         "fields": [
@@ -13,16 +60,22 @@
           "date_in",
           "date_out",
           "archive",
-          "loan"
+          "loan",
+          "created_by_user",
+          "updated_by_user"
         ]
       },
-      "conditions": ["admin::is-creator"]
+      "conditions": [
+        "admin::is-creator"
+      ]
     },
     {
       "action": "plugin::content-manager.explorer.delete",
       "subject": "api::archive-loan.archive-loan",
       "properties": {},
-      "conditions": ["admin::is-creator"]
+      "conditions": [
+        "admin::is-creator"
+      ]
     },
     {
       "action": "plugin::content-manager.explorer.read",
@@ -34,10 +87,14 @@
           "date_in",
           "date_out",
           "archive",
-          "loan"
+          "loan",
+          "created_by_user",
+          "updated_by_user"
         ]
       },
-      "conditions": ["admin::is-creator"]
+      "conditions": [
+        "admin::is-creator"
+      ]
     },
     {
       "action": "plugin::content-manager.explorer.update",
@@ -49,10 +106,14 @@
           "date_in",
           "date_out",
           "archive",
-          "loan"
+          "loan",
+          "created_by_user",
+          "updated_by_user"
         ]
       },
-      "conditions": ["admin::is-creator"]
+      "conditions": [
+        "admin::is-creator"
+      ]
     },
     {
       "action": "plugin::content-manager.explorer.create",
@@ -62,114 +123,130 @@
           "description",
           "t_1s",
           "t_2s",
-          "conservation_status_details",
-          "fantasy_details",
-          "value",
           "folders",
           "images",
           "is_mock",
-          "year",
-          "inventory",
-          "links_to",
-          "links_from",
           "archive_loans",
-          "materials",
-          "techniques",
-          "suit",
-          "colors"
+          "note",
+          "created_by_user",
+          "updated_by_user",
+          "apartment",
+          "place",
+          "shelf",
+          "box",
+          "sector"
         ]
       },
-      "conditions": ["admin::is-creator"]
+      "conditions": [
+        "admin::is-creator"
+      ]
     },
     {
       "action": "plugin::content-manager.explorer.delete",
       "subject": "api::archive.archive",
       "properties": {},
-      "conditions": ["admin::is-creator"]
+      "conditions": [
+        "admin::is-creator"
+      ]
     },
     {
       "action": "plugin::content-manager.explorer.read",
-      "subject": "api::archive.archive",
-      "properties": {
-        "fields": [
-          "description",
-          "t_1s",
-          "t_2s",
-          "conservation_status_details",
-          "fantasy_details",
-          "value",
-          "folders",
-          "images",
-          "is_mock",
-          "year",
-          "inventory",
-          "links_to",
-          "links_from",
-          "archive_loans",
-          "materials",
-          "techniques",
-          "suit",
-          "colors"
-        ]
-      },
-      "conditions": ["admin::is-creator"]
-    },
-    {
-      "action": "plugin::content-manager.explorer.update",
       "subject": "api::archive.archive",
       "properties": {
         "fields": [
           "description",
           "t_1s",
           "t_2s",
-          "conservation_status_details",
-          "fantasy_details",
-          "value",
           "folders",
           "images",
           "is_mock",
-          "year",
-          "inventory",
-          "links_to",
-          "links_from",
           "archive_loans",
-          "materials",
-          "techniques",
-          "suit",
-          "colors"
+          "note",
+          "created_by_user",
+          "updated_by_user",
+          "apartment",
+          "place",
+          "shelf",
+          "box",
+          "sector"
         ]
       },
-      "conditions": ["admin::is-creator"]
-    },
-    {
-      "action": "plugin::content-manager.explorer.create",
-      "subject": "api::color.color",
-      "properties": {
-        "fields": ["name"]
-      },
-      "conditions": ["admin::is-creator"]
-    },
-    {
-      "action": "plugin::content-manager.explorer.delete",
-      "subject": "api::color.color",
-      "properties": {},
-      "conditions": ["admin::is-creator"]
-    },
-    {
-      "action": "plugin::content-manager.explorer.read",
-      "subject": "api::color.color",
-      "properties": {
-        "fields": ["name"]
-      },
-      "conditions": ["admin::is-creator"]
+      "conditions": [
+        "admin::is-creator"
+      ]
     },
     {
       "action": "plugin::content-manager.explorer.update",
-      "subject": "api::color.color",
+      "subject": "api::archive.archive",
       "properties": {
-        "fields": ["name"]
+        "fields": [
+          "description",
+          "t_1s",
+          "t_2s",
+          "folders",
+          "images",
+          "is_mock",
+          "archive_loans",
+          "note",
+          "created_by_user",
+          "updated_by_user",
+          "apartment",
+          "place",
+          "shelf",
+          "box",
+          "sector"
+        ]
       },
-      "conditions": ["admin::is-creator"]
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::box.box",
+      "properties": {
+        "fields": [
+          "name",
+          "isPriorityItem"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::box.box",
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::box.box",
+      "properties": {
+        "fields": [
+          "name",
+          "isPriorityItem"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::box.box",
+      "properties": {
+        "fields": [
+          "name",
+          "isPriorityItem"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
     },
     {
       "action": "plugin::content-manager.explorer.create",
@@ -177,13 +254,17 @@
       "properties": {
         "fields": []
       },
-      "conditions": ["admin::is-creator"]
+      "conditions": [
+        "admin::is-creator"
+      ]
     },
     {
       "action": "plugin::content-manager.explorer.delete",
       "subject": "api::configuration.configuration",
       "properties": {},
-      "conditions": ["admin::is-creator"]
+      "conditions": [
+        "admin::is-creator"
+      ]
     },
     {
       "action": "plugin::content-manager.explorer.read",
@@ -191,7 +272,9 @@
       "properties": {
         "fields": []
       },
-      "conditions": ["admin::is-creator"]
+      "conditions": [
+        "admin::is-creator"
+      ]
     },
     {
       "action": "plugin::content-manager.explorer.update",
@@ -199,37 +282,77 @@
       "properties": {
         "fields": []
       },
-      "conditions": ["admin::is-creator"]
+      "conditions": [
+        "admin::is-creator"
+      ]
     },
     {
       "action": "plugin::content-manager.explorer.create",
       "subject": "api::folder.folder",
       "properties": {
-        "fields": ["name", "archives", "is_image_folder"]
+        "fields": [
+          "name",
+          "archives",
+          "is_image_folder",
+          "created_by_user",
+          "updated_by_user",
+          "is_visible_to_editor",
+          "is_visible_to_viewer",
+          "is_visible_to_collaborator",
+          "identifier"
+        ]
       },
-      "conditions": ["admin::is-creator"]
+      "conditions": [
+        "admin::is-creator"
+      ]
     },
     {
       "action": "plugin::content-manager.explorer.delete",
       "subject": "api::folder.folder",
       "properties": {},
-      "conditions": ["admin::is-creator"]
+      "conditions": [
+        "admin::is-creator"
+      ]
     },
     {
       "action": "plugin::content-manager.explorer.read",
       "subject": "api::folder.folder",
       "properties": {
-        "fields": ["name", "archives", "is_image_folder"]
+        "fields": [
+          "name",
+          "archives",
+          "is_image_folder",
+          "created_by_user",
+          "updated_by_user",
+          "is_visible_to_editor",
+          "is_visible_to_viewer",
+          "is_visible_to_collaborator",
+          "identifier"
+        ]
       },
-      "conditions": ["admin::is-creator"]
+      "conditions": [
+        "admin::is-creator"
+      ]
     },
     {
       "action": "plugin::content-manager.explorer.update",
       "subject": "api::folder.folder",
       "properties": {
-        "fields": ["name", "archives", "is_image_folder"]
+        "fields": [
+          "name",
+          "archives",
+          "is_image_folder",
+          "created_by_user",
+          "updated_by_user",
+          "is_visible_to_editor",
+          "is_visible_to_viewer",
+          "is_visible_to_collaborator",
+          "identifier"
+        ]
       },
-      "conditions": ["admin::is-creator"]
+      "conditions": [
+        "admin::is-creator"
+      ]
     },
     {
       "action": "plugin::content-manager.explorer.create",
@@ -241,34 +364,26 @@
           "date_out",
           "note",
           "reference",
-          "archive_loans"
+          "archive_loans",
+          "identifier",
+          "created_by_user",
+          "updated_by_user"
         ]
       },
-      "conditions": ["admin::is-creator"]
+      "conditions": [
+        "admin::is-creator"
+      ]
     },
     {
       "action": "plugin::content-manager.explorer.delete",
       "subject": "api::loan.loan",
       "properties": {},
-      "conditions": ["admin::is-creator"]
+      "conditions": [
+        "admin::is-creator"
+      ]
     },
     {
       "action": "plugin::content-manager.explorer.read",
-      "subject": "api::loan.loan",
-      "properties": {
-        "fields": [
-          "name",
-          "date_in",
-          "date_out",
-          "note",
-          "reference",
-          "archive_loans"
-        ]
-      },
-      "conditions": ["admin::is-creator"]
-    },
-    {
-      "action": "plugin::content-manager.explorer.update",
       "subject": "api::loan.loan",
       "properties": {
         "fields": [
@@ -277,250 +392,276 @@
           "date_out",
           "note",
           "reference",
-          "archive_loans"
+          "archive_loans",
+          "identifier",
+          "created_by_user",
+          "updated_by_user"
         ]
       },
-      "conditions": ["admin::is-creator"]
-    },
-    {
-      "action": "plugin::content-manager.explorer.create",
-      "subject": "api::material.material",
-      "properties": {
-        "fields": ["name"]
-      },
-      "conditions": ["admin::is-creator"]
-    },
-    {
-      "action": "plugin::content-manager.explorer.delete",
-      "subject": "api::material.material",
-      "properties": {},
-      "conditions": ["admin::is-creator"]
-    },
-    {
-      "action": "plugin::content-manager.explorer.read",
-      "subject": "api::material.material",
-      "properties": {
-        "fields": ["name"]
-      },
-      "conditions": ["admin::is-creator"]
+      "conditions": [
+        "admin::is-creator"
+      ]
     },
     {
       "action": "plugin::content-manager.explorer.update",
-      "subject": "api::material.material",
+      "subject": "api::loan.loan",
       "properties": {
-        "fields": ["name"]
+        "fields": [
+          "name",
+          "date_in",
+          "date_out",
+          "note",
+          "reference",
+          "archive_loans",
+          "identifier",
+          "created_by_user",
+          "updated_by_user"
+        ]
       },
-      "conditions": ["admin::is-creator"]
+      "conditions": [
+        "admin::is-creator"
+      ]
     },
     {
       "action": "plugin::content-manager.explorer.create",
-      "subject": "api::st1.st1",
+      "subject": "api::place.place",
       "properties": {
-        "fields": ["name", "completis"]
+        "fields": [
+          "name",
+          "isPriorityItem"
+        ]
       },
-      "conditions": ["admin::is-creator"]
+      "conditions": [
+        "admin::is-creator"
+      ]
     },
     {
       "action": "plugin::content-manager.explorer.delete",
-      "subject": "api::st1.st1",
+      "subject": "api::place.place",
       "properties": {},
-      "conditions": ["admin::is-creator"]
+      "conditions": [
+        "admin::is-creator"
+      ]
     },
     {
       "action": "plugin::content-manager.explorer.read",
-      "subject": "api::st1.st1",
+      "subject": "api::place.place",
       "properties": {
-        "fields": ["name", "completis"]
+        "fields": [
+          "name",
+          "isPriorityItem"
+        ]
       },
-      "conditions": ["admin::is-creator"]
+      "conditions": [
+        "admin::is-creator"
+      ]
     },
     {
       "action": "plugin::content-manager.explorer.update",
-      "subject": "api::st1.st1",
+      "subject": "api::place.place",
       "properties": {
-        "fields": ["name", "completis"]
+        "fields": [
+          "name",
+          "isPriorityItem"
+        ]
       },
-      "conditions": ["admin::is-creator"]
+      "conditions": [
+        "admin::is-creator"
+      ]
     },
     {
       "action": "plugin::content-manager.explorer.create",
-      "subject": "api::suit.suit",
+      "subject": "api::sector.sector",
       "properties": {
-        "fields": ["name", "s_t_1", "archives"]
+        "fields": [
+          "isPriorityItem",
+          "name"
+        ]
       },
-      "conditions": ["admin::is-creator"]
+      "conditions": [
+        "admin::is-creator"
+      ]
     },
     {
       "action": "plugin::content-manager.explorer.delete",
-      "subject": "api::suit.suit",
+      "subject": "api::sector.sector",
       "properties": {},
-      "conditions": ["admin::is-creator"]
+      "conditions": [
+        "admin::is-creator"
+      ]
     },
     {
       "action": "plugin::content-manager.explorer.read",
-      "subject": "api::suit.suit",
+      "subject": "api::sector.sector",
       "properties": {
-        "fields": ["name", "s_t_1", "archives"]
+        "fields": [
+          "isPriorityItem",
+          "name"
+        ]
       },
-      "conditions": ["admin::is-creator"]
+      "conditions": [
+        "admin::is-creator"
+      ]
     },
     {
       "action": "plugin::content-manager.explorer.update",
-      "subject": "api::suit.suit",
+      "subject": "api::sector.sector",
       "properties": {
-        "fields": ["name", "s_t_1", "archives"]
+        "fields": [
+          "isPriorityItem",
+          "name"
+        ]
       },
-      "conditions": ["admin::is-creator"]
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::shelf.shelf",
+      "properties": {
+        "fields": [
+          "name",
+          "isPriorityItem"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::shelf.shelf",
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::shelf.shelf",
+      "properties": {
+        "fields": [
+          "name",
+          "isPriorityItem"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::shelf.shelf",
+      "properties": {
+        "fields": [
+          "name",
+          "isPriorityItem"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
     },
     {
       "action": "plugin::content-manager.explorer.create",
       "subject": "api::t1.t1",
       "properties": {
-        "fields": ["name", "t_2s", "code", "inventory_counter"]
+        "fields": [
+          "name",
+          "t_2s",
+          "code",
+          "inventory_counter"
+        ]
       },
-      "conditions": ["admin::is-creator"]
+      "conditions": [
+        "admin::is-creator"
+      ]
     },
     {
       "action": "plugin::content-manager.explorer.delete",
       "subject": "api::t1.t1",
       "properties": {},
-      "conditions": ["admin::is-creator"]
+      "conditions": [
+        "admin::is-creator"
+      ]
     },
     {
       "action": "plugin::content-manager.explorer.read",
       "subject": "api::t1.t1",
       "properties": {
-        "fields": ["name", "t_2s", "code", "inventory_counter"]
+        "fields": [
+          "name",
+          "t_2s",
+          "code",
+          "inventory_counter"
+        ]
       },
-      "conditions": ["admin::is-creator"]
+      "conditions": [
+        "admin::is-creator"
+      ]
     },
     {
       "action": "plugin::content-manager.explorer.update",
       "subject": "api::t1.t1",
       "properties": {
-        "fields": ["name", "t_2s", "code", "inventory_counter"]
+        "fields": [
+          "name",
+          "t_2s",
+          "code",
+          "inventory_counter"
+        ]
       },
-      "conditions": ["admin::is-creator"]
+      "conditions": [
+        "admin::is-creator"
+      ]
     },
     {
       "action": "plugin::content-manager.explorer.create",
       "subject": "api::t2.t2",
       "properties": {
-        "fields": ["name", "t_1"]
+        "fields": [
+          "name",
+          "t_1"
+        ]
       },
-      "conditions": ["admin::is-creator"]
+      "conditions": [
+        "admin::is-creator"
+      ]
     },
     {
       "action": "plugin::content-manager.explorer.delete",
       "subject": "api::t2.t2",
       "properties": {},
-      "conditions": ["admin::is-creator"]
+      "conditions": [
+        "admin::is-creator"
+      ]
     },
     {
       "action": "plugin::content-manager.explorer.read",
       "subject": "api::t2.t2",
       "properties": {
-        "fields": ["name", "t_1"]
+        "fields": [
+          "name",
+          "t_1"
+        ]
       },
-      "conditions": ["admin::is-creator"]
+      "conditions": [
+        "admin::is-creator"
+      ]
     },
     {
       "action": "plugin::content-manager.explorer.update",
       "subject": "api::t2.t2",
       "properties": {
-        "fields": ["name", "t_1"]
+        "fields": [
+          "name",
+          "t_1"
+        ]
       },
-      "conditions": ["admin::is-creator"]
-    },
-    {
-      "action": "plugin::content-manager.explorer.create",
-      "subject": "api::t3.t3",
-      "properties": {
-        "fields": ["name", "t_2"]
-      },
-      "conditions": ["admin::is-creator"]
-    },
-    {
-      "action": "plugin::content-manager.explorer.delete",
-      "subject": "api::t3.t3",
-      "properties": {},
-      "conditions": ["admin::is-creator"]
-    },
-    {
-      "action": "plugin::content-manager.explorer.read",
-      "subject": "api::t3.t3",
-      "properties": {
-        "fields": ["name", "t_2"]
-      },
-      "conditions": ["admin::is-creator"]
-    },
-    {
-      "action": "plugin::content-manager.explorer.update",
-      "subject": "api::t3.t3",
-      "properties": {
-        "fields": ["name", "t_2"]
-      },
-      "conditions": ["admin::is-creator"]
-    },
-    {
-      "action": "plugin::content-manager.explorer.create",
-      "subject": "api::t4.t4",
-      "properties": {
-        "fields": ["name"]
-      },
-      "conditions": ["admin::is-creator"]
-    },
-    {
-      "action": "plugin::content-manager.explorer.delete",
-      "subject": "api::t4.t4",
-      "properties": {},
-      "conditions": ["admin::is-creator"]
-    },
-    {
-      "action": "plugin::content-manager.explorer.read",
-      "subject": "api::t4.t4",
-      "properties": {
-        "fields": ["name"]
-      },
-      "conditions": ["admin::is-creator"]
-    },
-    {
-      "action": "plugin::content-manager.explorer.update",
-      "subject": "api::t4.t4",
-      "properties": {
-        "fields": ["name"]
-      },
-      "conditions": ["admin::is-creator"]
-    },
-    {
-      "action": "plugin::content-manager.explorer.create",
-      "subject": "api::technique.technique",
-      "properties": {
-        "fields": ["name"]
-      },
-      "conditions": ["admin::is-creator"]
-    },
-    {
-      "action": "plugin::content-manager.explorer.delete",
-      "subject": "api::technique.technique",
-      "properties": {},
-      "conditions": ["admin::is-creator"]
-    },
-    {
-      "action": "plugin::content-manager.explorer.read",
-      "subject": "api::technique.technique",
-      "properties": {
-        "fields": ["name"]
-      },
-      "conditions": ["admin::is-creator"]
-    },
-    {
-      "action": "plugin::content-manager.explorer.update",
-      "subject": "api::technique.technique",
-      "properties": {
-        "fields": ["name"]
-      },
-      "conditions": ["admin::is-creator"]
+      "conditions": [
+        "admin::is-creator"
+      ]
     },
     {
       "action": "plugin::upload.assets.copy-link",
@@ -544,13 +685,17 @@
       "action": "plugin::upload.assets.update",
       "subject": null,
       "properties": {},
-      "conditions": ["admin::is-creator"]
+      "conditions": [
+        "admin::is-creator"
+      ]
     },
     {
       "action": "plugin::upload.read",
       "subject": null,
       "properties": {},
-      "conditions": ["admin::is-creator"]
+      "conditions": [
+        "admin::is-creator"
+      ]
     }
   ]
 }

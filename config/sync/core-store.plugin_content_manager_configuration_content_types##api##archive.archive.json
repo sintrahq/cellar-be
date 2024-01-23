@@ -8,7 +8,7 @@
       "searchable": true,
       "pageSize": 10,
       "mainField": "description",
-      "defaultSortBy": "id",
+      "defaultSortBy": "description",
       "defaultSortOrder": "ASC"
     },
     "metadatas": {
@@ -64,48 +64,6 @@
           "sortable": false
         }
       },
-      "conservation_status_details": {
-        "edit": {
-          "label": "conservation_status_details",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "conservation_status_details",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "fantasy_details": {
-        "edit": {
-          "label": "fantasy_details",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "fantasy_details",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "value": {
-        "edit": {
-          "label": "value",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "value",
-          "searchable": true,
-          "sortable": true
-        }
-      },
       "folders": {
         "edit": {
           "label": "folders",
@@ -149,64 +107,6 @@
           "sortable": true
         }
       },
-      "year": {
-        "edit": {
-          "label": "year",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "year",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "inventory": {
-        "edit": {
-          "label": "inventory",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "inventory",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "links_to": {
-        "edit": {
-          "label": "links_to",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true,
-          "mainField": "description"
-        },
-        "list": {
-          "label": "links_to",
-          "searchable": false,
-          "sortable": false
-        }
-      },
-      "links_from": {
-        "edit": {
-          "label": "links_from",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true,
-          "mainField": "description"
-        },
-        "list": {
-          "label": "links_from",
-          "searchable": false,
-          "sortable": false
-        }
-      },
       "archive_loans": {
         "edit": {
           "label": "archive_loans",
@@ -214,100 +114,10 @@
           "placeholder": "",
           "visible": true,
           "editable": true,
-          "mainField": "note_in"
+          "mainField": "id"
         },
         "list": {
           "label": "archive_loans",
-          "searchable": false,
-          "sortable": false
-        }
-      },
-      "materials": {
-        "edit": {
-          "label": "materials",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true,
-          "mainField": "name"
-        },
-        "list": {
-          "label": "materials",
-          "searchable": false,
-          "sortable": false
-        }
-      },
-      "techniques": {
-        "edit": {
-          "label": "techniques",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true,
-          "mainField": "name"
-        },
-        "list": {
-          "label": "techniques",
-          "searchable": false,
-          "sortable": false
-        }
-      },
-      "suit": {
-        "edit": {
-          "label": "suit",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true,
-          "mainField": "name"
-        },
-        "list": {
-          "label": "suit",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "colors": {
-        "edit": {
-          "label": "colors",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true,
-          "mainField": "name"
-        },
-        "list": {
-          "label": "colors",
-          "searchable": false,
-          "sortable": false
-        }
-      },
-      "lookbooks_to": {
-        "edit": {
-          "label": "lookbooks_to",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true,
-          "mainField": "description"
-        },
-        "list": {
-          "label": "lookbooks_to",
-          "searchable": false,
-          "sortable": false
-        }
-      },
-      "lookbooks_from": {
-        "edit": {
-          "label": "lookbooks_from",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true,
-          "mainField": "description"
-        },
-        "list": {
-          "label": "lookbooks_from",
           "searchable": false,
           "sortable": false
         }
@@ -322,48 +132,6 @@
         },
         "list": {
           "label": "note",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "label": {
-        "edit": {
-          "label": "label",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "label",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "is_imported": {
-        "edit": {
-          "label": "is_imported",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "is_imported",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "size": {
-        "edit": {
-          "label": "size",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "size",
           "searchable": true,
           "sortable": true
         }
@@ -409,36 +177,6 @@
         },
         "list": {
           "label": "apartment",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "brand": {
-        "edit": {
-          "label": "brand",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true,
-          "mainField": "name"
-        },
-        "list": {
-          "label": "brand",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "fantasy": {
-        "edit": {
-          "label": "fantasy",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true,
-          "mainField": "name"
-        },
-        "list": {
-          "label": "fantasy",
           "searchable": true,
           "sortable": true
         }
@@ -503,9 +241,39 @@
           "sortable": true
         }
       },
-      "season": {
+      "producer": {
         "edit": {
-          "label": "season",
+          "label": "producer",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "address"
+        },
+        "list": {
+          "label": "producer",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "distributor": {
+        "edit": {
+          "label": "distributor",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "address"
+        },
+        "list": {
+          "label": "distributor",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "race": {
+        "edit": {
+          "label": "race",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -513,87 +281,98 @@
           "mainField": "name"
         },
         "list": {
-          "label": "season",
+          "label": "race",
           "searchable": true,
           "sortable": true
         }
       },
-      "conservation_status": {
+      "production_date": {
         "edit": {
-          "label": "conservation_status",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true,
-          "mainField": "name"
-        },
-        "list": {
-          "label": "conservation_status",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "mainColor": {
-        "edit": {
-          "label": "mainColor",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true,
-          "mainField": "name"
-        },
-        "list": {
-          "label": "mainColor",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "mainMaterial": {
-        "edit": {
-          "label": "mainMaterial",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true,
-          "mainField": "name"
-        },
-        "list": {
-          "label": "mainMaterial",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "quantity": {
-        "edit": {
-          "label": "quantity",
+          "label": "production_date",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "quantity",
+          "label": "production_date",
           "searchable": true,
           "sortable": true
         }
       },
-      "object_description": {
+      "purchase_date": {
         "edit": {
-          "label": "object_description",
+          "label": "purchase_date",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "object_description",
+          "label": "purchase_date",
           "searchable": true,
           "sortable": true
         }
       },
-      "details": {
+      "price": {
         "edit": {
-          "label": "details",
+          "label": "price",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "price",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "weight": {
+        "edit": {
+          "label": "weight",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "weight",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "seasoning_date": {
+        "edit": {
+          "label": "seasoning_date",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "seasoning_date",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "purchase_price_kg": {
+        "edit": {
+          "label": "purchase_price_kg",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "purchase_price_kg",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "sex": {
+        "edit": {
+          "label": "sex",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -601,21 +380,37 @@
           "mainField": "name"
         },
         "list": {
-          "label": "details",
+          "label": "sex",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "t_3s": {
+        "edit": {
+          "label": "t_3s",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "name"
+        },
+        "list": {
+          "label": "t_3s",
           "searchable": false,
           "sortable": false
         }
       },
-      "external_links": {
+      "t_4s": {
         "edit": {
-          "label": "external_links",
+          "label": "t_4s",
           "description": "",
           "placeholder": "",
           "visible": true,
-          "editable": true
+          "editable": true,
+          "mainField": "name"
         },
         "list": {
-          "label": "external_links",
+          "label": "t_4s",
           "searchable": false,
           "sortable": false
         }
@@ -650,61 +445,20 @@
       }
     },
     "layouts": {
-      "list": [
-        "id",
-        "inventory",
-        "images",
-        "description",
-        "t_1s",
-        "t_2s",
-        "createdAt"
-      ],
       "edit": [
+        [
+          {
+            "name": "description",
+            "size": 6
+          }
+        ],
         [
           {
             "name": "images",
             "size": 6
           },
           {
-            "name": "inventory",
-            "size": 6
-          }
-        ],
-        [
-          {
-            "name": "description",
-            "size": 6
-          },
-          {
-            "name": "label",
-            "size": 6
-          }
-        ],
-        [
-          {
-            "name": "conservation_status_details",
-            "size": 6
-          }
-        ],
-        [
-          {
-            "name": "fantasy_details",
-            "size": 6
-          }
-        ],
-        [
-          {
-            "name": "year",
-            "size": 6
-          }
-        ],
-        [
-          {
-            "name": "size",
-            "size": 6
-          },
-          {
-            "name": "value",
+            "name": "is_mock",
             "size": 4
           }
         ],
@@ -712,58 +466,60 @@
           {
             "name": "note",
             "size": 6
+          },
+          {
+            "name": "production_date",
+            "size": 4
           }
         ],
         [
           {
-            "name": "is_imported",
+            "name": "price",
             "size": 4
           },
           {
-            "name": "is_mock",
+            "name": "weight",
             "size": 4
           },
           {
-            "name": "quantity",
+            "name": "seasoning_date",
             "size": 4
           }
         ],
         [
           {
-            "name": "object_description",
-            "size": 6
-          }
-        ],
-        [
+            "name": "purchase_date",
+            "size": 4
+          },
           {
-            "name": "external_links",
-            "size": 12
+            "name": "purchase_price_kg",
+            "size": 4
           }
         ]
       ],
       "editRelations": [
         "t_1s",
         "t_2s",
+        "t_3s",
+        "t_4s",
         "folders",
-        "links_to",
-        "links_from",
         "archive_loans",
-        "materials",
-        "techniques",
-        "suit",
-        "colors",
-        "lookbooks_to",
-        "lookbooks_from",
         "created_by_user",
         "updated_by_user",
         "apartment",
         "place",
         "shelf",
-        "sector",
         "box",
-        "mainColor",
-        "mainMaterial",
-        "details"
+        "sector",
+        "producer",
+        "race",
+        "distributor"
+      ],
+      "list": [
+        "id",
+        "description",
+        "t_1s",
+        "t_2s"
       ]
     }
   },

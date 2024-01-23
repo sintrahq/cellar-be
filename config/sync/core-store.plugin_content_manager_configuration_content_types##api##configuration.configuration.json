@@ -20,48 +20,6 @@
           "sortable": true
         }
       },
-      "archive_tooltip_properties": {
-        "edit": {
-          "label": "archive_tooltip_properties",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "archive_tooltip_properties",
-          "searchable": false,
-          "sortable": false
-        }
-      },
-      "folder_identifier": {
-        "edit": {
-          "label": "folder_identifier",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "folder_identifier",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "loan_identifier": {
-        "edit": {
-          "label": "loan_identifier",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "loan_identifier",
-          "searchable": true,
-          "sortable": true
-        }
-      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -94,28 +52,9 @@
     "layouts": {
       "list": [
         "id",
-        "createdAt",
-        "updatedAt",
-        "folder_identifier"
+        "createdAt"
       ],
-      "edit": [
-        [
-          {
-            "name": "archive_tooltip_properties",
-            "size": 12
-          }
-        ],
-        [
-          {
-            "name": "folder_identifier",
-            "size": 4
-          },
-          {
-            "name": "loan_identifier",
-            "size": 4
-          }
-        ]
-      ],
+      "edit": [],
       "editRelations": []
     }
   },

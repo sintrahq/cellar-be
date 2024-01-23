@@ -7,8 +7,8 @@
       "filterable": true,
       "searchable": true,
       "pageSize": 10,
-      "mainField": "date_out",
-      "defaultSortBy": "note_in",
+      "mainField": "id",
+      "defaultSortBy": "id",
       "defaultSortOrder": "ASC"
     },
     "metadatas": {
@@ -172,11 +172,17 @@
         "note_out",
         "date_in"
       ],
+      "editRelations": [
+        "archive",
+        "loan",
+        "created_by_user",
+        "updated_by_user"
+      ],
       "edit": [
         [
           {
-            "name": "date_out",
-            "size": 4
+            "name": "note_in",
+            "size": 6
           },
           {
             "name": "note_out",
@@ -189,16 +195,10 @@
             "size": 4
           },
           {
-            "name": "note_in",
-            "size": 6
+            "name": "date_out",
+            "size": 4
           }
         ]
-      ],
-      "editRelations": [
-        "archive",
-        "loan",
-        "created_by_user",
-        "updated_by_user"
       ]
     }
   },
