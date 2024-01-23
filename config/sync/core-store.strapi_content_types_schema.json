@@ -1923,6 +1923,9 @@
           "target": "api::folder.folder",
           "inversedBy": "archives"
         },
+        "inventory": {
+          "type": "string"
+        },
         "images": {
           "type": "media",
           "multiple": true,
@@ -2002,8 +2005,11 @@
         "purchase_date": {
           "type": "date"
         },
-        "price": {
+        "value": {
           "type": "decimal"
+        },
+        "quantity": {
+          "type": "integer"
         },
         "weight": {
           "type": "float"
@@ -2018,9 +2024,6 @@
           "type": "relation",
           "relation": "oneToOne",
           "target": "api::sex.sex"
-        },
-        "inventory": {
-          "type": "string"
         },
         "createdAt": {
           "type": "datetime"
@@ -2090,6 +2093,9 @@
             "relation": "manyToMany",
             "target": "api::folder.folder",
             "inversedBy": "archives"
+          },
+          "inventory": {
+            "type": "string"
           },
           "images": {
             "type": "media",
@@ -2170,8 +2176,11 @@
           "purchase_date": {
             "type": "date"
           },
-          "price": {
+          "value": {
             "type": "decimal"
+          },
+          "quantity": {
+            "type": "integer"
           },
           "weight": {
             "type": "float"
@@ -2186,9 +2195,6 @@
             "type": "relation",
             "relation": "oneToOne",
             "target": "api::sex.sex"
-          },
-          "inventory": {
-            "type": "string"
           }
         },
         "kind": "collectionType"
@@ -2502,6 +2508,18 @@
         "address": {
           "type": "string"
         },
+        "city": {
+          "type": "string"
+        },
+        "province": {
+          "type": "string"
+        },
+        "zip": {
+          "type": "string"
+        },
+        "country": {
+          "type": "string"
+        },
         "email": {
           "type": "email"
         },
@@ -2552,6 +2570,18 @@
         "pluginOptions": {},
         "attributes": {
           "address": {
+            "type": "string"
+          },
+          "city": {
+            "type": "string"
+          },
+          "province": {
+            "type": "string"
+          },
+          "zip": {
+            "type": "string"
+          },
+          "country": {
             "type": "string"
           },
           "email": {
@@ -2962,6 +2992,18 @@
         "address": {
           "type": "string"
         },
+        "city": {
+          "type": "string"
+        },
+        "province": {
+          "type": "string"
+        },
+        "zip": {
+          "type": "string"
+        },
+        "country": {
+          "type": "string"
+        },
         "email": {
           "type": "email"
         },
@@ -3012,6 +3054,18 @@
         "pluginOptions": {},
         "attributes": {
           "address": {
+            "type": "string"
+          },
+          "city": {
+            "type": "string"
+          },
+          "province": {
+            "type": "string"
+          },
+          "zip": {
+            "type": "string"
+          },
+          "country": {
             "type": "string"
           },
           "email": {

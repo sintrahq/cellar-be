@@ -109,6 +109,20 @@
           "sortable": false
         }
       },
+      "inventory": {
+        "edit": {
+          "label": "inventory",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "inventory",
+          "searchable": true,
+          "sortable": true
+        }
+      },
       "images": {
         "edit": {
           "label": "images",
@@ -344,16 +358,16 @@
           "sortable": true
         }
       },
-      "price": {
+      "value": {
         "edit": {
-          "label": "price",
+          "label": "value",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "price",
+          "label": "value",
           "searchable": true,
           "sortable": true
         }
@@ -415,16 +429,16 @@
           "sortable": true
         }
       },
-      "inventory": {
+      "quantity": {
         "edit": {
-          "label": "inventory",
+          "label": "quantity",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "inventory",
+          "label": "quantity",
           "searchable": true,
           "sortable": true
         }
@@ -494,10 +508,6 @@
         ],
         [
           {
-            "name": "price",
-            "size": 4
-          },
-          {
             "name": "weight",
             "size": 4
           },
@@ -520,6 +530,16 @@
           {
             "name": "inventory",
             "size": 6
+          },
+          {
+            "name": "value",
+            "size": 4
+          }
+        ],
+        [
+          {
+            "name": "quantity",
+            "size": 4
           }
         ]
       ],

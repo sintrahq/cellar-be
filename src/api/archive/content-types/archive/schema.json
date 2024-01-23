@@ -121,8 +121,11 @@
     "purchase_date": {
       "type": "date"
     },
-    "price": {
+    "value": {
       "type": "decimal"
+    },
+    "quantity": {
+      "type": "integer"
     },
     "weight": {
       "type": "float"

@@ -127,7 +127,8 @@
           "race",
           "production_date",
           "purchase_date",
-          "price",
+          "value",
+          "quantity",
           "weight",
           "seasoning_date",
           "purchase_price_kg",
@@ -170,7 +171,8 @@
           "race",
           "production_date",
           "purchase_date",
-          "price",
+          "value",
+          "quantity",
           "weight",
           "seasoning_date",
           "purchase_price_kg",
@@ -207,7 +209,8 @@
           "race",
           "production_date",
           "purchase_date",
-          "price",
+          "value",
+          "quantity",
           "weight",
           "seasoning_date",
           "purchase_price_kg",
@@ -291,6 +294,10 @@
       "properties": {
         "fields": [
           "address",
+          "city",
+          "province",
+          "zip",
+          "country",
           "email",
           "phone",
           "vat_number"
@@ -310,6 +317,10 @@
       "properties": {
         "fields": [
           "address",
+          "city",
+          "province",
+          "zip",
+          "country",
           "email",
           "phone",
           "vat_number"
@@ -323,6 +334,10 @@
       "properties": {
         "fields": [
           "address",
+          "city",
+          "province",
+          "zip",
+          "country",
           "email",
           "phone",
           "vat_number"
@@ -495,6 +510,10 @@
       "properties": {
         "fields": [
           "address",
+          "city",
+          "province",
+          "zip",
+          "country",
           "email",
           "phone",
           "vat_number"
@@ -514,6 +533,10 @@
       "properties": {
         "fields": [
           "address",
+          "city",
+          "province",
+          "zip",
+          "country",
           "email",
           "phone",
           "vat_number"
@@ -527,6 +550,10 @@
       "properties": {
         "fields": [
           "address",
+          "city",
+          "province",
+          "zip",
+          "country",
           "email",
           "phone",
           "vat_number"

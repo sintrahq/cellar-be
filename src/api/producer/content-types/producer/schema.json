@@ -15,6 +15,18 @@
     "address": {
       "type": "string"
     },
+    "city": {
+      "type": "string"
+    },
+    "province": {
+      "type": "string"
+    },
+    "zip": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
     "email": {
       "type": "email"
     },

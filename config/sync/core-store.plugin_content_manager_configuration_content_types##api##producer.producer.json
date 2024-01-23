@@ -76,6 +76,62 @@
           "sortable": true
         }
       },
+      "city": {
+        "edit": {
+          "label": "city",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "city",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "province": {
+        "edit": {
+          "label": "province",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "province",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "zip": {
+        "edit": {
+          "label": "zip",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "zip",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "country": {
+        "edit": {
+          "label": "country",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "country",
+          "searchable": true,
+          "sortable": true
+        }
+      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -112,7 +168,6 @@
         "email",
         "phone"
       ],
-      "editRelations": [],
       "edit": [
         [
           {
@@ -133,8 +188,29 @@
             "name": "vat_number",
             "size": 6
           }
+        ],
+        [
+          {
+            "name": "city",
+            "size": 6
+          },
+          {
+            "name": "province",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "zip",
+            "size": 6
+          },
+          {
+            "name": "country",
+            "size": 6
+          }
         ]
-      ]
+      ],
+      "editRelations": []
     }
   },
   "type": "object",
