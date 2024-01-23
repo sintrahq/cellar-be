@@ -2019,6 +2019,9 @@
           "relation": "oneToOne",
           "target": "api::sex.sex"
         },
+        "inventory": {
+          "type": "string"
+        },
         "createdAt": {
           "type": "datetime"
         },
@@ -2183,6 +2186,9 @@
             "type": "relation",
             "relation": "oneToOne",
             "target": "api::sex.sex"
+          },
+          "inventory": {
+            "type": "string"
           }
         },
         "kind": "collectionType"

@@ -64,6 +64,36 @@
           "sortable": false
         }
       },
+      "t_3s": {
+        "edit": {
+          "label": "t_3s",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "name"
+        },
+        "list": {
+          "label": "t_3s",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "t_4s": {
+        "edit": {
+          "label": "t_4s",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "name"
+        },
+        "list": {
+          "label": "t_4s",
+          "searchable": false,
+          "sortable": false
+        }
+      },
       "folders": {
         "edit": {
           "label": "folders",
@@ -385,34 +415,18 @@
           "sortable": true
         }
       },
-      "t_3s": {
+      "inventory": {
         "edit": {
-          "label": "t_3s",
+          "label": "inventory",
           "description": "",
           "placeholder": "",
           "visible": true,
-          "editable": true,
-          "mainField": "name"
+          "editable": true
         },
         "list": {
-          "label": "t_3s",
-          "searchable": false,
-          "sortable": false
-        }
-      },
-      "t_4s": {
-        "edit": {
-          "label": "t_4s",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true,
-          "mainField": "name"
-        },
-        "list": {
-          "label": "t_4s",
-          "searchable": false,
-          "sortable": false
+          "label": "inventory",
+          "searchable": true,
+          "sortable": true
         }
       },
       "createdAt": {
@@ -445,6 +459,12 @@
       }
     },
     "layouts": {
+      "list": [
+        "id",
+        "description",
+        "t_1s",
+        "t_2s"
+      ],
       "edit": [
         [
           {
@@ -495,6 +515,12 @@
             "name": "purchase_price_kg",
             "size": 4
           }
+        ],
+        [
+          {
+            "name": "inventory",
+            "size": 6
+          }
         ]
       ],
       "editRelations": [
@@ -514,12 +540,6 @@
         "producer",
         "race",
         "distributor"
-      ],
-      "list": [
-        "id",
-        "description",
-        "t_1s",
-        "t_2s"
       ]
     }
   },

@@ -41,6 +41,9 @@
       "target": "api::folder.folder",
       "inversedBy": "archives"
     },
+    "inventory": {
+      "type": "string"
+    },
     "images": {
       "type": "media",
       "multiple": true,
