@@ -176,13 +176,13 @@
       }
     },
     "layouts": {
-      "list": [
-        "id",
-        "address",
-        "email",
-        "phone"
-      ],
       "edit": [
+        [
+          {
+            "name": "name",
+            "size": 6
+          }
+        ],
         [
           {
             "name": "address",
@@ -222,15 +222,15 @@
             "name": "country",
             "size": 6
           }
-        ],
-        [
-          {
-            "name": "name",
-            "size": 6
-          }
         ]
       ],
-      "editRelations": []
+      "editRelations": [],
+      "list": [
+        "id",
+        "address",
+        "email",
+        "phone"
+      ]
     }
   },
   "type": "object",

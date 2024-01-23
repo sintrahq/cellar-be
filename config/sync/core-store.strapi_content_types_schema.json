@@ -2506,7 +2506,8 @@
       "pluginOptions": {},
       "attributes": {
         "name": {
-          "type": "string"
+          "type": "string",
+          "required": true
         },
         "address": {
           "type": "string"
@@ -2573,7 +2574,8 @@
         "pluginOptions": {},
         "attributes": {
           "name": {
-            "type": "string"
+            "type": "string",
+            "required": true
           },
           "address": {
             "type": "string"
@@ -2996,7 +2998,8 @@
       "pluginOptions": {},
       "attributes": {
         "name": {
-          "type": "string"
+          "type": "string",
+          "required": true
         },
         "address": {
           "type": "string"
@@ -3063,7 +3066,8 @@
         "pluginOptions": {},
         "attributes": {
           "name": {
-            "type": "string"
+            "type": "string",
+            "required": true
           },
           "address": {
             "type": "string"
@@ -3116,7 +3120,8 @@
       "pluginOptions": {},
       "attributes": {
         "name": {
-          "type": "string"
+          "type": "string",
+          "required": true
         },
         "seasoning_months": {
           "type": "integer"
@@ -3162,7 +3167,8 @@
         "pluginOptions": {},
         "attributes": {
           "name": {
-            "type": "string"
+            "type": "string",
+            "required": true
           },
           "seasoning_months": {
             "type": "integer"
@@ -3274,7 +3280,8 @@
       "pluginOptions": {},
       "attributes": {
         "name": {
-          "type": "string"
+          "type": "string",
+          "required": true
         },
         "createdAt": {
           "type": "datetime"
@@ -3317,7 +3324,8 @@
         "pluginOptions": {},
         "attributes": {
           "name": {
-            "type": "string"
+            "type": "string",
+            "required": true
           }
         },
         "kind": "collectionType"
