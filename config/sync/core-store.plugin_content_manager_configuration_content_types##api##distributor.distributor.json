@@ -34,48 +34,6 @@
           "sortable": true
         }
       },
-      "email": {
-        "edit": {
-          "label": "email",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "email",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "phone": {
-        "edit": {
-          "label": "phone",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "phone",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "vat_number": {
-        "edit": {
-          "label": "vat_number",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "vat_number",
-          "searchable": true,
-          "sortable": true
-        }
-      },
       "city": {
         "edit": {
           "label": "city",
@@ -128,6 +86,62 @@
         },
         "list": {
           "label": "country",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "email": {
+        "edit": {
+          "label": "email",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "email",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "phone": {
+        "edit": {
+          "label": "phone",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "phone",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "vat_number": {
+        "edit": {
+          "label": "vat_number",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "vat_number",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "name": {
+        "edit": {
+          "label": "name",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "name",
           "searchable": true,
           "sortable": true
         }
@@ -206,6 +220,12 @@
           },
           {
             "name": "country",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "name",
             "size": 6
           }
         ]

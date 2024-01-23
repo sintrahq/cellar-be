@@ -2505,6 +2505,9 @@
       },
       "pluginOptions": {},
       "attributes": {
+        "name": {
+          "type": "string"
+        },
         "address": {
           "type": "string"
         },
@@ -2569,6 +2572,9 @@
         },
         "pluginOptions": {},
         "attributes": {
+          "name": {
+            "type": "string"
+          },
           "address": {
             "type": "string"
           },
@@ -2989,6 +2995,9 @@
       },
       "pluginOptions": {},
       "attributes": {
+        "name": {
+          "type": "string"
+        },
         "address": {
           "type": "string"
         },
@@ -3053,6 +3062,9 @@
         },
         "pluginOptions": {},
         "attributes": {
+          "name": {
+            "type": "string"
+          },
           "address": {
             "type": "string"
           },
