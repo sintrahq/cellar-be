@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "t3s",
+  "info": {
+    "singularName": "t3",
+    "pluralName": "t3s",
+    "displayName": "Tipologia 3 livello"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "t_2": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::t2.t2",
+      "inversedBy": "t_3s"
+    },
+    "t_4s": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::t4.t4",
+      "mappedBy": "t_3"
+    }
+  }
+}

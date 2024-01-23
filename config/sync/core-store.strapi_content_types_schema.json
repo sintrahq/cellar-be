@@ -1792,7 +1792,7 @@
       "info": {
         "singularName": "apartment",
         "pluralName": "apartments",
-        "displayName": "Appartamenti",
+        "displayName": "Luoghi",
         "description": ""
       },
       "options": {
@@ -1839,7 +1839,7 @@
         "info": {
           "singularName": "apartment",
           "pluralName": "apartments",
-          "displayName": "Appartamenti",
+          "displayName": "Luoghi",
           "description": ""
         },
         "options": {

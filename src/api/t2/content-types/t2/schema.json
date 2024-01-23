@@ -22,6 +22,12 @@
       "relation": "manyToOne",
       "target": "api::t1.t1",
       "inversedBy": "t_2s"
+    },
+    "t_3s": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::t3.t3",
+      "mappedBy": "t_2"
     }
   }
 }

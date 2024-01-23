@@ -94,9 +94,9 @@
       "relation": "oneToOne",
       "target": "api::producer.producer"
     },
-    "distributors": {
+    "distributor": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "oneToOne",
       "target": "api::distributor.distributor"
     },
     "race": {
@@ -110,13 +110,6 @@
     "purchase_date": {
       "type": "date"
     },
-    "sex": {
-      "type": "enumeration",
-      "enum": [
-        "MALE",
-        "FEMALE"
-      ]
-    },
     "price": {
       "type": "decimal"
     },
@@ -128,6 +121,21 @@
     },
     "purchase_price_kg": {
       "type": "decimal"
+    },
+    "sex": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::sex.sex"
+    },
+    "t_3s": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::t3.t3"
+    },
+    "t_4s": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::t4.t4"
     }
   }
 }

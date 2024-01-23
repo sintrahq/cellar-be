@@ -11,13 +11,5 @@
     "draftAndPublish": false
   },
   "pluginOptions": {},
-  "attributes": {
-    "folder_identifier": {
-      "type": "integer",
-      "default": 46
-    },
-    "loan_identifier": {
-      "type": "integer"
-    }
-  }
+  "attributes": {}
 }
