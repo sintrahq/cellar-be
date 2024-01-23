@@ -7,7 +7,7 @@
       "filterable": true,
       "searchable": true,
       "pageSize": 10,
-      "mainField": "address",
+      "mainField": "name",
       "defaultSortBy": "address",
       "defaultSortOrder": "ASC"
     },
