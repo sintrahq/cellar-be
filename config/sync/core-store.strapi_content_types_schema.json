@@ -2485,10 +2485,11 @@
       "info": {
         "singularName": "distributor",
         "pluralName": "distributors",
-        "displayName": "Distributore"
+        "displayName": "Distributore",
+        "description": ""
       },
       "options": {
-        "draftAndPublish": true
+        "draftAndPublish": false
       },
       "pluginOptions": {},
       "attributes": {
@@ -2509,12 +2510,6 @@
         },
         "updatedAt": {
           "type": "datetime"
-        },
-        "publishedAt": {
-          "type": "datetime",
-          "configurable": false,
-          "writable": true,
-          "visible": false
         },
         "createdBy": {
           "type": "relation",
@@ -2542,10 +2537,11 @@
         "info": {
           "singularName": "distributor",
           "pluralName": "distributors",
-          "displayName": "Distributore"
+          "displayName": "Distributore",
+          "description": ""
         },
         "options": {
-          "draftAndPublish": true
+          "draftAndPublish": false
         },
         "pluginOptions": {},
         "attributes": {
@@ -2949,10 +2945,11 @@
       "info": {
         "singularName": "producer",
         "pluralName": "producers",
-        "displayName": "Produttore"
+        "displayName": "Produttore",
+        "description": ""
       },
       "options": {
-        "draftAndPublish": true
+        "draftAndPublish": false
       },
       "pluginOptions": {},
       "attributes": {
@@ -2973,12 +2970,6 @@
         },
         "updatedAt": {
           "type": "datetime"
-        },
-        "publishedAt": {
-          "type": "datetime",
-          "configurable": false,
-          "writable": true,
-          "visible": false
         },
         "createdBy": {
           "type": "relation",
@@ -3006,10 +2997,11 @@
         "info": {
           "singularName": "producer",
           "pluralName": "producers",
-          "displayName": "Produttore"
+          "displayName": "Produttore",
+          "description": ""
         },
         "options": {
-          "draftAndPublish": true
+          "draftAndPublish": false
         },
         "pluginOptions": {},
         "attributes": {
@@ -3043,10 +3035,11 @@
       "info": {
         "singularName": "race",
         "pluralName": "races",
-        "displayName": "Razza"
+        "displayName": "Razza",
+        "description": ""
       },
       "options": {
-        "draftAndPublish": true
+        "draftAndPublish": false
       },
       "pluginOptions": {},
       "attributes": {
@@ -3061,12 +3054,6 @@
         },
         "updatedAt": {
           "type": "datetime"
-        },
-        "publishedAt": {
-          "type": "datetime",
-          "configurable": false,
-          "writable": true,
-          "visible": false
         },
         "createdBy": {
           "type": "relation",
@@ -3094,10 +3081,11 @@
         "info": {
           "singularName": "race",
           "pluralName": "races",
-          "displayName": "Razza"
+          "displayName": "Razza",
+          "description": ""
         },
         "options": {
-          "draftAndPublish": true
+          "draftAndPublish": false
         },
         "pluginOptions": {},
         "attributes": {
@@ -3205,10 +3193,11 @@
       "info": {
         "singularName": "sex",
         "pluralName": "sexs",
-        "displayName": "Sesso"
+        "displayName": "Sesso",
+        "description": ""
       },
       "options": {
-        "draftAndPublish": true
+        "draftAndPublish": false
       },
       "pluginOptions": {},
       "attributes": {
@@ -3220,12 +3209,6 @@
         },
         "updatedAt": {
           "type": "datetime"
-        },
-        "publishedAt": {
-          "type": "datetime",
-          "configurable": false,
-          "writable": true,
-          "visible": false
         },
         "createdBy": {
           "type": "relation",
@@ -3253,10 +3236,11 @@
         "info": {
           "singularName": "sex",
           "pluralName": "sexs",
-          "displayName": "Sesso"
+          "displayName": "Sesso",
+          "description": ""
         },
         "options": {
-          "draftAndPublish": true
+          "draftAndPublish": false
         },
         "pluginOptions": {},
         "attributes": {

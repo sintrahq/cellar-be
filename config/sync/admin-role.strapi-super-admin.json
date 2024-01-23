@@ -302,12 +302,6 @@
       "conditions": []
     },
     {
-      "action": "plugin::content-manager.explorer.publish",
-      "subject": "api::distributor.distributor",
-      "properties": {},
-      "conditions": []
-    },
-    {
       "action": "plugin::content-manager.explorer.read",
       "subject": "api::distributor.distributor",
       "properties": {
@@ -507,12 +501,6 @@
     },
     {
       "action": "plugin::content-manager.explorer.delete",
-      "subject": "api::producer.producer",
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.publish",
       "subject": "api::producer.producer",
       "properties": {},
       "conditions": []
@@ -556,12 +544,6 @@
     },
     {
       "action": "plugin::content-manager.explorer.delete",
-      "subject": "api::race.race",
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.publish",
       "subject": "api::race.race",
       "properties": {},
       "conditions": []
@@ -639,12 +621,6 @@
     },
     {
       "action": "plugin::content-manager.explorer.delete",
-      "subject": "api::sex.sex",
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.publish",
       "subject": "api::sex.sex",
       "properties": {},
       "conditions": []

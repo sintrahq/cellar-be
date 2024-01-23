@@ -4,10 +4,11 @@
   "info": {
     "singularName": "race",
     "pluralName": "races",
-    "displayName": "Razza"
+    "displayName": "Razza",
+    "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
