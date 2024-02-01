@@ -103,12 +103,12 @@ async function doBeforeCreateAndUpdate(event) {
 
   const typology = t2 ? t2 : t1;
 
-  data.description = getDescription({
+  /* data.description = getDescription({
     year: archive.year,
     brand,
     season,
     typology,
-  });
+  }); */
 
   // event.params.data.label = getLabel({ ...params.data, t1, t2, t3, t4 });
 }
