@@ -48,7 +48,9 @@
       "type": "media",
       "multiple": true,
       "required": false,
-      "allowedTypes": ["images"]
+      "allowedTypes": [
+        "images"
+      ]
     },
     "is_mock": {
       "type": "boolean",
@@ -116,10 +118,10 @@
       "target": "api::race.race"
     },
     "production_date": {
-      "type": "date"
+      "type": "datetime"
     },
     "purchase_date": {
-      "type": "date"
+      "type": "datetime"
     },
     "value": {
       "type": "decimal"
@@ -131,7 +133,7 @@
       "type": "float"
     },
     "seasoning_date": {
-      "type": "date"
+      "type": "datetime"
     },
     "purchase_price_kg": {
       "type": "decimal"
