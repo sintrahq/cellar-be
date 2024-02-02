@@ -118,10 +118,10 @@
       "target": "api::race.race"
     },
     "production_date": {
-      "type": "datetime"
+      "type": "date"
     },
     "purchase_date": {
-      "type": "datetime"
+      "type": "date"
     },
     "value": {
       "type": "decimal"
@@ -133,7 +133,7 @@
       "type": "float"
     },
     "seasoning_date": {
-      "type": "datetime"
+      "type": "date"
     },
     "purchase_price_kg": {
       "type": "decimal"
