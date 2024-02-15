@@ -260,36 +260,6 @@
     },
     {
       "action": "plugin::content-manager.explorer.create",
-      "subject": "api::configuration.configuration",
-      "properties": {
-        "fields": []
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.delete",
-      "subject": "api::configuration.configuration",
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.read",
-      "subject": "api::configuration.configuration",
-      "properties": {
-        "fields": []
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.update",
-      "subject": "api::configuration.configuration",
-      "properties": {
-        "fields": []
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.create",
       "subject": "api::distributor.distributor",
       "properties": {
         "fields": [

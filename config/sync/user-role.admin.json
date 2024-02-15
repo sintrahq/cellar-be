@@ -46,15 +46,6 @@
       "action": "api::box.box.findOne"
     },
     {
-      "action": "api::configuration.configuration.delete"
-    },
-    {
-      "action": "api::configuration.configuration.find"
-    },
-    {
-      "action": "api::configuration.configuration.update"
-    },
-    {
       "action": "api::distributor.distributor.find"
     },
     {
