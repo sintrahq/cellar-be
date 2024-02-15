@@ -14,7 +14,7 @@ module.exports = {
         type: "Query",
         definition(t) {
           t.field("totalArchivesValue", {
-            type: "Int",
+            type: "Float",
             args: getContentTypeArgs(
               strapi.contentTypes["api::archive.archive"]
             ),
