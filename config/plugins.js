@@ -57,7 +57,4 @@ module.exports = ({ env }) => ({
       dsn: env("SENTRY_DSN"),
     },
   },
-  "vercel-deploy": {
-    enabled: true,
-  },
 });
