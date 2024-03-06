@@ -1,5 +1,5 @@
 {
-  "key": "plugin_content_manager_configuration_content_types::api::loan.loan",
+  "key": "plugin_content_manager_configuration_content_types::admin::transfer-token",
   "value": {
     "settings": {
       "bulkable": true,
@@ -33,117 +33,87 @@
           "sortable": true
         }
       },
-      "date_in": {
+      "description": {
         "edit": {
-          "label": "date_in",
+          "label": "description",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "date_in",
+          "label": "description",
           "searchable": true,
           "sortable": true
         }
       },
-      "date_out": {
+      "accessKey": {
         "edit": {
-          "label": "date_out",
+          "label": "accessKey",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "date_out",
+          "label": "accessKey",
           "searchable": true,
           "sortable": true
         }
       },
-      "note": {
+      "lastUsedAt": {
         "edit": {
-          "label": "note",
+          "label": "lastUsedAt",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "note",
+          "label": "lastUsedAt",
           "searchable": true,
           "sortable": true
         }
       },
-      "reference": {
+      "permissions": {
         "edit": {
-          "label": "reference",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "reference",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "archive_loans": {
-        "edit": {
-          "label": "archive_loans",
+          "label": "permissions",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true,
-          "mainField": "id"
+          "mainField": "action"
         },
         "list": {
-          "label": "archive_loans",
+          "label": "permissions",
           "searchable": false,
           "sortable": false
         }
       },
-      "identifier": {
+      "expiresAt": {
         "edit": {
-          "label": "identifier",
+          "label": "expiresAt",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "identifier",
+          "label": "expiresAt",
           "searchable": true,
           "sortable": true
         }
       },
-      "created_by_user": {
+      "lifespan": {
         "edit": {
-          "label": "created_by_user",
+          "label": "lifespan",
           "description": "",
           "placeholder": "",
           "visible": true,
-          "editable": true,
-          "mainField": "username"
+          "editable": true
         },
         "list": {
-          "label": "created_by_user",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "updated_by_user": {
-        "edit": {
-          "label": "updated_by_user",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true,
-          "mainField": "username"
-        },
-        "list": {
-          "label": "updated_by_user",
+          "label": "lifespan",
           "searchable": true,
           "sortable": true
         }
@@ -211,8 +181,8 @@
       "list": [
         "id",
         "name",
-        "date_in",
-        "date_out"
+        "description",
+        "accessKey"
       ],
       "edit": [
         [
@@ -221,49 +191,39 @@
             "size": 6
           },
           {
-            "name": "date_in",
+            "name": "description",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "accessKey",
+            "size": 6
+          },
+          {
+            "name": "lastUsedAt",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "permissions",
+            "size": 6
+          },
+          {
+            "name": "expiresAt",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "lifespan",
             "size": 4
-          }
-        ],
-        [
-          {
-            "name": "date_out",
-            "size": 4
-          },
-          {
-            "name": "note",
-            "size": 6
-          }
-        ],
-        [
-          {
-            "name": "reference",
-            "size": 6
-          },
-          {
-            "name": "archive_loans",
-            "size": 6
-          }
-        ],
-        [
-          {
-            "name": "identifier",
-            "size": 6
-          },
-          {
-            "name": "created_by_user",
-            "size": 6
-          }
-        ],
-        [
-          {
-            "name": "updated_by_user",
-            "size": 6
           }
         ]
       ]
     },
-    "uid": "api::loan.loan"
+    "uid": "admin::transfer-token"
   },
   "type": "object",
   "environment": null,

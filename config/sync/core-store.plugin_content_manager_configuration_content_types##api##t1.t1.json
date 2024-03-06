@@ -1,7 +1,6 @@
 {
   "key": "plugin_content_manager_configuration_content_types::api::t1.t1",
   "value": {
-    "uid": "api::t1.t1",
     "settings": {
       "bulkable": true,
       "filterable": true,
@@ -104,6 +103,36 @@
           "searchable": true,
           "sortable": true
         }
+      },
+      "createdBy": {
+        "edit": {
+          "label": "createdBy",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true,
+          "mainField": "firstname"
+        },
+        "list": {
+          "label": "createdBy",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedBy": {
+        "edit": {
+          "label": "updatedBy",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true,
+          "mainField": "firstname"
+        },
+        "list": {
+          "label": "updatedBy",
+          "searchable": true,
+          "sortable": true
+        }
       }
     },
     "layouts": {
@@ -113,9 +142,6 @@
         "t_2s",
         "code"
       ],
-      "editRelations": [
-        "t_2s"
-      ],
       "edit": [
         [
           {
@@ -123,18 +149,23 @@
             "size": 6
           },
           {
-            "name": "code",
+            "name": "t_2s",
             "size": 6
           }
         ],
         [
+          {
+            "name": "code",
+            "size": 6
+          },
           {
             "name": "inventory_counter",
             "size": 4
           }
         ]
       ]
-    }
+    },
+    "uid": "api::t1.t1"
   },
   "type": "object",
   "environment": null,

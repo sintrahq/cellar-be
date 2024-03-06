@@ -1,7 +1,6 @@
 {
   "key": "plugin_content_manager_configuration_content_types::api::folder.folder",
   "value": {
-    "uid": "api::folder.folder",
     "settings": {
       "bulkable": true,
       "filterable": true,
@@ -176,6 +175,36 @@
           "searchable": true,
           "sortable": true
         }
+      },
+      "createdBy": {
+        "edit": {
+          "label": "createdBy",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true,
+          "mainField": "firstname"
+        },
+        "list": {
+          "label": "createdBy",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedBy": {
+        "edit": {
+          "label": "updatedBy",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true,
+          "mainField": "firstname"
+        },
+        "list": {
+          "label": "updatedBy",
+          "searchable": true,
+          "sortable": true
+        }
       }
     },
     "layouts": {
@@ -192,15 +221,31 @@
             "size": 6
           },
           {
-            "name": "is_image_folder",
-            "size": 4
+            "name": "archives",
+            "size": 6
           }
         ],
         [
           {
-            "name": "is_visible_to_editor",
+            "name": "is_image_folder",
             "size": 4
           },
+          {
+            "name": "created_by_user",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "updated_by_user",
+            "size": 6
+          },
+          {
+            "name": "is_visible_to_editor",
+            "size": 4
+          }
+        ],
+        [
           {
             "name": "is_visible_to_viewer",
             "size": 4
@@ -208,21 +253,15 @@
           {
             "name": "is_visible_to_collaborator",
             "size": 4
-          }
-        ],
-        [
+          },
           {
             "name": "identifier",
             "size": 4
           }
         ]
-      ],
-      "editRelations": [
-        "archives",
-        "created_by_user",
-        "updated_by_user"
       ]
-    }
+    },
+    "uid": "api::folder.folder"
   },
   "type": "object",
   "environment": null,

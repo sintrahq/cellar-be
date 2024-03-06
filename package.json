@@ -1,16 +1,17 @@
 {
   "name": "cantina-strapi",
-  "private": true,
   "version": "1.11.1",
+  "private": true,
   "description": "App Cantina Strapi - api",
+  "license": "MIT",
+  "author": {
+    "name": "Bitforce"
+  },
   "scripts": {
+    "build": "strapi build",
     "develop": "strapi develop",
     "start": "strapi start",
-    "build": "strapi build",
     "strapi": "strapi"
-  },
-  "devDependencies": {
-    "heroku": "^7.60.2"
   },
   "dependencies": {
     "@_sh/strapi-plugin-ckeditor": "^1.0.9",
@@ -30,21 +31,24 @@
     "mysql": "2.18.1",
     "node-fetch": "2",
     "node-fetch-retry-timeout": "^1.2.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^5.2.0",
     "strapi-plugin-config-sync": "^1.0.2",
     "strapi-plugin-duplicate-button": "^1.0.4",
     "strapi-plugin-import-export-entries": "^1.6.1",
     "strapi-plugin-placeholder": "^4.1.7",
-    "strapi-plugin-transformer": "^2.0.1"
+    "strapi-plugin-transformer": "^2.0.1",
+    "styled-components": "^5.2.1"
   },
-  "author": {
-    "name": "A Strapi developer"
+  "devDependencies": {
+    "heroku": "^7.60.2"
+  },
+  "engines": {
+    "node": "18.x.x",
+    "npm": "9.6.7"
   },
   "strapi": {
     "uuid": "5818b6c3-d604-4689-a8d3-d122111c93bd"
-  },
-  "engines": {
-    "node": "16.x.x",
-    "npm": "9.6.7"
-  },
-  "license": "MIT"
+  }
 }

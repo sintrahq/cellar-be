@@ -1,7 +1,6 @@
 {
   "key": "plugin_content_manager_configuration_content_types::admin::user",
   "value": {
-    "uid": "admin::user",
     "settings": {
       "bulkable": true,
       "filterable": true,
@@ -95,7 +94,7 @@
           "label": "resetPasswordToken",
           "description": "",
           "placeholder": "",
-          "visible": true,
+          "visible": false,
           "editable": true
         },
         "list": {
@@ -109,7 +108,7 @@
           "label": "registrationToken",
           "description": "",
           "placeholder": "",
-          "visible": true,
+          "visible": false,
           "editable": true
         },
         "list": {
@@ -202,6 +201,36 @@
           "searchable": true,
           "sortable": true
         }
+      },
+      "createdBy": {
+        "edit": {
+          "label": "createdBy",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true,
+          "mainField": "firstname"
+        },
+        "list": {
+          "label": "createdBy",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedBy": {
+        "edit": {
+          "label": "updatedBy",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true,
+          "mainField": "firstname"
+        },
+        "list": {
+          "label": "updatedBy",
+          "searchable": true,
+          "sortable": true
+        }
       }
     },
     "layouts": {
@@ -210,9 +239,6 @@
         "firstname",
         "lastname",
         "username"
-      ],
-      "editRelations": [
-        "roles"
       ],
       "edit": [
         [
@@ -241,32 +267,29 @@
             "size": 6
           },
           {
-            "name": "resetPasswordToken",
-            "size": 6
-          }
-        ],
-        [
-          {
-            "name": "registrationToken",
-            "size": 6
-          },
-          {
             "name": "isActive",
             "size": 4
           }
         ],
         [
           {
+            "name": "roles",
+            "size": 6
+          },
+          {
             "name": "blocked",
             "size": 4
-          },
+          }
+        ],
+        [
           {
             "name": "preferedLanguage",
             "size": 6
           }
         ]
       ]
-    }
+    },
+    "uid": "admin::user"
   },
   "type": "object",
   "environment": null,

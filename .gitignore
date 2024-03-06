@@ -114,4 +114,5 @@ exports
 build
 .strapi
 .strapi-updater.json
+types/
 full_documentation.json

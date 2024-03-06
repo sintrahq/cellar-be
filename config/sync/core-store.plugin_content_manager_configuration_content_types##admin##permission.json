@@ -1,7 +1,6 @@
 {
   "key": "plugin_content_manager_configuration_content_types::admin::permission",
   "value": {
-    "uid": "admin::permission",
     "settings": {
       "bulkable": true,
       "filterable": true,
@@ -32,6 +31,20 @@
           "label": "action",
           "searchable": true,
           "sortable": true
+        }
+      },
+      "actionParameters": {
+        "edit": {
+          "label": "actionParameters",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "actionParameters",
+          "searchable": false,
+          "sortable": false
         }
       },
       "subject": {
@@ -118,6 +131,36 @@
           "searchable": true,
           "sortable": true
         }
+      },
+      "createdBy": {
+        "edit": {
+          "label": "createdBy",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true,
+          "mainField": "firstname"
+        },
+        "list": {
+          "label": "createdBy",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedBy": {
+        "edit": {
+          "label": "updatedBy",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true,
+          "mainField": "firstname"
+        },
+        "list": {
+          "label": "updatedBy",
+          "searchable": true,
+          "sortable": true
+        }
       }
     },
     "layouts": {
@@ -127,15 +170,20 @@
         "subject",
         "role"
       ],
-      "editRelations": [
-        "role"
-      ],
       "edit": [
         [
           {
             "name": "action",
             "size": 6
-          },
+          }
+        ],
+        [
+          {
+            "name": "actionParameters",
+            "size": 12
+          }
+        ],
+        [
           {
             "name": "subject",
             "size": 6
@@ -152,9 +200,16 @@
             "name": "conditions",
             "size": 12
           }
+        ],
+        [
+          {
+            "name": "role",
+            "size": 6
+          }
         ]
       ]
-    }
+    },
+    "uid": "admin::permission"
   },
   "type": "object",
   "environment": null,

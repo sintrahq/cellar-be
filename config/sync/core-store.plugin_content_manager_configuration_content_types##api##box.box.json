@@ -1,7 +1,6 @@
 {
   "key": "plugin_content_manager_configuration_content_types::api::box.box",
   "value": {
-    "uid": "api::box.box",
     "settings": {
       "bulkable": true,
       "filterable": true,
@@ -75,6 +74,36 @@
           "searchable": true,
           "sortable": true
         }
+      },
+      "createdBy": {
+        "edit": {
+          "label": "createdBy",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true,
+          "mainField": "firstname"
+        },
+        "list": {
+          "label": "createdBy",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedBy": {
+        "edit": {
+          "label": "updatedBy",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true,
+          "mainField": "firstname"
+        },
+        "list": {
+          "label": "updatedBy",
+          "searchable": true,
+          "sortable": true
+        }
       }
     },
     "layouts": {
@@ -84,7 +113,6 @@
         "isPriorityItem",
         "createdAt"
       ],
-      "editRelations": [],
       "edit": [
         [
           {
@@ -97,7 +125,8 @@
           }
         ]
       ]
-    }
+    },
+    "uid": "api::box.box"
   },
   "type": "object",
   "environment": null,

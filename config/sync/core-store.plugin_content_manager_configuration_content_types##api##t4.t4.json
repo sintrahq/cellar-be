@@ -1,7 +1,6 @@
 {
   "key": "plugin_content_manager_configuration_content_types::api::t4.t4",
   "value": {
-    "uid": "api::t4.t4",
     "settings": {
       "bulkable": true,
       "filterable": true,
@@ -76,6 +75,36 @@
           "searchable": true,
           "sortable": true
         }
+      },
+      "createdBy": {
+        "edit": {
+          "label": "createdBy",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true,
+          "mainField": "firstname"
+        },
+        "list": {
+          "label": "createdBy",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedBy": {
+        "edit": {
+          "label": "updatedBy",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true,
+          "mainField": "firstname"
+        },
+        "list": {
+          "label": "updatedBy",
+          "searchable": true,
+          "sortable": true
+        }
       }
     },
     "layouts": {
@@ -85,18 +114,20 @@
         "t_3",
         "createdAt"
       ],
-      "editRelations": [
-        "t_3"
-      ],
       "edit": [
         [
           {
             "name": "name",
             "size": 6
+          },
+          {
+            "name": "t_3",
+            "size": 6
           }
         ]
       ]
-    }
+    },
+    "uid": "api::t4.t4"
   },
   "type": "object",
   "environment": null,
