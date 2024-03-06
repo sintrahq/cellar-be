@@ -5,6 +5,7 @@
   "permissions": [
     {
       "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
       "subject": "api::apartment.apartment",
       "properties": {
         "fields": [
@@ -18,6 +19,7 @@
     },
     {
       "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
       "subject": "api::apartment.apartment",
       "properties": {},
       "conditions": [
@@ -26,6 +28,7 @@
     },
     {
       "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
       "subject": "api::apartment.apartment",
       "properties": {
         "fields": [
@@ -39,6 +42,7 @@
     },
     {
       "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
       "subject": "api::apartment.apartment",
       "properties": {
         "fields": [
@@ -52,6 +56,7 @@
     },
     {
       "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
       "subject": "api::archive-loan.archive-loan",
       "properties": {
         "fields": [
@@ -71,6 +76,7 @@
     },
     {
       "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
       "subject": "api::archive-loan.archive-loan",
       "properties": {},
       "conditions": [
@@ -79,25 +85,7 @@
     },
     {
       "action": "plugin::content-manager.explorer.read",
-      "subject": "api::archive-loan.archive-loan",
-      "properties": {
-        "fields": [
-          "note_in",
-          "note_out",
-          "date_in",
-          "date_out",
-          "archive",
-          "loan",
-          "created_by_user",
-          "updated_by_user"
-        ]
-      },
-      "conditions": [
-        "admin::is-creator"
-      ]
-    },
-    {
-      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
       "subject": "api::archive-loan.archive-loan",
       "properties": {
         "fields": [
@@ -116,14 +104,38 @@
       ]
     },
     {
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::archive-loan.archive-loan",
+      "properties": {
+        "fields": [
+          "note_in",
+          "note_out",
+          "date_in",
+          "date_out",
+          "archive",
+          "loan",
+          "created_by_user",
+          "updated_by_user"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
       "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
       "subject": "api::archive.archive",
       "properties": {
         "fields": [
           "description",
           "t_1s",
           "t_2s",
+          "t_3s",
+          "t_4s",
           "folders",
+          "inventory",
           "images",
           "is_mock",
           "archive_loans",
@@ -134,7 +146,18 @@
           "place",
           "shelf",
           "box",
-          "sector"
+          "sector",
+          "producer",
+          "distributor",
+          "race",
+          "production_date",
+          "purchase_date",
+          "value",
+          "quantity",
+          "weight",
+          "seasoning_date",
+          "purchase_price_kg",
+          "sex"
         ]
       },
       "conditions": [
@@ -143,6 +166,7 @@
     },
     {
       "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
       "subject": "api::archive.archive",
       "properties": {},
       "conditions": [
@@ -151,13 +175,17 @@
     },
     {
       "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
       "subject": "api::archive.archive",
       "properties": {
         "fields": [
           "description",
           "t_1s",
           "t_2s",
+          "t_3s",
+          "t_4s",
           "folders",
+          "inventory",
           "images",
           "is_mock",
           "archive_loans",
@@ -168,7 +196,18 @@
           "place",
           "shelf",
           "box",
-          "sector"
+          "sector",
+          "producer",
+          "distributor",
+          "race",
+          "production_date",
+          "purchase_date",
+          "value",
+          "quantity",
+          "weight",
+          "seasoning_date",
+          "purchase_price_kg",
+          "sex"
         ]
       },
       "conditions": [
@@ -177,13 +216,17 @@
     },
     {
       "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
       "subject": "api::archive.archive",
       "properties": {
         "fields": [
           "description",
           "t_1s",
           "t_2s",
+          "t_3s",
+          "t_4s",
           "folders",
+          "inventory",
           "images",
           "is_mock",
           "archive_loans",
@@ -194,7 +237,18 @@
           "place",
           "shelf",
           "box",
-          "sector"
+          "sector",
+          "producer",
+          "distributor",
+          "race",
+          "production_date",
+          "purchase_date",
+          "value",
+          "quantity",
+          "weight",
+          "seasoning_date",
+          "purchase_price_kg",
+          "sex"
         ]
       },
       "conditions": [
@@ -203,6 +257,7 @@
     },
     {
       "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
       "subject": "api::box.box",
       "properties": {
         "fields": [
@@ -216,6 +271,7 @@
     },
     {
       "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
       "subject": "api::box.box",
       "properties": {},
       "conditions": [
@@ -224,6 +280,7 @@
     },
     {
       "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
       "subject": "api::box.box",
       "properties": {
         "fields": [
@@ -237,6 +294,7 @@
     },
     {
       "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
       "subject": "api::box.box",
       "properties": {
         "fields": [
@@ -250,6 +308,79 @@
     },
     {
       "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
+      "subject": "api::distributor.distributor",
+      "properties": {
+        "fields": [
+          "name",
+          "address",
+          "city",
+          "province",
+          "zip",
+          "country",
+          "email",
+          "phone",
+          "vat_number"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
+      "subject": "api::distributor.distributor",
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::distributor.distributor",
+      "properties": {
+        "fields": [
+          "name",
+          "address",
+          "city",
+          "province",
+          "zip",
+          "country",
+          "email",
+          "phone",
+          "vat_number"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::distributor.distributor",
+      "properties": {
+        "fields": [
+          "name",
+          "address",
+          "city",
+          "province",
+          "zip",
+          "country",
+          "email",
+          "phone",
+          "vat_number"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
       "subject": "api::folder.folder",
       "properties": {
         "fields": [
@@ -270,6 +401,7 @@
     },
     {
       "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
       "subject": "api::folder.folder",
       "properties": {},
       "conditions": [
@@ -278,26 +410,7 @@
     },
     {
       "action": "plugin::content-manager.explorer.read",
-      "subject": "api::folder.folder",
-      "properties": {
-        "fields": [
-          "name",
-          "archives",
-          "is_image_folder",
-          "created_by_user",
-          "updated_by_user",
-          "is_visible_to_editor",
-          "is_visible_to_viewer",
-          "is_visible_to_collaborator",
-          "identifier"
-        ]
-      },
-      "conditions": [
-        "admin::is-creator"
-      ]
-    },
-    {
-      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
       "subject": "api::folder.folder",
       "properties": {
         "fields": [
@@ -317,7 +430,29 @@
       ]
     },
     {
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::folder.folder",
+      "properties": {
+        "fields": [
+          "name",
+          "archives",
+          "is_image_folder",
+          "created_by_user",
+          "updated_by_user",
+          "is_visible_to_editor",
+          "is_visible_to_viewer",
+          "is_visible_to_collaborator",
+          "identifier"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
       "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
       "subject": "api::loan.loan",
       "properties": {
         "fields": [
@@ -338,6 +473,7 @@
     },
     {
       "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
       "subject": "api::loan.loan",
       "properties": {},
       "conditions": [
@@ -346,26 +482,7 @@
     },
     {
       "action": "plugin::content-manager.explorer.read",
-      "subject": "api::loan.loan",
-      "properties": {
-        "fields": [
-          "name",
-          "date_in",
-          "date_out",
-          "note",
-          "reference",
-          "archive_loans",
-          "identifier",
-          "created_by_user",
-          "updated_by_user"
-        ]
-      },
-      "conditions": [
-        "admin::is-creator"
-      ]
-    },
-    {
-      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
       "subject": "api::loan.loan",
       "properties": {
         "fields": [
@@ -385,7 +502,29 @@
       ]
     },
     {
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::loan.loan",
+      "properties": {
+        "fields": [
+          "name",
+          "date_in",
+          "date_out",
+          "note",
+          "reference",
+          "archive_loans",
+          "identifier",
+          "created_by_user",
+          "updated_by_user"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
       "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
       "subject": "api::place.place",
       "properties": {
         "fields": [
@@ -399,6 +538,7 @@
     },
     {
       "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
       "subject": "api::place.place",
       "properties": {},
       "conditions": [
@@ -407,6 +547,7 @@
     },
     {
       "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
       "subject": "api::place.place",
       "properties": {
         "fields": [
@@ -420,6 +561,7 @@
     },
     {
       "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
       "subject": "api::place.place",
       "properties": {
         "fields": [
@@ -433,6 +575,130 @@
     },
     {
       "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
+      "subject": "api::producer.producer",
+      "properties": {
+        "fields": [
+          "name",
+          "address",
+          "city",
+          "province",
+          "zip",
+          "country",
+          "email",
+          "phone",
+          "vat_number"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
+      "subject": "api::producer.producer",
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::producer.producer",
+      "properties": {
+        "fields": [
+          "name",
+          "address",
+          "city",
+          "province",
+          "zip",
+          "country",
+          "email",
+          "phone",
+          "vat_number"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::producer.producer",
+      "properties": {
+        "fields": [
+          "name",
+          "address",
+          "city",
+          "province",
+          "zip",
+          "country",
+          "email",
+          "phone",
+          "vat_number"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
+      "subject": "api::race.race",
+      "properties": {
+        "fields": [
+          "name",
+          "seasoning_months"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
+      "subject": "api::race.race",
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::race.race",
+      "properties": {
+        "fields": [
+          "name",
+          "seasoning_months"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::race.race",
+      "properties": {
+        "fields": [
+          "name",
+          "seasoning_months"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
       "subject": "api::sector.sector",
       "properties": {
         "fields": [
@@ -446,6 +712,7 @@
     },
     {
       "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
       "subject": "api::sector.sector",
       "properties": {},
       "conditions": [
@@ -454,6 +721,7 @@
     },
     {
       "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
       "subject": "api::sector.sector",
       "properties": {
         "fields": [
@@ -467,6 +735,7 @@
     },
     {
       "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
       "subject": "api::sector.sector",
       "properties": {
         "fields": [
@@ -480,6 +749,55 @@
     },
     {
       "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
+      "subject": "api::sex.sex",
+      "properties": {
+        "fields": [
+          "name"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
+      "subject": "api::sex.sex",
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::sex.sex",
+      "properties": {
+        "fields": [
+          "name"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::sex.sex",
+      "properties": {
+        "fields": [
+          "name"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
       "subject": "api::shelf.shelf",
       "properties": {
         "fields": [
@@ -493,6 +811,7 @@
     },
     {
       "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
       "subject": "api::shelf.shelf",
       "properties": {},
       "conditions": [
@@ -501,6 +820,7 @@
     },
     {
       "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
       "subject": "api::shelf.shelf",
       "properties": {
         "fields": [
@@ -514,6 +834,7 @@
     },
     {
       "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
       "subject": "api::shelf.shelf",
       "properties": {
         "fields": [
@@ -527,6 +848,7 @@
     },
     {
       "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
       "subject": "api::t1.t1",
       "properties": {
         "fields": [
@@ -542,6 +864,7 @@
     },
     {
       "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
       "subject": "api::t1.t1",
       "properties": {},
       "conditions": [
@@ -550,6 +873,7 @@
     },
     {
       "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
       "subject": "api::t1.t1",
       "properties": {
         "fields": [
@@ -565,6 +889,7 @@
     },
     {
       "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
       "subject": "api::t1.t1",
       "properties": {
         "fields": [
@@ -580,11 +905,13 @@
     },
     {
       "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
       "subject": "api::t2.t2",
       "properties": {
         "fields": [
           "name",
-          "t_1"
+          "t_1",
+          "t_3s"
         ]
       },
       "conditions": [
@@ -593,6 +920,7 @@
     },
     {
       "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
       "subject": "api::t2.t2",
       "properties": {},
       "conditions": [
@@ -601,11 +929,13 @@
     },
     {
       "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
       "subject": "api::t2.t2",
       "properties": {
         "fields": [
           "name",
-          "t_1"
+          "t_1",
+          "t_3s"
         ]
       },
       "conditions": [
@@ -614,11 +944,118 @@
     },
     {
       "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
       "subject": "api::t2.t2",
       "properties": {
         "fields": [
           "name",
-          "t_1"
+          "t_1",
+          "t_3s"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
+      "subject": "api::t3.t3",
+      "properties": {
+        "fields": [
+          "name",
+          "t_2",
+          "t_4s"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
+      "subject": "api::t3.t3",
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::t3.t3",
+      "properties": {
+        "fields": [
+          "name",
+          "t_2",
+          "t_4s"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::t3.t3",
+      "properties": {
+        "fields": [
+          "name",
+          "t_2",
+          "t_4s"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
+      "subject": "api::t4.t4",
+      "properties": {
+        "fields": [
+          "name",
+          "t_3"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
+      "subject": "api::t4.t4",
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::t4.t4",
+      "properties": {
+        "fields": [
+          "name",
+          "t_3"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::t4.t4",
+      "properties": {
+        "fields": [
+          "name",
+          "t_3"
         ]
       },
       "conditions": [
@@ -627,24 +1064,28 @@
     },
     {
       "action": "plugin::upload.assets.copy-link",
+      "actionParameters": {},
       "subject": null,
       "properties": {},
       "conditions": []
     },
     {
       "action": "plugin::upload.assets.create",
+      "actionParameters": {},
       "subject": null,
       "properties": {},
       "conditions": []
     },
     {
       "action": "plugin::upload.assets.download",
+      "actionParameters": {},
       "subject": null,
       "properties": {},
       "conditions": []
     },
     {
       "action": "plugin::upload.assets.update",
+      "actionParameters": {},
       "subject": null,
       "properties": {},
       "conditions": [
@@ -652,7 +1093,15 @@
       ]
     },
     {
+      "action": "plugin::upload.configure-view",
+      "actionParameters": {},
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
       "action": "plugin::upload.read",
+      "actionParameters": {},
       "subject": null,
       "properties": {},
       "conditions": [

@@ -1,7 +1,6 @@
 {
   "key": "plugin_content_manager_configuration_content_types::plugin::upload.folder",
   "value": {
-    "uid": "plugin::upload.folder",
     "settings": {
       "bulkable": true,
       "filterable": true,
@@ -134,6 +133,36 @@
           "searchable": true,
           "sortable": true
         }
+      },
+      "createdBy": {
+        "edit": {
+          "label": "createdBy",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true,
+          "mainField": "firstname"
+        },
+        "list": {
+          "label": "createdBy",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedBy": {
+        "edit": {
+          "label": "updatedBy",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true,
+          "mainField": "firstname"
+        },
+        "list": {
+          "label": "updatedBy",
+          "searchable": true,
+          "sortable": true
+        }
       }
     },
     "layouts": {
@@ -142,11 +171,6 @@
         "name",
         "pathId",
         "parent"
-      ],
-      "editRelations": [
-        "parent",
-        "children",
-        "files"
       ],
       "edit": [
         [
@@ -161,12 +185,27 @@
         ],
         [
           {
+            "name": "parent",
+            "size": 6
+          },
+          {
+            "name": "children",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "files",
+            "size": 6
+          },
+          {
             "name": "path",
             "size": 6
           }
         ]
       ]
-    }
+    },
+    "uid": "plugin::upload.folder"
   },
   "type": "object",
   "environment": null,

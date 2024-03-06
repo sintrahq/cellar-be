@@ -1,7 +1,6 @@
 {
   "key": "plugin_content_manager_configuration_content_types::api::producer.producer",
   "value": {
-    "uid": "api::producer.producer",
     "settings": {
       "bulkable": true,
       "filterable": true,
@@ -16,6 +15,20 @@
         "edit": {},
         "list": {
           "label": "id",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "name": {
+        "edit": {
+          "label": "name",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "name",
           "searchable": true,
           "sortable": true
         }
@@ -132,20 +145,6 @@
           "sortable": true
         }
       },
-      "name": {
-        "edit": {
-          "label": "name",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "name",
-          "searchable": true,
-          "sortable": true
-        }
-      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -173,33 +172,53 @@
           "searchable": true,
           "sortable": true
         }
+      },
+      "createdBy": {
+        "edit": {
+          "label": "createdBy",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true,
+          "mainField": "firstname"
+        },
+        "list": {
+          "label": "createdBy",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedBy": {
+        "edit": {
+          "label": "updatedBy",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true,
+          "mainField": "firstname"
+        },
+        "list": {
+          "label": "updatedBy",
+          "searchable": true,
+          "sortable": true
+        }
       }
     },
     "layouts": {
+      "list": [
+        "id",
+        "name",
+        "address",
+        "city"
+      ],
       "edit": [
         [
           {
             "name": "name",
             "size": 6
-          }
-        ],
-        [
+          },
           {
             "name": "address",
-            "size": 6
-          },
-          {
-            "name": "email",
-            "size": 6
-          }
-        ],
-        [
-          {
-            "name": "phone",
-            "size": 6
-          },
-          {
-            "name": "vat_number",
             "size": 6
           }
         ],
@@ -222,16 +241,26 @@
             "name": "country",
             "size": 6
           }
+        ],
+        [
+          {
+            "name": "email",
+            "size": 6
+          },
+          {
+            "name": "phone",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "vat_number",
+            "size": 6
+          }
         ]
-      ],
-      "editRelations": [],
-      "list": [
-        "id",
-        "name",
-        "email",
-        "phone"
       ]
-    }
+    },
+    "uid": "api::producer.producer"
   },
   "type": "object",
   "environment": null,

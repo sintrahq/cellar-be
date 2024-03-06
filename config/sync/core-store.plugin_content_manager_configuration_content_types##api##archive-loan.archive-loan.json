@@ -1,7 +1,6 @@
 {
   "key": "plugin_content_manager_configuration_content_types::api::archive-loan.archive-loan",
   "value": {
-    "uid": "api::archive-loan.archive-loan",
     "settings": {
       "bulkable": true,
       "filterable": true,
@@ -163,6 +162,36 @@
           "searchable": true,
           "sortable": true
         }
+      },
+      "createdBy": {
+        "edit": {
+          "label": "createdBy",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true,
+          "mainField": "firstname"
+        },
+        "list": {
+          "label": "createdBy",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedBy": {
+        "edit": {
+          "label": "updatedBy",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true,
+          "mainField": "firstname"
+        },
+        "list": {
+          "label": "updatedBy",
+          "searchable": true,
+          "sortable": true
+        }
       }
     },
     "layouts": {
@@ -171,12 +200,6 @@
         "note_in",
         "note_out",
         "date_in"
-      ],
-      "editRelations": [
-        "archive",
-        "loan",
-        "created_by_user",
-        "updated_by_user"
       ],
       "edit": [
         [
@@ -198,9 +221,30 @@
             "name": "date_out",
             "size": 4
           }
+        ],
+        [
+          {
+            "name": "archive",
+            "size": 6
+          },
+          {
+            "name": "loan",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "created_by_user",
+            "size": 6
+          },
+          {
+            "name": "updated_by_user",
+            "size": 6
+          }
         ]
       ]
-    }
+    },
+    "uid": "api::archive-loan.archive-loan"
   },
   "type": "object",
   "environment": null,

@@ -1,7 +1,6 @@
 {
   "key": "plugin_content_manager_configuration_content_types::api::t3.t3",
   "value": {
-    "uid": "api::t3.t3",
     "settings": {
       "bulkable": true,
       "filterable": true,
@@ -91,6 +90,36 @@
           "searchable": true,
           "sortable": true
         }
+      },
+      "createdBy": {
+        "edit": {
+          "label": "createdBy",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true,
+          "mainField": "firstname"
+        },
+        "list": {
+          "label": "createdBy",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedBy": {
+        "edit": {
+          "label": "updatedBy",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true,
+          "mainField": "firstname"
+        },
+        "list": {
+          "label": "updatedBy",
+          "searchable": true,
+          "sortable": true
+        }
       }
     },
     "layouts": {
@@ -98,21 +127,28 @@
         "id",
         "name",
         "t_2",
-        "createdAt"
+        "t_4s"
       ],
       "edit": [
         [
           {
             "name": "name",
             "size": 6
+          },
+          {
+            "name": "t_2",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "t_4s",
+            "size": 6
           }
         ]
-      ],
-      "editRelations": [
-        "t_2",
-        "t_4s"
       ]
-    }
+    },
+    "uid": "api::t3.t3"
   },
   "type": "object",
   "environment": null,

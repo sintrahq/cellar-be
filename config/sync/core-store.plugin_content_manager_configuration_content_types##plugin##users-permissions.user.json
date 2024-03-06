@@ -1,7 +1,6 @@
 {
   "key": "plugin_content_manager_configuration_content_types::plugin::users-permissions.user",
   "value": {
-    "uid": "plugin::users-permissions.user",
     "settings": {
       "bulkable": true,
       "filterable": true,
@@ -322,6 +321,36 @@
           "searchable": true,
           "sortable": true
         }
+      },
+      "createdBy": {
+        "edit": {
+          "label": "createdBy",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true,
+          "mainField": "firstname"
+        },
+        "list": {
+          "label": "createdBy",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedBy": {
+        "edit": {
+          "label": "updatedBy",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true,
+          "mainField": "firstname"
+        },
+        "list": {
+          "label": "updatedBy",
+          "searchable": true,
+          "sortable": true
+        }
       }
     },
     "layouts": {
@@ -330,17 +359,6 @@
         "username",
         "email",
         "confirmed"
-      ],
-      "editRelations": [
-        "role",
-        "created_loans",
-        "updated_loans",
-        "created_archives",
-        "updated_archives",
-        "created_folders",
-        "updated_folders",
-        "created_archive_loans",
-        "updated_archive_loans"
       ],
       "edit": [
         [
@@ -369,18 +387,63 @@
             "size": 4
           },
           {
-            "name": "first_name",
+            "name": "role",
             "size": 6
           }
         ],
         [
           {
+            "name": "first_name",
+            "size": 6
+          },
+          {
             "name": "last_name",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "created_loans",
+            "size": 6
+          },
+          {
+            "name": "updated_loans",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "created_archives",
+            "size": 6
+          },
+          {
+            "name": "updated_archives",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "created_folders",
+            "size": 6
+          },
+          {
+            "name": "updated_folders",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "created_archive_loans",
+            "size": 6
+          },
+          {
+            "name": "updated_archive_loans",
             "size": 6
           }
         ]
       ]
-    }
+    },
+    "uid": "plugin::users-permissions.user"
   },
   "type": "object",
   "environment": null,

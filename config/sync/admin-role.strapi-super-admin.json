@@ -5,6 +5,7 @@
   "permissions": [
     {
       "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
       "subject": "api::apartment.apartment",
       "properties": {
         "fields": [
@@ -16,12 +17,14 @@
     },
     {
       "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
       "subject": "api::apartment.apartment",
       "properties": {},
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
       "subject": "api::apartment.apartment",
       "properties": {
         "fields": [
@@ -33,6 +36,7 @@
     },
     {
       "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
       "subject": "api::apartment.apartment",
       "properties": {
         "fields": [
@@ -44,6 +48,7 @@
     },
     {
       "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
       "subject": "api::archive-loan.archive-loan",
       "properties": {
         "fields": [
@@ -61,12 +66,14 @@
     },
     {
       "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
       "subject": "api::archive-loan.archive-loan",
       "properties": {},
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
       "subject": "api::archive-loan.archive-loan",
       "properties": {
         "fields": [
@@ -84,6 +91,7 @@
     },
     {
       "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
       "subject": "api::archive-loan.archive-loan",
       "properties": {
         "fields": [
@@ -101,6 +109,7 @@
     },
     {
       "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
       "subject": "api::archive.archive",
       "properties": {
         "fields": [
@@ -139,50 +148,14 @@
     },
     {
       "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
       "subject": "api::archive.archive",
       "properties": {},
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.read",
-      "subject": "api::archive.archive",
-      "properties": {
-        "fields": [
-          "description",
-          "t_1s",
-          "t_2s",
-          "t_3s",
-          "t_4s",
-          "folders",
-          "inventory",
-          "images",
-          "is_mock",
-          "archive_loans",
-          "note",
-          "created_by_user",
-          "updated_by_user",
-          "apartment",
-          "place",
-          "shelf",
-          "box",
-          "sector",
-          "producer",
-          "distributor",
-          "race",
-          "production_date",
-          "purchase_date",
-          "value",
-          "quantity",
-          "weight",
-          "seasoning_date",
-          "purchase_price_kg",
-          "sex"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
       "subject": "api::archive.archive",
       "properties": {
         "fields": [
@@ -220,7 +193,47 @@
       "conditions": []
     },
     {
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::archive.archive",
+      "properties": {
+        "fields": [
+          "description",
+          "t_1s",
+          "t_2s",
+          "t_3s",
+          "t_4s",
+          "folders",
+          "inventory",
+          "images",
+          "is_mock",
+          "archive_loans",
+          "note",
+          "created_by_user",
+          "updated_by_user",
+          "apartment",
+          "place",
+          "shelf",
+          "box",
+          "sector",
+          "producer",
+          "distributor",
+          "race",
+          "production_date",
+          "purchase_date",
+          "value",
+          "quantity",
+          "weight",
+          "seasoning_date",
+          "purchase_price_kg",
+          "sex"
+        ]
+      },
+      "conditions": []
+    },
+    {
       "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
       "subject": "api::box.box",
       "properties": {
         "fields": [
@@ -232,12 +245,14 @@
     },
     {
       "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
       "subject": "api::box.box",
       "properties": {},
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
       "subject": "api::box.box",
       "properties": {
         "fields": [
@@ -249,6 +264,7 @@
     },
     {
       "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
       "subject": "api::box.box",
       "properties": {
         "fields": [
@@ -260,6 +276,7 @@
     },
     {
       "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
       "subject": "api::distributor.distributor",
       "properties": {
         "fields": [
@@ -278,12 +295,14 @@
     },
     {
       "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
       "subject": "api::distributor.distributor",
       "properties": {},
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
       "subject": "api::distributor.distributor",
       "properties": {
         "fields": [
@@ -302,6 +321,7 @@
     },
     {
       "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
       "subject": "api::distributor.distributor",
       "properties": {
         "fields": [
@@ -320,6 +340,7 @@
     },
     {
       "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
       "subject": "api::folder.folder",
       "properties": {
         "fields": [
@@ -338,30 +359,14 @@
     },
     {
       "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
       "subject": "api::folder.folder",
       "properties": {},
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.read",
-      "subject": "api::folder.folder",
-      "properties": {
-        "fields": [
-          "name",
-          "archives",
-          "is_image_folder",
-          "created_by_user",
-          "updated_by_user",
-          "is_visible_to_editor",
-          "is_visible_to_viewer",
-          "is_visible_to_collaborator",
-          "identifier"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
       "subject": "api::folder.folder",
       "properties": {
         "fields": [
@@ -379,7 +384,27 @@
       "conditions": []
     },
     {
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::folder.folder",
+      "properties": {
+        "fields": [
+          "name",
+          "archives",
+          "is_image_folder",
+          "created_by_user",
+          "updated_by_user",
+          "is_visible_to_editor",
+          "is_visible_to_viewer",
+          "is_visible_to_collaborator",
+          "identifier"
+        ]
+      },
+      "conditions": []
+    },
+    {
       "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
       "subject": "api::loan.loan",
       "properties": {
         "fields": [
@@ -398,30 +423,14 @@
     },
     {
       "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
       "subject": "api::loan.loan",
       "properties": {},
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.read",
-      "subject": "api::loan.loan",
-      "properties": {
-        "fields": [
-          "name",
-          "date_in",
-          "date_out",
-          "note",
-          "reference",
-          "archive_loans",
-          "identifier",
-          "created_by_user",
-          "updated_by_user"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
       "subject": "api::loan.loan",
       "properties": {
         "fields": [
@@ -439,7 +448,27 @@
       "conditions": []
     },
     {
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::loan.loan",
+      "properties": {
+        "fields": [
+          "name",
+          "date_in",
+          "date_out",
+          "note",
+          "reference",
+          "archive_loans",
+          "identifier",
+          "created_by_user",
+          "updated_by_user"
+        ]
+      },
+      "conditions": []
+    },
+    {
       "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
       "subject": "api::place.place",
       "properties": {
         "fields": [
@@ -451,12 +480,14 @@
     },
     {
       "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
       "subject": "api::place.place",
       "properties": {},
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
       "subject": "api::place.place",
       "properties": {
         "fields": [
@@ -468,6 +499,7 @@
     },
     {
       "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
       "subject": "api::place.place",
       "properties": {
         "fields": [
@@ -479,6 +511,7 @@
     },
     {
       "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
       "subject": "api::producer.producer",
       "properties": {
         "fields": [
@@ -497,30 +530,14 @@
     },
     {
       "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
       "subject": "api::producer.producer",
       "properties": {},
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.read",
-      "subject": "api::producer.producer",
-      "properties": {
-        "fields": [
-          "name",
-          "address",
-          "city",
-          "province",
-          "zip",
-          "country",
-          "email",
-          "phone",
-          "vat_number"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
       "subject": "api::producer.producer",
       "properties": {
         "fields": [
@@ -538,7 +555,27 @@
       "conditions": []
     },
     {
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::producer.producer",
+      "properties": {
+        "fields": [
+          "name",
+          "address",
+          "city",
+          "province",
+          "zip",
+          "country",
+          "email",
+          "phone",
+          "vat_number"
+        ]
+      },
+      "conditions": []
+    },
+    {
       "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
       "subject": "api::race.race",
       "properties": {
         "fields": [
@@ -550,23 +587,14 @@
     },
     {
       "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
       "subject": "api::race.race",
       "properties": {},
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.read",
-      "subject": "api::race.race",
-      "properties": {
-        "fields": [
-          "name",
-          "seasoning_months"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
       "subject": "api::race.race",
       "properties": {
         "fields": [
@@ -577,7 +605,20 @@
       "conditions": []
     },
     {
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::race.race",
+      "properties": {
+        "fields": [
+          "name",
+          "seasoning_months"
+        ]
+      },
+      "conditions": []
+    },
+    {
       "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
       "subject": "api::sector.sector",
       "properties": {
         "fields": [
@@ -589,23 +630,14 @@
     },
     {
       "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
       "subject": "api::sector.sector",
       "properties": {},
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.read",
-      "subject": "api::sector.sector",
-      "properties": {
-        "fields": [
-          "isPriorityItem",
-          "name"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
       "subject": "api::sector.sector",
       "properties": {
         "fields": [
@@ -616,7 +648,20 @@
       "conditions": []
     },
     {
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::sector.sector",
+      "properties": {
+        "fields": [
+          "isPriorityItem",
+          "name"
+        ]
+      },
+      "conditions": []
+    },
+    {
       "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
       "subject": "api::sex.sex",
       "properties": {
         "fields": [
@@ -627,12 +672,14 @@
     },
     {
       "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
       "subject": "api::sex.sex",
       "properties": {},
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
       "subject": "api::sex.sex",
       "properties": {
         "fields": [
@@ -643,6 +690,7 @@
     },
     {
       "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
       "subject": "api::sex.sex",
       "properties": {
         "fields": [
@@ -653,6 +701,7 @@
     },
     {
       "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
       "subject": "api::shelf.shelf",
       "properties": {
         "fields": [
@@ -664,12 +713,14 @@
     },
     {
       "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
       "subject": "api::shelf.shelf",
       "properties": {},
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
       "subject": "api::shelf.shelf",
       "properties": {
         "fields": [
@@ -681,6 +732,7 @@
     },
     {
       "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
       "subject": "api::shelf.shelf",
       "properties": {
         "fields": [
@@ -692,6 +744,7 @@
     },
     {
       "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
       "subject": "api::t1.t1",
       "properties": {
         "fields": [
@@ -705,25 +758,14 @@
     },
     {
       "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
       "subject": "api::t1.t1",
       "properties": {},
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.read",
-      "subject": "api::t1.t1",
-      "properties": {
-        "fields": [
-          "name",
-          "t_2s",
-          "code",
-          "inventory_counter"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
       "subject": "api::t1.t1",
       "properties": {
         "fields": [
@@ -736,7 +778,22 @@
       "conditions": []
     },
     {
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::t1.t1",
+      "properties": {
+        "fields": [
+          "name",
+          "t_2s",
+          "code",
+          "inventory_counter"
+        ]
+      },
+      "conditions": []
+    },
+    {
       "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
       "subject": "api::t2.t2",
       "properties": {
         "fields": [
@@ -749,12 +806,14 @@
     },
     {
       "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
       "subject": "api::t2.t2",
       "properties": {},
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
       "subject": "api::t2.t2",
       "properties": {
         "fields": [
@@ -767,6 +826,7 @@
     },
     {
       "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
       "subject": "api::t2.t2",
       "properties": {
         "fields": [
@@ -779,6 +839,7 @@
     },
     {
       "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
       "subject": "api::t3.t3",
       "properties": {
         "fields": [
@@ -791,12 +852,14 @@
     },
     {
       "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
       "subject": "api::t3.t3",
       "properties": {},
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
       "subject": "api::t3.t3",
       "properties": {
         "fields": [
@@ -809,6 +872,7 @@
     },
     {
       "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
       "subject": "api::t3.t3",
       "properties": {
         "fields": [
@@ -821,6 +885,7 @@
     },
     {
       "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
       "subject": "api::t4.t4",
       "properties": {
         "fields": [
@@ -832,12 +897,14 @@
     },
     {
       "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
       "subject": "api::t4.t4",
       "properties": {},
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
       "subject": "api::t4.t4",
       "properties": {
         "fields": [
@@ -849,6 +916,7 @@
     },
     {
       "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
       "subject": "api::t4.t4",
       "properties": {
         "fields": [
@@ -860,168 +928,224 @@
     },
     {
       "action": "admin::api-tokens.access",
+      "actionParameters": {},
       "subject": null,
       "properties": {},
       "conditions": []
     },
     {
       "action": "admin::api-tokens.create",
+      "actionParameters": {},
       "subject": null,
       "properties": {},
       "conditions": []
     },
     {
       "action": "admin::api-tokens.delete",
+      "actionParameters": {},
       "subject": null,
       "properties": {},
       "conditions": []
     },
     {
       "action": "admin::api-tokens.read",
+      "actionParameters": {},
       "subject": null,
       "properties": {},
       "conditions": []
     },
     {
       "action": "admin::api-tokens.regenerate",
+      "actionParameters": {},
       "subject": null,
       "properties": {},
       "conditions": []
     },
     {
       "action": "admin::api-tokens.update",
-      "subject": null,
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "admin::marketplace.plugins.install",
-      "subject": null,
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "admin::marketplace.plugins.uninstall",
+      "actionParameters": {},
       "subject": null,
       "properties": {},
       "conditions": []
     },
     {
       "action": "admin::marketplace.read",
+      "actionParameters": {},
       "subject": null,
       "properties": {},
       "conditions": []
     },
     {
       "action": "admin::project-settings.read",
+      "actionParameters": {},
       "subject": null,
       "properties": {},
       "conditions": []
     },
     {
       "action": "admin::project-settings.update",
+      "actionParameters": {},
       "subject": null,
       "properties": {},
       "conditions": []
     },
     {
       "action": "admin::roles.create",
+      "actionParameters": {},
       "subject": null,
       "properties": {},
       "conditions": []
     },
     {
       "action": "admin::roles.delete",
+      "actionParameters": {},
       "subject": null,
       "properties": {},
       "conditions": []
     },
     {
       "action": "admin::roles.read",
+      "actionParameters": {},
       "subject": null,
       "properties": {},
       "conditions": []
     },
     {
       "action": "admin::roles.update",
+      "actionParameters": {},
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "admin::transfer.tokens.access",
+      "actionParameters": {},
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "admin::transfer.tokens.create",
+      "actionParameters": {},
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "admin::transfer.tokens.delete",
+      "actionParameters": {},
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "admin::transfer.tokens.read",
+      "actionParameters": {},
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "admin::transfer.tokens.regenerate",
+      "actionParameters": {},
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "admin::transfer.tokens.update",
+      "actionParameters": {},
       "subject": null,
       "properties": {},
       "conditions": []
     },
     {
       "action": "admin::users.create",
+      "actionParameters": {},
       "subject": null,
       "properties": {},
       "conditions": []
     },
     {
       "action": "admin::users.delete",
+      "actionParameters": {},
       "subject": null,
       "properties": {},
       "conditions": []
     },
     {
       "action": "admin::users.read",
+      "actionParameters": {},
       "subject": null,
       "properties": {},
       "conditions": []
     },
     {
       "action": "admin::users.update",
+      "actionParameters": {},
       "subject": null,
       "properties": {},
       "conditions": []
     },
     {
       "action": "admin::webhooks.create",
+      "actionParameters": {},
       "subject": null,
       "properties": {},
       "conditions": []
     },
     {
       "action": "admin::webhooks.delete",
+      "actionParameters": {},
       "subject": null,
       "properties": {},
       "conditions": []
     },
     {
       "action": "admin::webhooks.read",
+      "actionParameters": {},
       "subject": null,
       "properties": {},
       "conditions": []
     },
     {
       "action": "admin::webhooks.update",
+      "actionParameters": {},
       "subject": null,
       "properties": {},
       "conditions": []
     },
     {
       "action": "plugin::config-sync.menu-link",
+      "actionParameters": {},
       "subject": null,
       "properties": {},
       "conditions": []
     },
     {
       "action": "plugin::config-sync.settings.read",
+      "actionParameters": {},
       "subject": null,
       "properties": {},
       "conditions": []
     },
     {
       "action": "plugin::content-manager.collection-types.configure-view",
+      "actionParameters": {},
       "subject": null,
       "properties": {},
       "conditions": []
     },
     {
       "action": "plugin::content-manager.components.configure-layout",
+      "actionParameters": {},
       "subject": null,
       "properties": {},
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
       "subject": "plugin::users-permissions.user",
       "properties": {
         "fields": [
@@ -1050,12 +1174,14 @@
     },
     {
       "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
       "subject": "plugin::users-permissions.user",
       "properties": {},
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
       "subject": "plugin::users-permissions.user",
       "properties": {
         "fields": [
@@ -1084,6 +1210,7 @@
     },
     {
       "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
       "subject": "plugin::users-permissions.user",
       "properties": {
         "fields": [
@@ -1112,162 +1239,210 @@
     },
     {
       "action": "plugin::content-manager.single-types.configure-view",
+      "actionParameters": {},
       "subject": null,
       "properties": {},
       "conditions": []
     },
     {
       "action": "plugin::content-type-builder.read",
+      "actionParameters": {},
       "subject": null,
       "properties": {},
       "conditions": []
     },
     {
       "action": "plugin::documentation.read",
+      "actionParameters": {},
       "subject": null,
       "properties": {},
       "conditions": []
     },
     {
       "action": "plugin::documentation.settings.read",
+      "actionParameters": {},
       "subject": null,
       "properties": {},
       "conditions": []
     },
     {
       "action": "plugin::documentation.settings.regenerate",
+      "actionParameters": {},
       "subject": null,
       "properties": {},
       "conditions": []
     },
     {
       "action": "plugin::documentation.settings.update",
+      "actionParameters": {},
       "subject": null,
       "properties": {},
       "conditions": []
     },
     {
       "action": "plugin::email.settings.read",
+      "actionParameters": {},
       "subject": null,
       "properties": {},
       "conditions": []
     },
     {
       "action": "plugin::i18n.locale.create",
+      "actionParameters": {},
       "subject": null,
       "properties": {},
       "conditions": []
     },
     {
       "action": "plugin::i18n.locale.delete",
+      "actionParameters": {},
       "subject": null,
       "properties": {},
       "conditions": []
     },
     {
       "action": "plugin::i18n.locale.read",
+      "actionParameters": {},
       "subject": null,
       "properties": {},
       "conditions": []
     },
     {
       "action": "plugin::i18n.locale.update",
+      "actionParameters": {},
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::import-export-entries.export",
+      "actionParameters": {},
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::import-export-entries.import",
+      "actionParameters": {},
       "subject": null,
       "properties": {},
       "conditions": []
     },
     {
       "action": "plugin::upload.assets.copy-link",
+      "actionParameters": {},
       "subject": null,
       "properties": {},
       "conditions": []
     },
     {
       "action": "plugin::upload.assets.create",
+      "actionParameters": {},
       "subject": null,
       "properties": {},
       "conditions": []
     },
     {
       "action": "plugin::upload.assets.download",
+      "actionParameters": {},
       "subject": null,
       "properties": {},
       "conditions": []
     },
     {
       "action": "plugin::upload.assets.update",
+      "actionParameters": {},
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::upload.configure-view",
+      "actionParameters": {},
       "subject": null,
       "properties": {},
       "conditions": []
     },
     {
       "action": "plugin::upload.read",
+      "actionParameters": {},
       "subject": null,
       "properties": {},
       "conditions": []
     },
     {
       "action": "plugin::upload.settings.read",
+      "actionParameters": {},
       "subject": null,
       "properties": {},
       "conditions": []
     },
     {
       "action": "plugin::users-permissions.advanced-settings.read",
+      "actionParameters": {},
       "subject": null,
       "properties": {},
       "conditions": []
     },
     {
       "action": "plugin::users-permissions.advanced-settings.update",
+      "actionParameters": {},
       "subject": null,
       "properties": {},
       "conditions": []
     },
     {
       "action": "plugin::users-permissions.email-templates.read",
+      "actionParameters": {},
       "subject": null,
       "properties": {},
       "conditions": []
     },
     {
       "action": "plugin::users-permissions.email-templates.update",
+      "actionParameters": {},
       "subject": null,
       "properties": {},
       "conditions": []
     },
     {
       "action": "plugin::users-permissions.providers.read",
+      "actionParameters": {},
       "subject": null,
       "properties": {},
       "conditions": []
     },
     {
       "action": "plugin::users-permissions.providers.update",
+      "actionParameters": {},
       "subject": null,
       "properties": {},
       "conditions": []
     },
     {
       "action": "plugin::users-permissions.roles.create",
+      "actionParameters": {},
       "subject": null,
       "properties": {},
       "conditions": []
     },
     {
       "action": "plugin::users-permissions.roles.delete",
+      "actionParameters": {},
       "subject": null,
       "properties": {},
       "conditions": []
     },
     {
       "action": "plugin::users-permissions.roles.read",
+      "actionParameters": {},
       "subject": null,
       "properties": {},
       "conditions": []
     },
     {
       "action": "plugin::users-permissions.roles.update",
+      "actionParameters": {},
       "subject": null,
       "properties": {},
       "conditions": []

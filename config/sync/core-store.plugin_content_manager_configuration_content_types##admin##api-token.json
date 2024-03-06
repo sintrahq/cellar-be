@@ -1,7 +1,6 @@
 {
   "key": "plugin_content_manager_configuration_content_types::admin::api-token",
   "value": {
-    "uid": "admin::api-token",
     "settings": {
       "bulkable": true,
       "filterable": true,
@@ -160,6 +159,36 @@
           "searchable": true,
           "sortable": true
         }
+      },
+      "createdBy": {
+        "edit": {
+          "label": "createdBy",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true,
+          "mainField": "firstname"
+        },
+        "list": {
+          "label": "createdBy",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedBy": {
+        "edit": {
+          "label": "updatedBy",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true,
+          "mainField": "firstname"
+        },
+        "list": {
+          "label": "updatedBy",
+          "searchable": true,
+          "sortable": true
+        }
       }
     },
     "layouts": {
@@ -196,21 +225,23 @@
             "size": 6
           },
           {
-            "name": "expiresAt",
+            "name": "permissions",
             "size": 6
           }
         ],
         [
           {
+            "name": "expiresAt",
+            "size": 6
+          },
+          {
             "name": "lifespan",
             "size": 4
           }
         ]
-      ],
-      "editRelations": [
-        "permissions"
       ]
-    }
+    },
+    "uid": "admin::api-token"
   },
   "type": "object",
   "environment": null,
