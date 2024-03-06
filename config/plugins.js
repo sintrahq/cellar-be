@@ -45,7 +45,7 @@ module.exports = ({ env }) => ({
   placeholder: {
     enabled: true,
     config: {
-      size: 400,
+      size: 64,
     },
   },
   "import-export-entries": {
