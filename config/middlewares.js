@@ -1,4 +1,5 @@
 module.exports = (env) => [
+  "strapi::logger",
   "strapi::errors",
   {
     name: "strapi::security",
@@ -52,7 +53,6 @@ module.exports = (env) => [
     },
   },
   "strapi::poweredBy",
-  "strapi::logger",
   "strapi::query",
   "strapi::body",
   "strapi::session",
