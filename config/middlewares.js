@@ -37,7 +37,7 @@ module.exports = (env) => [
         "http://localhost:4111",
         "https://staging.appprosciuttibucasf.it",
         "https://staging-be.appprosciuttibucasf.it",
-        "https://appprosciuttibucasf.it",
+        "https://www.appprosciuttibucasf.it",
         "https://be.appprosciuttibucasf.it",
       ],
       credentials: true,
