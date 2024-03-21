@@ -947,6 +947,11 @@ export interface ApiArchiveArchive extends Schema.CollectionType {
     seasoning_date: Attribute.Date;
     purchase_price_kg: Attribute.Decimal;
     sex: Attribute.Relation<'api::archive.archive', 'oneToOne', 'api::sex.sex'>;
+    archive_sales: Attribute.Relation<
+      'api::archive.archive',
+      'oneToMany',
+      'api::archive-sale.archive-sale'
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
@@ -1010,6 +1015,123 @@ export interface ApiArchiveLoanArchiveLoan extends Schema.CollectionType {
       Attribute.Private;
     updatedBy: Attribute.Relation<
       'api::archive-loan.archive-loan',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiArchiveSaleArchiveSale extends Schema.CollectionType {
+  collectionName: 'archive_sales';
+  info: {
+    singularName: 'archive-sale';
+    pluralName: 'archive-sales';
+    displayName: 'Archivio - Vendite';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    description: Attribute.String;
+    t_1s: Attribute.Relation<
+      'api::archive-sale.archive-sale',
+      'oneToMany',
+      'api::t1.t1'
+    >;
+    t_2s: Attribute.Relation<
+      'api::archive-sale.archive-sale',
+      'oneToMany',
+      'api::t2.t2'
+    >;
+    t_3s: Attribute.Relation<
+      'api::archive-sale.archive-sale',
+      'oneToMany',
+      'api::t3.t3'
+    >;
+    t_4s: Attribute.Relation<
+      'api::archive-sale.archive-sale',
+      'oneToMany',
+      'api::t4.t4'
+    >;
+    inventory: Attribute.String;
+    images: Attribute.Media;
+    is_mock: Attribute.Boolean;
+    note: Attribute.Text;
+    apartment: Attribute.Relation<
+      'api::archive-sale.archive-sale',
+      'oneToOne',
+      'api::apartment.apartment'
+    >;
+    place: Attribute.Relation<
+      'api::archive-sale.archive-sale',
+      'oneToOne',
+      'api::place.place'
+    >;
+    shelf: Attribute.Relation<
+      'api::archive-sale.archive-sale',
+      'oneToOne',
+      'api::shelf.shelf'
+    >;
+    box: Attribute.Relation<
+      'api::archive-sale.archive-sale',
+      'oneToOne',
+      'api::box.box'
+    >;
+    sector: Attribute.Relation<
+      'api::archive-sale.archive-sale',
+      'oneToOne',
+      'api::sector.sector'
+    >;
+    producer: Attribute.Relation<
+      'api::archive-sale.archive-sale',
+      'oneToOne',
+      'api::producer.producer'
+    >;
+    distributor: Attribute.Relation<
+      'api::archive-sale.archive-sale',
+      'oneToOne',
+      'api::distributor.distributor'
+    >;
+    race: Attribute.Relation<
+      'api::archive-sale.archive-sale',
+      'oneToOne',
+      'api::race.race'
+    >;
+    production_date: Attribute.Date;
+    purchase_date: Attribute.Date;
+    value: Attribute.Decimal;
+    quantity: Attribute.Integer;
+    weight: Attribute.Float;
+    seasoning_date: Attribute.Date;
+    purchase_price_kg: Attribute.Decimal;
+    sex: Attribute.Relation<
+      'api::archive-sale.archive-sale',
+      'oneToOne',
+      'api::sex.sex'
+    >;
+    note_in: Attribute.String;
+    date_in: Attribute.Date;
+    archive: Attribute.Relation<
+      'api::archive-sale.archive-sale',
+      'manyToOne',
+      'api::archive.archive'
+    >;
+    sale: Attribute.Relation<
+      'api::archive-sale.archive-sale',
+      'manyToOne',
+      'api::sale.sale'
+    >;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::archive-sale.archive-sale',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::archive-sale.archive-sale',
       'oneToOne',
       'admin::user'
     > &
@@ -1262,6 +1384,36 @@ export interface ApiRaceRace extends Schema.CollectionType {
   };
 }
 
+export interface ApiSaleSale extends Schema.CollectionType {
+  collectionName: 'sales';
+  info: {
+    singularName: 'sale';
+    pluralName: 'sales';
+    displayName: 'Vendite';
+    description: '';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    name: Attribute.String & Attribute.Required;
+    date: Attribute.Date;
+    note: Attribute.Text;
+    reference: Attribute.String;
+    archive_sales: Attribute.Relation<
+      'api::sale.sale',
+      'oneToMany',
+      'api::archive-sale.archive-sale'
+    >;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<'api::sale.sale', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<'api::sale.sale', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+  };
+}
+
 export interface ApiSectorSector extends Schema.CollectionType {
   collectionName: 'sectors';
   info: {
@@ -1463,6 +1615,7 @@ declare module '@strapi/types' {
       'api::apartment.apartment': ApiApartmentApartment;
       'api::archive.archive': ApiArchiveArchive;
       'api::archive-loan.archive-loan': ApiArchiveLoanArchiveLoan;
+      'api::archive-sale.archive-sale': ApiArchiveSaleArchiveSale;
       'api::box.box': ApiBoxBox;
       'api::distributor.distributor': ApiDistributorDistributor;
       'api::folder.folder': ApiFolderFolder;
@@ -1470,6 +1623,7 @@ declare module '@strapi/types' {
       'api::place.place': ApiPlacePlace;
       'api::producer.producer': ApiProducerProducer;
       'api::race.race': ApiRaceRace;
+      'api::sale.sale': ApiSaleSale;
       'api::sector.sector': ApiSectorSector;
       'api::sex.sex': ApiSexSex;
       'api::shelf.shelf': ApiShelfShelf;

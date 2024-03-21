@@ -110,6 +110,130 @@
     {
       "action": "plugin::content-manager.explorer.create",
       "actionParameters": {},
+      "subject": "api::archive-sale.archive-sale",
+      "properties": {
+        "fields": [
+          "description",
+          "t_1s",
+          "t_2s",
+          "t_3s",
+          "t_4s",
+          "inventory",
+          "images",
+          "is_mock",
+          "note",
+          "apartment",
+          "place",
+          "shelf",
+          "box",
+          "sector",
+          "producer",
+          "distributor",
+          "race",
+          "production_date",
+          "purchase_date",
+          "value",
+          "quantity",
+          "weight",
+          "seasoning_date",
+          "purchase_price_kg",
+          "sex",
+          "note_in",
+          "date_in",
+          "archive",
+          "sale"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
+      "subject": "api::archive-sale.archive-sale",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::archive-sale.archive-sale",
+      "properties": {
+        "fields": [
+          "description",
+          "t_1s",
+          "t_2s",
+          "t_3s",
+          "t_4s",
+          "inventory",
+          "images",
+          "is_mock",
+          "note",
+          "apartment",
+          "place",
+          "shelf",
+          "box",
+          "sector",
+          "producer",
+          "distributor",
+          "race",
+          "production_date",
+          "purchase_date",
+          "value",
+          "quantity",
+          "weight",
+          "seasoning_date",
+          "purchase_price_kg",
+          "sex",
+          "note_in",
+          "date_in",
+          "archive",
+          "sale"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::archive-sale.archive-sale",
+      "properties": {
+        "fields": [
+          "description",
+          "t_1s",
+          "t_2s",
+          "t_3s",
+          "t_4s",
+          "inventory",
+          "images",
+          "is_mock",
+          "note",
+          "apartment",
+          "place",
+          "shelf",
+          "box",
+          "sector",
+          "producer",
+          "distributor",
+          "race",
+          "production_date",
+          "purchase_date",
+          "value",
+          "quantity",
+          "weight",
+          "seasoning_date",
+          "purchase_price_kg",
+          "sex",
+          "note_in",
+          "date_in",
+          "archive",
+          "sale"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
       "subject": "api::archive.archive",
       "properties": {
         "fields": [
@@ -141,7 +265,8 @@
           "weight",
           "seasoning_date",
           "purchase_price_kg",
-          "sex"
+          "sex",
+          "archive_sales"
         ]
       },
       "conditions": []
@@ -187,7 +312,8 @@
           "weight",
           "seasoning_date",
           "purchase_price_kg",
-          "sex"
+          "sex",
+          "archive_sales"
         ]
       },
       "conditions": []
@@ -226,7 +352,8 @@
           "weight",
           "seasoning_date",
           "purchase_price_kg",
-          "sex"
+          "sex",
+          "archive_sales"
         ]
       },
       "conditions": []
@@ -612,6 +739,58 @@
         "fields": [
           "name",
           "seasoning_months"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
+      "subject": "api::sale.sale",
+      "properties": {
+        "fields": [
+          "name",
+          "date",
+          "note",
+          "reference",
+          "archive_sales"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
+      "subject": "api::sale.sale",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::sale.sale",
+      "properties": {
+        "fields": [
+          "name",
+          "date",
+          "note",
+          "reference",
+          "archive_sales"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::sale.sale",
+      "properties": {
+        "fields": [
+          "name",
+          "date",
+          "note",
+          "reference",
+          "archive_sales"
         ]
       },
       "conditions": []

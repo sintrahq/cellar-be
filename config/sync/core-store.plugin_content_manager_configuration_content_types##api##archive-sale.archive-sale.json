@@ -1,5 +1,5 @@
 {
-  "key": "plugin_content_manager_configuration_content_types::api::archive.archive",
+  "key": "plugin_content_manager_configuration_content_types::api::archive-sale.archive-sale",
   "value": {
     "settings": {
       "bulkable": true,
@@ -93,21 +93,6 @@
           "sortable": false
         }
       },
-      "folders": {
-        "edit": {
-          "label": "folders",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true,
-          "mainField": "name"
-        },
-        "list": {
-          "label": "folders",
-          "searchable": false,
-          "sortable": false
-        }
-      },
       "inventory": {
         "edit": {
           "label": "inventory",
@@ -150,21 +135,6 @@
           "sortable": true
         }
       },
-      "archive_loans": {
-        "edit": {
-          "label": "archive_loans",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true,
-          "mainField": "id"
-        },
-        "list": {
-          "label": "archive_loans",
-          "searchable": false,
-          "sortable": false
-        }
-      },
       "note": {
         "edit": {
           "label": "note",
@@ -175,36 +145,6 @@
         },
         "list": {
           "label": "note",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "created_by_user": {
-        "edit": {
-          "label": "created_by_user",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true,
-          "mainField": "username"
-        },
-        "list": {
-          "label": "created_by_user",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "updated_by_user": {
-        "edit": {
-          "label": "updated_by_user",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true,
-          "mainField": "username"
-        },
-        "list": {
-          "label": "updated_by_user",
           "searchable": true,
           "sortable": true
         }
@@ -442,9 +382,37 @@
           "sortable": true
         }
       },
-      "archive_sales": {
+      "note_in": {
         "edit": {
-          "label": "archive_sales",
+          "label": "note_in",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "note_in",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "date_in": {
+        "edit": {
+          "label": "date_in",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "date_in",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "archive": {
+        "edit": {
+          "label": "archive",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -452,9 +420,24 @@
           "mainField": "description"
         },
         "list": {
-          "label": "archive_sales",
-          "searchable": false,
-          "sortable": false
+          "label": "archive",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "sale": {
+        "edit": {
+          "label": "sale",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "name"
+        },
+        "list": {
+          "label": "sale",
+          "searchable": true,
+          "sortable": true
         }
       },
       "createdAt": {
@@ -550,43 +533,23 @@
             "size": 6
           },
           {
-            "name": "folders",
+            "name": "inventory",
             "size": 6
           }
         ],
         [
-          {
-            "name": "inventory",
-            "size": 6
-          },
           {
             "name": "images",
             "size": 6
-          }
-        ],
-        [
+          },
           {
             "name": "is_mock",
             "size": 4
-          },
-          {
-            "name": "archive_loans",
-            "size": 6
           }
         ],
         [
           {
             "name": "note",
-            "size": 6
-          },
-          {
-            "name": "created_by_user",
-            "size": 6
-          }
-        ],
-        [
-          {
-            "name": "updated_by_user",
             "size": 6
           },
           {
@@ -668,13 +631,29 @@
             "size": 6
           },
           {
-            "name": "archive_sales",
+            "name": "note_in",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "date_in",
+            "size": 4
+          },
+          {
+            "name": "archive",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "sale",
             "size": 6
           }
         ]
       ]
     },
-    "uid": "api::archive.archive"
+    "uid": "api::archive-sale.archive-sale"
   },
   "type": "object",
   "environment": null,

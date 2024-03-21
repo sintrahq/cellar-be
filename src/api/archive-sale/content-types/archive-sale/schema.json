@@ -1,11 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "archives",
+  "collectionName": "archive_sales",
   "info": {
-    "singularName": "archive",
-    "pluralName": "archives",
-    "displayName": "Archivio",
-    "description": ""
+    "singularName": "archive-sale",
+    "pluralName": "archive-sales",
+    "displayName": "Archivio - Vendite"
   },
   "options": {
     "draftAndPublish": false
@@ -35,47 +34,24 @@
       "relation": "oneToMany",
       "target": "api::t4.t4"
     },
-    "folders": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::folder.folder",
-      "inversedBy": "archives"
-    },
     "inventory": {
       "type": "string"
     },
     "images": {
-      "type": "media",
-      "multiple": true,
-      "required": false,
       "allowedTypes": [
-        "images"
-      ]
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
     },
     "is_mock": {
-      "type": "boolean",
-      "default": false
-    },
-    "archive_loans": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::archive-loan.archive-loan",
-      "mappedBy": "archive"
+      "type": "boolean"
     },
     "note": {
       "type": "text"
-    },
-    "created_by_user": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "plugin::users-permissions.user",
-      "inversedBy": "created_archives"
-    },
-    "updated_by_user": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "plugin::users-permissions.user",
-      "inversedBy": "updated_archives"
     },
     "apartment": {
       "type": "relation",
@@ -143,11 +119,23 @@
       "relation": "oneToOne",
       "target": "api::sex.sex"
     },
-    "archive_sales": {
+    "note_in": {
+      "type": "string"
+    },
+    "date_in": {
+      "type": "date"
+    },
+    "archive": {
       "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::archive-sale.archive-sale",
-      "mappedBy": "archive"
+      "relation": "manyToOne",
+      "target": "api::archive.archive",
+      "inversedBy": "archive_sales"
+    },
+    "sale": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::sale.sale",
+      "inversedBy": "archive_sales"
     }
   }
 }

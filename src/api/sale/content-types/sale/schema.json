@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sales",
+  "info": {
+    "singularName": "sale",
+    "pluralName": "sales",
+    "displayName": "Vendite",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "date": {
+      "type": "date"
+    },
+    "note": {
+      "type": "text"
+    },
+    "reference": {
+      "type": "string"
+    },
+    "archive_sales": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::archive-sale.archive-sale",
+      "mappedBy": "sale"
+    }
+  }
+}

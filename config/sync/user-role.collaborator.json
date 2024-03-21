@@ -25,6 +25,21 @@
       "action": "api::archive-loan.archive-loan.update"
     },
     {
+      "action": "api::archive-sale.archive-sale.create"
+    },
+    {
+      "action": "api::archive-sale.archive-sale.delete"
+    },
+    {
+      "action": "api::archive-sale.archive-sale.find"
+    },
+    {
+      "action": "api::archive-sale.archive-sale.findOne"
+    },
+    {
+      "action": "api::archive-sale.archive-sale.update"
+    },
+    {
       "action": "api::archive.archive.find"
     },
     {
@@ -35,15 +50,6 @@
     },
     {
       "action": "api::box.box.findOne"
-    },
-    {
-      "action": "api::configuration.configuration.delete"
-    },
-    {
-      "action": "api::configuration.configuration.find"
-    },
-    {
-      "action": "api::configuration.configuration.update"
     },
     {
       "action": "api::folder.folder.create"
@@ -80,6 +86,21 @@
     },
     {
       "action": "api::place.place.findOne"
+    },
+    {
+      "action": "api::sale.sale.create"
+    },
+    {
+      "action": "api::sale.sale.delete"
+    },
+    {
+      "action": "api::sale.sale.find"
+    },
+    {
+      "action": "api::sale.sale.findOne"
+    },
+    {
+      "action": "api::sale.sale.update"
     },
     {
       "action": "api::sector.sector.find"
