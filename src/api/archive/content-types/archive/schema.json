@@ -150,7 +150,8 @@
       "mappedBy": "archive"
     },
     "is_sold": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
     },
     "sold_date": {
       "type": "date"

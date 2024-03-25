@@ -952,7 +952,7 @@ export interface ApiArchiveArchive extends Schema.CollectionType {
       'oneToMany',
       'api::archive-sale.archive-sale'
     >;
-    is_sold: Attribute.Boolean;
+    is_sold: Attribute.Boolean & Attribute.DefaultTo<false>;
     sold_date: Attribute.Date;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
