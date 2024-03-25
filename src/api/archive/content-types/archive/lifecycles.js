@@ -114,6 +114,7 @@ async function doBeforeCreateAndUpdate(event) {
 }
 
 async function loadTypology(name, value) {
+  if (value.connect) value = value.connect;
   value = value.map((t) => t.id || t);
 
   if (value && value.length > 0) {
