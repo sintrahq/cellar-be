@@ -113,33 +113,8 @@
       "subject": "api::archive-sale.archive-sale",
       "properties": {
         "fields": [
-          "description",
-          "t_1s",
-          "t_2s",
-          "t_3s",
-          "t_4s",
-          "inventory",
-          "images",
-          "is_mock",
-          "note",
-          "apartment",
-          "place",
-          "shelf",
-          "box",
-          "sector",
-          "producer",
-          "distributor",
-          "race",
-          "production_date",
-          "purchase_date",
-          "value",
-          "quantity",
-          "weight",
-          "seasoning_date",
-          "purchase_price_kg",
-          "sex",
-          "note_in",
-          "date_in",
+          "note_out",
+          "date_out",
           "archive",
           "sale"
         ]
@@ -159,33 +134,8 @@
       "subject": "api::archive-sale.archive-sale",
       "properties": {
         "fields": [
-          "description",
-          "t_1s",
-          "t_2s",
-          "t_3s",
-          "t_4s",
-          "inventory",
-          "images",
-          "is_mock",
-          "note",
-          "apartment",
-          "place",
-          "shelf",
-          "box",
-          "sector",
-          "producer",
-          "distributor",
-          "race",
-          "production_date",
-          "purchase_date",
-          "value",
-          "quantity",
-          "weight",
-          "seasoning_date",
-          "purchase_price_kg",
-          "sex",
-          "note_in",
-          "date_in",
+          "note_out",
+          "date_out",
           "archive",
           "sale"
         ]
@@ -198,33 +148,8 @@
       "subject": "api::archive-sale.archive-sale",
       "properties": {
         "fields": [
-          "description",
-          "t_1s",
-          "t_2s",
-          "t_3s",
-          "t_4s",
-          "inventory",
-          "images",
-          "is_mock",
-          "note",
-          "apartment",
-          "place",
-          "shelf",
-          "box",
-          "sector",
-          "producer",
-          "distributor",
-          "race",
-          "production_date",
-          "purchase_date",
-          "value",
-          "quantity",
-          "weight",
-          "seasoning_date",
-          "purchase_price_kg",
-          "sex",
-          "note_in",
-          "date_in",
+          "note_out",
+          "date_out",
           "archive",
           "sale"
         ]
@@ -266,7 +191,9 @@
           "seasoning_date",
           "purchase_price_kg",
           "sex",
-          "archive_sales"
+          "archive_sales",
+          "is_sold",
+          "sold_date"
         ]
       },
       "conditions": []
@@ -313,7 +240,9 @@
           "seasoning_date",
           "purchase_price_kg",
           "sex",
-          "archive_sales"
+          "archive_sales",
+          "is_sold",
+          "sold_date"
         ]
       },
       "conditions": []
@@ -353,7 +282,9 @@
           "seasoning_date",
           "purchase_price_kg",
           "sex",
-          "archive_sales"
+          "archive_sales",
+          "is_sold",
+          "sold_date"
         ]
       },
       "conditions": []

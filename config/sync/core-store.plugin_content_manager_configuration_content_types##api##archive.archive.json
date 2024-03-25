@@ -449,12 +449,40 @@
           "placeholder": "",
           "visible": true,
           "editable": true,
-          "mainField": "description"
+          "mainField": "note_out"
         },
         "list": {
           "label": "archive_sales",
           "searchable": false,
           "sortable": false
+        }
+      },
+      "is_sold": {
+        "edit": {
+          "label": "is_sold",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "is_sold",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "sold_date": {
+        "edit": {
+          "label": "sold_date",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "sold_date",
+          "searchable": true,
+          "sortable": true
         }
       },
       "createdAt": {
@@ -670,6 +698,16 @@
           {
             "name": "archive_sales",
             "size": 6
+          }
+        ],
+        [
+          {
+            "name": "is_sold",
+            "size": 4
+          },
+          {
+            "name": "sold_date",
+            "size": 4
           }
         ]
       ]

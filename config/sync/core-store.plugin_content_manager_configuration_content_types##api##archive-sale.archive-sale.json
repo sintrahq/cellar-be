@@ -6,8 +6,8 @@
       "filterable": true,
       "searchable": true,
       "pageSize": 10,
-      "mainField": "description",
-      "defaultSortBy": "description",
+      "mainField": "note_out",
+      "defaultSortBy": "note_out",
       "defaultSortOrder": "ASC"
     },
     "metadatas": {
@@ -19,393 +19,30 @@
           "sortable": true
         }
       },
-      "description": {
+      "note_out": {
         "edit": {
-          "label": "description",
+          "label": "note_out",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "description",
+          "label": "note_out",
           "searchable": true,
           "sortable": true
         }
       },
-      "t_1s": {
+      "date_out": {
         "edit": {
-          "label": "t_1s",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true,
-          "mainField": "name"
-        },
-        "list": {
-          "label": "t_1s",
-          "searchable": false,
-          "sortable": false
-        }
-      },
-      "t_2s": {
-        "edit": {
-          "label": "t_2s",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true,
-          "mainField": "name"
-        },
-        "list": {
-          "label": "t_2s",
-          "searchable": false,
-          "sortable": false
-        }
-      },
-      "t_3s": {
-        "edit": {
-          "label": "t_3s",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true,
-          "mainField": "name"
-        },
-        "list": {
-          "label": "t_3s",
-          "searchable": false,
-          "sortable": false
-        }
-      },
-      "t_4s": {
-        "edit": {
-          "label": "t_4s",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true,
-          "mainField": "name"
-        },
-        "list": {
-          "label": "t_4s",
-          "searchable": false,
-          "sortable": false
-        }
-      },
-      "inventory": {
-        "edit": {
-          "label": "inventory",
+          "label": "date_out",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "inventory",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "images": {
-        "edit": {
-          "label": "images",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "images",
-          "searchable": false,
-          "sortable": false
-        }
-      },
-      "is_mock": {
-        "edit": {
-          "label": "is_mock",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "is_mock",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "note": {
-        "edit": {
-          "label": "note",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "note",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "apartment": {
-        "edit": {
-          "label": "apartment",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true,
-          "mainField": "name"
-        },
-        "list": {
-          "label": "apartment",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "place": {
-        "edit": {
-          "label": "place",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true,
-          "mainField": "name"
-        },
-        "list": {
-          "label": "place",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "shelf": {
-        "edit": {
-          "label": "shelf",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true,
-          "mainField": "name"
-        },
-        "list": {
-          "label": "shelf",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "box": {
-        "edit": {
-          "label": "box",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true,
-          "mainField": "name"
-        },
-        "list": {
-          "label": "box",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "sector": {
-        "edit": {
-          "label": "sector",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true,
-          "mainField": "name"
-        },
-        "list": {
-          "label": "sector",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "producer": {
-        "edit": {
-          "label": "producer",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true,
-          "mainField": "name"
-        },
-        "list": {
-          "label": "producer",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "distributor": {
-        "edit": {
-          "label": "distributor",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true,
-          "mainField": "name"
-        },
-        "list": {
-          "label": "distributor",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "race": {
-        "edit": {
-          "label": "race",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true,
-          "mainField": "name"
-        },
-        "list": {
-          "label": "race",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "production_date": {
-        "edit": {
-          "label": "production_date",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "production_date",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "purchase_date": {
-        "edit": {
-          "label": "purchase_date",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "purchase_date",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "value": {
-        "edit": {
-          "label": "value",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "value",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "quantity": {
-        "edit": {
-          "label": "quantity",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "quantity",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "weight": {
-        "edit": {
-          "label": "weight",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "weight",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "seasoning_date": {
-        "edit": {
-          "label": "seasoning_date",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "seasoning_date",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "purchase_price_kg": {
-        "edit": {
-          "label": "purchase_price_kg",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "purchase_price_kg",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "sex": {
-        "edit": {
-          "label": "sex",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true,
-          "mainField": "name"
-        },
-        "list": {
-          "label": "sex",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "note_in": {
-        "edit": {
-          "label": "note_in",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "note_in",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "date_in": {
-        "edit": {
-          "label": "date_in",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "date_in",
+          "label": "date_out",
           "searchable": true,
           "sortable": true
         }
@@ -502,144 +139,11 @@
     "layouts": {
       "list": [
         "id",
-        "description",
-        "t_1s",
-        "t_2s"
+        "note_out",
+        "date_out"
       ],
       "edit": [
         [
-          {
-            "name": "description",
-            "size": 6
-          },
-          {
-            "name": "t_1s",
-            "size": 6
-          }
-        ],
-        [
-          {
-            "name": "t_2s",
-            "size": 6
-          },
-          {
-            "name": "t_3s",
-            "size": 6
-          }
-        ],
-        [
-          {
-            "name": "t_4s",
-            "size": 6
-          },
-          {
-            "name": "inventory",
-            "size": 6
-          }
-        ],
-        [
-          {
-            "name": "images",
-            "size": 6
-          },
-          {
-            "name": "is_mock",
-            "size": 4
-          }
-        ],
-        [
-          {
-            "name": "note",
-            "size": 6
-          },
-          {
-            "name": "apartment",
-            "size": 6
-          }
-        ],
-        [
-          {
-            "name": "place",
-            "size": 6
-          },
-          {
-            "name": "shelf",
-            "size": 6
-          }
-        ],
-        [
-          {
-            "name": "box",
-            "size": 6
-          },
-          {
-            "name": "sector",
-            "size": 6
-          }
-        ],
-        [
-          {
-            "name": "producer",
-            "size": 6
-          },
-          {
-            "name": "distributor",
-            "size": 6
-          }
-        ],
-        [
-          {
-            "name": "race",
-            "size": 6
-          },
-          {
-            "name": "production_date",
-            "size": 4
-          }
-        ],
-        [
-          {
-            "name": "purchase_date",
-            "size": 4
-          },
-          {
-            "name": "value",
-            "size": 4
-          },
-          {
-            "name": "quantity",
-            "size": 4
-          }
-        ],
-        [
-          {
-            "name": "weight",
-            "size": 4
-          },
-          {
-            "name": "seasoning_date",
-            "size": 4
-          },
-          {
-            "name": "purchase_price_kg",
-            "size": 4
-          }
-        ],
-        [
-          {
-            "name": "sex",
-            "size": 6
-          },
-          {
-            "name": "note_in",
-            "size": 6
-          }
-        ],
-        [
-          {
-            "name": "date_in",
-            "size": 4
-          },
           {
             "name": "archive",
             "size": 6
@@ -649,6 +153,16 @@
           {
             "name": "sale",
             "size": 6
+          },
+          {
+            "name": "note_out",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "date_out",
+            "size": 4
           }
         ]
       ]

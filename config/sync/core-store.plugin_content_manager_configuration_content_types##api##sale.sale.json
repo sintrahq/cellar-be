@@ -82,7 +82,7 @@
           "placeholder": "",
           "visible": true,
           "editable": true,
-          "mainField": "description"
+          "mainField": "note_out"
         },
         "list": {
           "label": "archive_sales",
