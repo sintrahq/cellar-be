@@ -148,6 +148,12 @@
       "relation": "oneToMany",
       "target": "api::archive-sale.archive-sale",
       "mappedBy": "archive"
+    },
+    "is_sold": {
+      "type": "boolean"
+    },
+    "sold_date": {
+      "type": "date"
     }
   }
 }

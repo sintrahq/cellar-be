@@ -952,6 +952,8 @@ export interface ApiArchiveArchive extends Schema.CollectionType {
       'oneToMany',
       'api::archive-sale.archive-sale'
     >;
+    is_sold: Attribute.Boolean;
+    sold_date: Attribute.Date;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
@@ -1028,90 +1030,14 @@ export interface ApiArchiveSaleArchiveSale extends Schema.CollectionType {
     singularName: 'archive-sale';
     pluralName: 'archive-sales';
     displayName: 'Archivio - Vendite';
+    description: '';
   };
   options: {
     draftAndPublish: false;
   };
   attributes: {
-    description: Attribute.String;
-    t_1s: Attribute.Relation<
-      'api::archive-sale.archive-sale',
-      'oneToMany',
-      'api::t1.t1'
-    >;
-    t_2s: Attribute.Relation<
-      'api::archive-sale.archive-sale',
-      'oneToMany',
-      'api::t2.t2'
-    >;
-    t_3s: Attribute.Relation<
-      'api::archive-sale.archive-sale',
-      'oneToMany',
-      'api::t3.t3'
-    >;
-    t_4s: Attribute.Relation<
-      'api::archive-sale.archive-sale',
-      'oneToMany',
-      'api::t4.t4'
-    >;
-    inventory: Attribute.String;
-    images: Attribute.Media;
-    is_mock: Attribute.Boolean;
-    note: Attribute.Text;
-    apartment: Attribute.Relation<
-      'api::archive-sale.archive-sale',
-      'oneToOne',
-      'api::apartment.apartment'
-    >;
-    place: Attribute.Relation<
-      'api::archive-sale.archive-sale',
-      'oneToOne',
-      'api::place.place'
-    >;
-    shelf: Attribute.Relation<
-      'api::archive-sale.archive-sale',
-      'oneToOne',
-      'api::shelf.shelf'
-    >;
-    box: Attribute.Relation<
-      'api::archive-sale.archive-sale',
-      'oneToOne',
-      'api::box.box'
-    >;
-    sector: Attribute.Relation<
-      'api::archive-sale.archive-sale',
-      'oneToOne',
-      'api::sector.sector'
-    >;
-    producer: Attribute.Relation<
-      'api::archive-sale.archive-sale',
-      'oneToOne',
-      'api::producer.producer'
-    >;
-    distributor: Attribute.Relation<
-      'api::archive-sale.archive-sale',
-      'oneToOne',
-      'api::distributor.distributor'
-    >;
-    race: Attribute.Relation<
-      'api::archive-sale.archive-sale',
-      'oneToOne',
-      'api::race.race'
-    >;
-    production_date: Attribute.Date;
-    purchase_date: Attribute.Date;
-    value: Attribute.Decimal;
-    quantity: Attribute.Integer;
-    weight: Attribute.Float;
-    seasoning_date: Attribute.Date;
-    purchase_price_kg: Attribute.Decimal;
-    sex: Attribute.Relation<
-      'api::archive-sale.archive-sale',
-      'oneToOne',
-      'api::sex.sex'
-    >;
-    note_in: Attribute.String;
-    date_in: Attribute.Date;
+    note_out: Attribute.String;
+    date_out: Attribute.Date;
     archive: Attribute.Relation<
       'api::archive-sale.archive-sale',
       'manyToOne',

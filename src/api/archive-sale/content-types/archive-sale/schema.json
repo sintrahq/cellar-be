@@ -4,125 +4,18 @@
   "info": {
     "singularName": "archive-sale",
     "pluralName": "archive-sales",
-    "displayName": "Archivio - Vendite"
+    "displayName": "Archivio - Vendite",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
-    "description": {
+    "note_out": {
       "type": "string"
     },
-    "t_1s": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::t1.t1"
-    },
-    "t_2s": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::t2.t2"
-    },
-    "t_3s": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::t3.t3"
-    },
-    "t_4s": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::t4.t4"
-    },
-    "inventory": {
-      "type": "string"
-    },
-    "images": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
-      "type": "media",
-      "multiple": true
-    },
-    "is_mock": {
-      "type": "boolean"
-    },
-    "note": {
-      "type": "text"
-    },
-    "apartment": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::apartment.apartment"
-    },
-    "place": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::place.place"
-    },
-    "shelf": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::shelf.shelf"
-    },
-    "box": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::box.box"
-    },
-    "sector": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::sector.sector"
-    },
-    "producer": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::producer.producer"
-    },
-    "distributor": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::distributor.distributor"
-    },
-    "race": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::race.race"
-    },
-    "production_date": {
-      "type": "date"
-    },
-    "purchase_date": {
-      "type": "date"
-    },
-    "value": {
-      "type": "decimal"
-    },
-    "quantity": {
-      "type": "integer"
-    },
-    "weight": {
-      "type": "float"
-    },
-    "seasoning_date": {
-      "type": "date"
-    },
-    "purchase_price_kg": {
-      "type": "decimal"
-    },
-    "sex": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::sex.sex"
-    },
-    "note_in": {
-      "type": "string"
-    },
-    "date_in": {
+    "date_out": {
       "type": "date"
     },
     "archive": {
