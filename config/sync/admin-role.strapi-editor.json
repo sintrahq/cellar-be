@@ -113,6 +113,8 @@
       "subject": "api::archive-sale.archive-sale",
       "properties": {
         "fields": [
+          "note_out",
+          "date_out",
           "archive",
           "sale"
         ]
@@ -132,6 +134,8 @@
       "subject": "api::archive-sale.archive-sale",
       "properties": {
         "fields": [
+          "note_out",
+          "date_out",
           "archive",
           "sale"
         ]
@@ -144,6 +148,8 @@
       "subject": "api::archive-sale.archive-sale",
       "properties": {
         "fields": [
+          "note_out",
+          "date_out",
           "archive",
           "sale"
         ]
@@ -184,7 +190,10 @@
           "weight",
           "seasoning_date",
           "purchase_price_kg",
-          "sex"
+          "sex",
+          "archive_sales",
+          "is_sold",
+          "sold_date"
         ]
       },
       "conditions": []
@@ -230,7 +239,10 @@
           "weight",
           "seasoning_date",
           "purchase_price_kg",
-          "sex"
+          "sex",
+          "archive_sales",
+          "is_sold",
+          "sold_date"
         ]
       },
       "conditions": []
@@ -269,7 +281,10 @@
           "weight",
           "seasoning_date",
           "purchase_price_kg",
-          "sex"
+          "sex",
+          "archive_sales",
+          "is_sold",
+          "sold_date"
         ]
       },
       "conditions": []
@@ -668,7 +683,8 @@
           "name",
           "date",
           "note",
-          "reference"
+          "reference",
+          "archive_sales"
         ]
       },
       "conditions": []
@@ -689,7 +705,8 @@
           "name",
           "date",
           "note",
-          "reference"
+          "reference",
+          "archive_sales"
         ]
       },
       "conditions": []
@@ -703,7 +720,8 @@
           "name",
           "date",
           "note",
-          "reference"
+          "reference",
+          "archive_sales"
         ]
       },
       "conditions": []
