@@ -5,15 +5,17 @@ module.exports = {
       const t1 = await loadTypology("t1", params.data.t_1s);
 
       // NOTE: Increment the t1 and save it
-      t1.inventory_counter++;
-      await strapi.db.query(`api::t1.t1`).update({
-        where: {
-          id: t1.id,
-        },
-        data: t1,
-      });
-      const counter = String(t1.inventory_counter).padStart(6, "0");
-      event.params.data.inventory = `${t1.code}${counter}`;
+      if (!event.params.data.inventory) {
+        t1.inventory_counter++;
+        await strapi.db.query(`api::t1.t1`).update({
+          where: {
+            id: t1.id,
+          },
+          data: t1,
+        });
+        const counter = String(t1.inventory_counter).padStart(6, "0");
+        event.params.data.inventory = `${t1.code}${counter}`;
+      }
 
       await doBeforeCreateAndUpdate(event);
     }
