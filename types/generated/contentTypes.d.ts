@@ -953,7 +953,6 @@ export interface ApiArchiveArchive extends Schema.CollectionType {
       'api::archive-sale.archive-sale'
     >;
     is_sold: Attribute.Boolean & Attribute.DefaultTo<false>;
-    sold_date: Attribute.Date;
     sale: Attribute.Relation<
       'api::archive.archive',
       'oneToOne',

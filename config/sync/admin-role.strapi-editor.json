@@ -192,8 +192,7 @@
           "purchase_price_kg",
           "sex",
           "archive_sales",
-          "is_sold",
-          "sold_date"
+          "is_sold"
         ]
       },
       "conditions": []
@@ -241,8 +240,7 @@
           "purchase_price_kg",
           "sex",
           "archive_sales",
-          "is_sold",
-          "sold_date"
+          "is_sold"
         ]
       },
       "conditions": []
@@ -283,8 +281,7 @@
           "purchase_price_kg",
           "sex",
           "archive_sales",
-          "is_sold",
-          "sold_date"
+          "is_sold"
         ]
       },
       "conditions": []

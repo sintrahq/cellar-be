@@ -471,20 +471,6 @@
           "sortable": true
         }
       },
-      "sold_date": {
-        "edit": {
-          "label": "sold_date",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "sold_date",
-          "searchable": true,
-          "sortable": true
-        }
-      },
       "sale": {
         "edit": {
           "label": "sale",
@@ -718,10 +704,6 @@
         [
           {
             "name": "is_sold",
-            "size": 4
-          },
-          {
-            "name": "sold_date",
             "size": 4
           }
         ],

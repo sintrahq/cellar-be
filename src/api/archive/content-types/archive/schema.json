@@ -153,9 +153,6 @@
       "type": "boolean",
       "default": false
     },
-    "sold_date": {
-      "type": "date"
-    },
     "sale": {
       "type": "relation",
       "relation": "oneToOne",
