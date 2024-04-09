@@ -485,6 +485,21 @@
           "sortable": true
         }
       },
+      "sale": {
+        "edit": {
+          "label": "sale",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "name"
+        },
+        "list": {
+          "label": "sale",
+          "searchable": true,
+          "sortable": true
+        }
+      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -708,6 +723,12 @@
           {
             "name": "sold_date",
             "size": 4
+          }
+        ],
+        [
+          {
+            "name": "sale",
+            "size": 6
           }
         ]
       ]

@@ -193,7 +193,8 @@
           "sex",
           "archive_sales",
           "is_sold",
-          "sold_date"
+          "sold_date",
+          "sale"
         ]
       },
       "conditions": []
@@ -242,7 +243,8 @@
           "sex",
           "archive_sales",
           "is_sold",
-          "sold_date"
+          "sold_date",
+          "sale"
         ]
       },
       "conditions": []
@@ -284,7 +286,8 @@
           "sex",
           "archive_sales",
           "is_sold",
-          "sold_date"
+          "sold_date",
+          "sale"
         ]
       },
       "conditions": []

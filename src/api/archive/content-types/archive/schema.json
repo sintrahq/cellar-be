@@ -155,6 +155,11 @@
     },
     "sold_date": {
       "type": "date"
+    },
+    "sale": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::sale.sale"
     }
   }
 }
