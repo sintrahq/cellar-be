@@ -16,6 +16,12 @@
       "action": "api::archive-loan.archive-loan.findOne"
     },
     {
+      "action": "api::archive-sale.archive-sale.find"
+    },
+    {
+      "action": "api::archive-sale.archive-sale.findOne"
+    },
+    {
       "action": "api::archive.archive.find"
     },
     {
@@ -26,9 +32,6 @@
     },
     {
       "action": "api::box.box.findOne"
-    },
-    {
-      "action": "api::configuration.configuration.find"
     },
     {
       "action": "api::folder.folder.find"
@@ -47,6 +50,12 @@
     },
     {
       "action": "api::place.place.findOne"
+    },
+    {
+      "action": "api::sale.sale.find"
+    },
+    {
+      "action": "api::sale.sale.findOne"
     },
     {
       "action": "api::sector.sector.find"

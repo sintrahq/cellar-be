@@ -110,6 +110,52 @@
     {
       "action": "plugin::content-manager.explorer.create",
       "actionParameters": {},
+      "subject": "api::archive-sale.archive-sale",
+      "properties": {
+        "fields": [
+          "note_out",
+          "archive",
+          "sale"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
+      "subject": "api::archive-sale.archive-sale",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::archive-sale.archive-sale",
+      "properties": {
+        "fields": [
+          "note_out",
+          "archive",
+          "sale"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::archive-sale.archive-sale",
+      "properties": {
+        "fields": [
+          "note_out",
+          "archive",
+          "sale"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
       "subject": "api::archive.archive",
       "properties": {
         "fields": [
@@ -141,7 +187,9 @@
           "weight",
           "seasoning_date",
           "purchase_price_kg",
-          "sex"
+          "sex",
+          "archive_sales",
+          "is_sold"
         ]
       },
       "conditions": []
@@ -187,7 +235,9 @@
           "weight",
           "seasoning_date",
           "purchase_price_kg",
-          "sex"
+          "sex",
+          "archive_sales",
+          "is_sold"
         ]
       },
       "conditions": []
@@ -226,7 +276,9 @@
           "weight",
           "seasoning_date",
           "purchase_price_kg",
-          "sex"
+          "sex",
+          "archive_sales",
+          "is_sold"
         ]
       },
       "conditions": []
@@ -612,6 +664,58 @@
         "fields": [
           "name",
           "seasoning_months"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
+      "subject": "api::sale.sale",
+      "properties": {
+        "fields": [
+          "name",
+          "date",
+          "note",
+          "reference",
+          "archive_sales"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
+      "subject": "api::sale.sale",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::sale.sale",
+      "properties": {
+        "fields": [
+          "name",
+          "date",
+          "note",
+          "reference",
+          "archive_sales"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::sale.sale",
+      "properties": {
+        "fields": [
+          "name",
+          "date",
+          "note",
+          "reference",
+          "archive_sales"
         ]
       },
       "conditions": []

@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "archive_sales",
+  "info": {
+    "singularName": "archive-sale",
+    "pluralName": "archive-sales",
+    "displayName": "Archivio - Vendite",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "note_out": {
+      "type": "string"
+    },
+    "archive": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::archive.archive",
+      "inversedBy": "archive_sales"
+    },
+    "sale": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::sale.sale",
+      "inversedBy": "archive_sales"
+    }
+  }
+}

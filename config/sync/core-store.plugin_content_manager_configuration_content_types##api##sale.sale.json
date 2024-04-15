@@ -1,5 +1,5 @@
 {
-  "key": "plugin_content_manager_configuration_content_types::plugin::content-releases.release",
+  "key": "plugin_content_manager_configuration_content_types::api::sale.sale",
   "value": {
     "settings": {
       "bulkable": true,
@@ -33,73 +33,59 @@
           "sortable": true
         }
       },
-      "releasedAt": {
+      "date": {
         "edit": {
-          "label": "releasedAt",
+          "label": "date",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "releasedAt",
+          "label": "date",
           "searchable": true,
           "sortable": true
         }
       },
-      "scheduledAt": {
+      "note": {
         "edit": {
-          "label": "scheduledAt",
+          "label": "note",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "scheduledAt",
+          "label": "note",
           "searchable": true,
           "sortable": true
         }
       },
-      "timezone": {
+      "reference": {
         "edit": {
-          "label": "timezone",
+          "label": "reference",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "timezone",
+          "label": "reference",
           "searchable": true,
           "sortable": true
         }
       },
-      "status": {
+      "archive_sales": {
         "edit": {
-          "label": "status",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "status",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "actions": {
-        "edit": {
-          "label": "actions",
+          "label": "archive_sales",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true,
-          "mainField": "contentType"
+          "mainField": "note_out"
         },
         "list": {
-          "label": "actions",
+          "label": "archive_sales",
           "searchable": false,
           "sortable": false
         }
@@ -167,8 +153,8 @@
       "list": [
         "id",
         "name",
-        "releasedAt",
-        "scheduledAt"
+        "date",
+        "note"
       ],
       "edit": [
         [
@@ -177,33 +163,29 @@
             "size": 6
           },
           {
-            "name": "releasedAt",
+            "name": "date",
+            "size": 4
+          }
+        ],
+        [
+          {
+            "name": "note",
+            "size": 6
+          },
+          {
+            "name": "reference",
             "size": 6
           }
         ],
         [
           {
-            "name": "scheduledAt",
-            "size": 6
-          },
-          {
-            "name": "timezone",
-            "size": 6
-          }
-        ],
-        [
-          {
-            "name": "actions",
-            "size": 6
-          },
-          {
-            "name": "status",
+            "name": "archive_sales",
             "size": 6
           }
         ]
       ]
     },
-    "uid": "plugin::content-releases.release"
+    "uid": "api::sale.sale"
   },
   "type": "object",
   "environment": null,

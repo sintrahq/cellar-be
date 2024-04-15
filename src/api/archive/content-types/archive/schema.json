@@ -142,6 +142,21 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::sex.sex"
+    },
+    "archive_sales": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::archive-sale.archive-sale",
+      "mappedBy": "archive"
+    },
+    "is_sold": {
+      "type": "boolean",
+      "default": false
+    },
+    "sale": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::sale.sale"
     }
   }
 }
