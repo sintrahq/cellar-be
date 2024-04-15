@@ -33,7 +33,7 @@ module.exports = {
               );
 
               return response
-                .map((a) => (a.quantity ? a.value * a.quantity : a.value))
+                .map((a) => (a.quantity ? a.value * a.quantity : 0))
                 .reduce((a, c) => a + c, 0);
             },
           });
