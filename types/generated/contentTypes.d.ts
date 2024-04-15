@@ -1041,7 +1041,6 @@ export interface ApiArchiveSaleArchiveSale extends Schema.CollectionType {
   };
   attributes: {
     note_out: Attribute.String;
-    date_out: Attribute.Date;
     archive: Attribute.Relation<
       'api::archive-sale.archive-sale',
       'manyToOne',

@@ -130,7 +130,6 @@
       "properties": {
         "fields": [
           "note_out",
-          "date_out",
           "archive",
           "sale"
         ]
@@ -151,7 +150,6 @@
       "properties": {
         "fields": [
           "note_out",
-          "date_out",
           "archive",
           "sale"
         ]
@@ -165,7 +163,6 @@
       "properties": {
         "fields": [
           "note_out",
-          "date_out",
           "archive",
           "sale"
         ]

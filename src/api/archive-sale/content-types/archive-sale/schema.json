@@ -15,9 +15,6 @@
     "note_out": {
       "type": "string"
     },
-    "date_out": {
-      "type": "date"
-    },
     "archive": {
       "type": "relation",
       "relation": "manyToOne",

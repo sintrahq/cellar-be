@@ -33,20 +33,6 @@
           "sortable": true
         }
       },
-      "date_out": {
-        "edit": {
-          "label": "date_out",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "date_out",
-          "searchable": true,
-          "sortable": true
-        }
-      },
       "archive": {
         "edit": {
           "label": "archive",
@@ -139,8 +125,7 @@
     "layouts": {
       "list": [
         "id",
-        "note_out",
-        "date_out"
+        "note_out"
       ],
       "edit": [
         [
@@ -157,12 +142,6 @@
           {
             "name": "note_out",
             "size": 6
-          }
-        ],
-        [
-          {
-            "name": "date_out",
-            "size": 4
           }
         ]
       ]
