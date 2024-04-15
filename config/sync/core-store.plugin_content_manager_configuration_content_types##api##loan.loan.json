@@ -104,20 +104,6 @@
           "sortable": false
         }
       },
-      "identifier": {
-        "edit": {
-          "label": "identifier",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "identifier",
-          "searchable": true,
-          "sortable": true
-        }
-      },
       "created_by_user": {
         "edit": {
           "label": "created_by_user",
@@ -246,10 +232,6 @@
           }
         ],
         [
-          {
-            "name": "identifier",
-            "size": 6
-          },
           {
             "name": "created_by_user",
             "size": 6

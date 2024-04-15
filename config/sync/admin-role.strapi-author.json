@@ -512,7 +512,6 @@
           "note",
           "reference",
           "archive_loans",
-          "identifier",
           "created_by_user",
           "updated_by_user"
         ]
@@ -542,7 +541,6 @@
           "note",
           "reference",
           "archive_loans",
-          "identifier",
           "created_by_user",
           "updated_by_user"
         ]
@@ -563,7 +561,6 @@
           "note",
           "reference",
           "archive_loans",
-          "identifier",
           "created_by_user",
           "updated_by_user"
         ]

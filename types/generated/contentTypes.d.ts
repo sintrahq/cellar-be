@@ -1201,7 +1201,6 @@ export interface ApiLoanLoan extends Schema.CollectionType {
       'oneToMany',
       'api::archive-loan.archive-loan'
     >;
-    identifier: Attribute.String;
     created_by_user: Attribute.Relation<
       'api::loan.loan',
       'manyToOne',

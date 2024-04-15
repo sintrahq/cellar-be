@@ -35,9 +35,6 @@
       "target": "api::archive-loan.archive-loan",
       "mappedBy": "loan"
     },
-    "identifier": {
-      "type": "string"
-    },
     "created_by_user": {
       "type": "relation",
       "relation": "manyToOne",
