@@ -85,7 +85,7 @@ async function doBeforeCreateAndUpdate(event) {
 
   Object.assign(archive, data);
 
-  let brand;
+  /*let brand;
   if (archive.brand) {
     brand = await strapi.entityService.findOne(
       "api::brand.brand",
@@ -105,7 +105,7 @@ async function doBeforeCreateAndUpdate(event) {
 
   const typology = t2 ? t2 : t1;
 
-  /* data.description = getDescription({
+  data.description = getDescription({
     year: archive.year,
     brand,
     season,
