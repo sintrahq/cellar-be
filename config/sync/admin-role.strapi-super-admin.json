@@ -190,7 +190,10 @@
           "sex",
           "archive_sales",
           "is_sold",
-          "sale"
+          "sale",
+          "is_visible_to_editor",
+          "is_visible_to_collaborator",
+          "is_visible_to_viewer"
         ]
       },
       "conditions": []
@@ -239,7 +242,10 @@
           "sex",
           "archive_sales",
           "is_sold",
-          "sale"
+          "sale",
+          "is_visible_to_editor",
+          "is_visible_to_collaborator",
+          "is_visible_to_viewer"
         ]
       },
       "conditions": []
@@ -281,7 +287,10 @@
           "sex",
           "archive_sales",
           "is_sold",
-          "sale"
+          "sale",
+          "is_visible_to_editor",
+          "is_visible_to_collaborator",
+          "is_visible_to_viewer"
         ]
       },
       "conditions": []
