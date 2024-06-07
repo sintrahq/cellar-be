@@ -486,6 +486,48 @@
           "sortable": true
         }
       },
+      "is_visible_to_editor": {
+        "edit": {
+          "label": "is_visible_to_editor",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "is_visible_to_editor",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "is_visible_to_collaborator": {
+        "edit": {
+          "label": "is_visible_to_collaborator",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "is_visible_to_collaborator",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "is_visible_to_viewer": {
+        "edit": {
+          "label": "is_visible_to_viewer",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "is_visible_to_viewer",
+          "searchable": true,
+          "sortable": true
+        }
+      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -711,6 +753,20 @@
           {
             "name": "sale",
             "size": 6
+          },
+          {
+            "name": "is_visible_to_editor",
+            "size": 4
+          }
+        ],
+        [
+          {
+            "name": "is_visible_to_collaborator",
+            "size": 4
+          },
+          {
+            "name": "is_visible_to_viewer",
+            "size": 4
           }
         ]
       ]

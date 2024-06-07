@@ -157,6 +157,18 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::sale.sale"
+    },
+    "is_visible_to_editor": {
+      "type": "boolean",
+      "default": true
+    },
+    "is_visible_to_collaborator": {
+      "type": "boolean",
+      "default": true
+    },
+    "is_visible_to_viewer": {
+      "type": "boolean",
+      "default": true
     }
   }
 }

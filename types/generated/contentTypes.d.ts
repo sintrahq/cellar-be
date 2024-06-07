@@ -958,6 +958,9 @@ export interface ApiArchiveArchive extends Schema.CollectionType {
       'oneToOne',
       'api::sale.sale'
     >;
+    is_visible_to_editor: Attribute.Boolean & Attribute.DefaultTo<true>;
+    is_visible_to_collaborator: Attribute.Boolean & Attribute.DefaultTo<true>;
+    is_visible_to_viewer: Attribute.Boolean & Attribute.DefaultTo<true>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
