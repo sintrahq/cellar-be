@@ -148,6 +148,20 @@
           "sortable": true
         }
       },
+      "is_visible_to_ufficio_stile": {
+        "edit": {
+          "label": "is_visible_to_ufficio_stile",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "is_visible_to_ufficio_stile",
+          "searchable": true,
+          "sortable": true
+        }
+      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -256,6 +270,12 @@
           },
           {
             "name": "identifier",
+            "size": 4
+          }
+        ],
+        [
+          {
+            "name": "is_visible_to_ufficio_stile",
             "size": 4
           }
         ]

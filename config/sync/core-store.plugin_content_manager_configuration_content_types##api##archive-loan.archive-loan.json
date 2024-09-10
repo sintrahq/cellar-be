@@ -135,6 +135,20 @@
           "sortable": true
         }
       },
+      "office_note": {
+        "edit": {
+          "label": "office_note",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "office_note",
+          "searchable": true,
+          "sortable": true
+        }
+      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -239,6 +253,12 @@
           },
           {
             "name": "updated_by_user",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "office_note",
             "size": 6
           }
         ]

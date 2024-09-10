@@ -169,6 +169,11 @@
     "is_visible_to_viewer": {
       "type": "boolean",
       "default": true
+    },
+    "is_visible_to_ufficio_stile": {
+      "type": "boolean",
+      "default": true,
+      "required": false
     }
   }
 }

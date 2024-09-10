@@ -52,6 +52,9 @@
     },
     "identifier": {
       "type": "integer"
+    },
+    "is_visible_to_ufficio_stile": {
+      "type": "boolean"
     }
   }
 }

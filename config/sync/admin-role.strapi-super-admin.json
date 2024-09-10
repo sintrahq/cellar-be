@@ -59,7 +59,8 @@
           "archive",
           "loan",
           "created_by_user",
-          "updated_by_user"
+          "updated_by_user",
+          "office_note"
         ]
       },
       "conditions": []
@@ -84,7 +85,8 @@
           "archive",
           "loan",
           "created_by_user",
-          "updated_by_user"
+          "updated_by_user",
+          "office_note"
         ]
       },
       "conditions": []
@@ -102,7 +104,8 @@
           "archive",
           "loan",
           "created_by_user",
-          "updated_by_user"
+          "updated_by_user",
+          "office_note"
         ]
       },
       "conditions": []
@@ -193,7 +196,8 @@
           "sale",
           "is_visible_to_editor",
           "is_visible_to_collaborator",
-          "is_visible_to_viewer"
+          "is_visible_to_viewer",
+          "is_visible_to_ufficio_stile"
         ]
       },
       "conditions": []
@@ -245,7 +249,8 @@
           "sale",
           "is_visible_to_editor",
           "is_visible_to_collaborator",
-          "is_visible_to_viewer"
+          "is_visible_to_viewer",
+          "is_visible_to_ufficio_stile"
         ]
       },
       "conditions": []
@@ -290,7 +295,8 @@
           "sale",
           "is_visible_to_editor",
           "is_visible_to_collaborator",
-          "is_visible_to_viewer"
+          "is_visible_to_viewer",
+          "is_visible_to_ufficio_stile"
         ]
       },
       "conditions": []
@@ -416,7 +422,8 @@
           "is_visible_to_editor",
           "is_visible_to_viewer",
           "is_visible_to_collaborator",
-          "identifier"
+          "identifier",
+          "is_visible_to_ufficio_stile"
         ]
       },
       "conditions": []
@@ -442,7 +449,8 @@
           "is_visible_to_editor",
           "is_visible_to_viewer",
           "is_visible_to_collaborator",
-          "identifier"
+          "identifier",
+          "is_visible_to_ufficio_stile"
         ]
       },
       "conditions": []
@@ -461,7 +469,8 @@
           "is_visible_to_editor",
           "is_visible_to_viewer",
           "is_visible_to_collaborator",
-          "identifier"
+          "identifier",
+          "is_visible_to_ufficio_stile"
         ]
       },
       "conditions": []

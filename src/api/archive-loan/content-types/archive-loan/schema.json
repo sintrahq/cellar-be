@@ -47,6 +47,9 @@
       "relation": "manyToOne",
       "target": "plugin::users-permissions.user",
       "inversedBy": "updated_archive_loans"
+    },
+    "office_note": {
+      "type": "string"
     }
   }
 }

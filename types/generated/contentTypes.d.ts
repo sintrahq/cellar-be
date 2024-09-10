@@ -961,6 +961,7 @@ export interface ApiArchiveArchive extends Schema.CollectionType {
     is_visible_to_editor: Attribute.Boolean & Attribute.DefaultTo<true>;
     is_visible_to_collaborator: Attribute.Boolean & Attribute.DefaultTo<true>;
     is_visible_to_viewer: Attribute.Boolean & Attribute.DefaultTo<true>;
+    is_visible_to_ufficio_stile: Attribute.Boolean & Attribute.DefaultTo<true>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
@@ -1014,6 +1015,7 @@ export interface ApiArchiveLoanArchiveLoan extends Schema.CollectionType {
       'manyToOne',
       'plugin::users-permissions.user'
     >;
+    office_note: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
@@ -1165,6 +1167,7 @@ export interface ApiFolderFolder extends Schema.CollectionType {
     is_visible_to_viewer: Attribute.Boolean & Attribute.DefaultTo<false>;
     is_visible_to_collaborator: Attribute.Boolean;
     identifier: Attribute.Integer;
+    is_visible_to_ufficio_stile: Attribute.Boolean;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
