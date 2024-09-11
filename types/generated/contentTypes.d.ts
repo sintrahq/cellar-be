@@ -1217,6 +1217,10 @@ export interface ApiLoanLoan extends Schema.CollectionType {
       'manyToOne',
       'plugin::users-permissions.user'
     >;
+    is_visible_to_viewer: Attribute.Boolean & Attribute.DefaultTo<false>;
+    is_visible_to_ufficio_stile: Attribute.Boolean & Attribute.DefaultTo<false>;
+    is_visible_to_editor: Attribute.Boolean & Attribute.DefaultTo<false>;
+    is_visible_to_collaborator: Attribute.Boolean & Attribute.DefaultTo<false>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<'api::loan.loan', 'oneToOne', 'admin::user'> &

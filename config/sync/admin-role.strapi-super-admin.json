@@ -488,7 +488,11 @@
           "reference",
           "archive_loans",
           "created_by_user",
-          "updated_by_user"
+          "updated_by_user",
+          "is_visible_to_viewer",
+          "is_visible_to_ufficio_stile",
+          "is_visible_to_editor",
+          "is_visible_to_collaborator"
         ]
       },
       "conditions": []
@@ -513,7 +517,11 @@
           "reference",
           "archive_loans",
           "created_by_user",
-          "updated_by_user"
+          "updated_by_user",
+          "is_visible_to_viewer",
+          "is_visible_to_ufficio_stile",
+          "is_visible_to_editor",
+          "is_visible_to_collaborator"
         ]
       },
       "conditions": []
@@ -531,7 +539,11 @@
           "reference",
           "archive_loans",
           "created_by_user",
-          "updated_by_user"
+          "updated_by_user",
+          "is_visible_to_viewer",
+          "is_visible_to_ufficio_stile",
+          "is_visible_to_editor",
+          "is_visible_to_collaborator"
         ]
       },
       "conditions": []

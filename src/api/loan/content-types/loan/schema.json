@@ -46,6 +46,22 @@
       "relation": "manyToOne",
       "target": "plugin::users-permissions.user",
       "inversedBy": "updated_loans"
+    },
+    "is_visible_to_viewer": {
+      "type": "boolean",
+      "default": false
+    },
+    "is_visible_to_ufficio_stile": {
+      "type": "boolean",
+      "default": false
+    },
+    "is_visible_to_editor": {
+      "type": "boolean",
+      "default": false
+    },
+    "is_visible_to_collaborator": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
