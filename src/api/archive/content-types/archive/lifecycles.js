@@ -83,6 +83,14 @@ async function doBeforeCreateAndUpdate(event) {
     );
   }
 
+  if (archive.market_estimate !== data.market_estimate) {
+    if (data.market_estimate) {
+      data.market_estimate_date = new Date();
+    } else {
+      data.market_estimate_date = null;
+    }
+  }
+
   Object.assign(archive, data);
 
   /*let brand;

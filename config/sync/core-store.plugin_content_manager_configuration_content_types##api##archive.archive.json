@@ -542,6 +542,34 @@
           "sortable": true
         }
       },
+      "market_estimate": {
+        "edit": {
+          "label": "market_estimate",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "market_estimate",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "market_estimate_date": {
+        "edit": {
+          "label": "market_estimate_date",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "market_estimate_date",
+          "searchable": true,
+          "sortable": true
+        }
+      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -784,6 +812,16 @@
           },
           {
             "name": "is_visible_to_ufficio_stile",
+            "size": 4
+          }
+        ],
+        [
+          {
+            "name": "market_estimate",
+            "size": 4
+          },
+          {
+            "name": "market_estimate_date",
             "size": 4
           }
         ]
