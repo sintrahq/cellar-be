@@ -180,6 +180,10 @@
     },
     "market_estimate_date": {
       "type": "date"
+    },
+    "n_pieces": {
+      "type": "integer",
+      "min": 0
     }
   }
 }

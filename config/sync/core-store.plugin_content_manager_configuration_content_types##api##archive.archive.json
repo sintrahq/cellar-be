@@ -570,6 +570,20 @@
           "sortable": true
         }
       },
+      "n_pieces": {
+        "edit": {
+          "label": "n_pieces",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "n_pieces",
+          "searchable": true,
+          "sortable": true
+        }
+      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -822,6 +836,10 @@
           },
           {
             "name": "market_estimate_date",
+            "size": 4
+          },
+          {
+            "name": "n_pieces",
             "size": 4
           }
         ]

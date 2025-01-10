@@ -199,7 +199,8 @@
           "is_visible_to_viewer",
           "is_visible_to_ufficio_stile",
           "market_estimate",
-          "market_estimate_date"
+          "market_estimate_date",
+          "n_pieces"
         ]
       },
       "conditions": []
@@ -254,7 +255,8 @@
           "is_visible_to_viewer",
           "is_visible_to_ufficio_stile",
           "market_estimate",
-          "market_estimate_date"
+          "market_estimate_date",
+          "n_pieces"
         ]
       },
       "conditions": []
@@ -302,7 +304,8 @@
           "is_visible_to_viewer",
           "is_visible_to_ufficio_stile",
           "market_estimate",
-          "market_estimate_date"
+          "market_estimate_date",
+          "n_pieces"
         ]
       },
       "conditions": []
