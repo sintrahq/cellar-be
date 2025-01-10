@@ -964,6 +964,13 @@ export interface ApiArchiveArchive extends Schema.CollectionType {
     is_visible_to_ufficio_stile: Attribute.Boolean & Attribute.DefaultTo<true>;
     market_estimate: Attribute.Integer;
     market_estimate_date: Attribute.Date;
+    n_pieces: Attribute.Integer &
+      Attribute.SetMinMax<
+        {
+          min: 0;
+        },
+        number
+      >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
