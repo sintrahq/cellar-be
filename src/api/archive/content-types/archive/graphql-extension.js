@@ -37,6 +37,30 @@ module.exports = {
                 .reduce((a, c) => a + c, 0);
             },
           });
+          t.field("totalArchivesEstimate", {
+            type: "Float",
+            args: getContentTypeArgs(
+              strapi.contentTypes["api::archive.archive"]
+            ),
+            resolve: async (root, args, ctx) => {
+              const transformedArgs = transformArgs(args, {
+                contentType: strapi.contentTypes["api::archive.archive"],
+                usePagination: false,
+              });
+
+              const response = await strapi.entityService.findMany(
+                "api::archive.archive",
+                {
+                  fields: ["market_estimate", "quantity"],
+                  filters: transformedArgs.filters,
+                }
+              );
+
+              return response
+                .map((a) => (a.quantity ? a.market_estimate * a.quantity : 0))
+                .reduce((a, c) => a + c, 0);
+            },
+          });
           t.field("totalArchivesQuantity", {
             type: "Int",
             args: getContentTypeArgs(
