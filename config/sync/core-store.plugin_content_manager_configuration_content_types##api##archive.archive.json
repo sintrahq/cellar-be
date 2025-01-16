@@ -584,6 +584,49 @@
           "sortable": true
         }
       },
+      "grab_weight": {
+        "edit": {
+          "label": "grab_weight",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "grab_weight",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "grab_date": {
+        "edit": {
+          "label": "grab_date",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "grab_date",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "lot": {
+        "edit": {
+          "label": "lot",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "name"
+        },
+        "list": {
+          "label": "lot",
+          "searchable": true,
+          "sortable": true
+        }
+      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -841,6 +884,22 @@
           {
             "name": "n_pieces",
             "size": 4
+          }
+        ],
+        [
+          {
+            "name": "grab_weight",
+            "size": 4
+          },
+          {
+            "name": "grab_date",
+            "size": 4
+          }
+        ],
+        [
+          {
+            "name": "lot",
+            "size": 6
           }
         ]
       ]

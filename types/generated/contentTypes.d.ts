@@ -943,7 +943,13 @@ export interface ApiArchiveArchive extends Schema.CollectionType {
     purchase_date: Attribute.Date;
     value: Attribute.Decimal;
     quantity: Attribute.Integer;
-    weight: Attribute.Float;
+    weight: Attribute.Float &
+      Attribute.SetMinMax<
+        {
+          min: 0;
+        },
+        number
+      >;
     seasoning_date: Attribute.Date;
     purchase_price_kg: Attribute.Decimal;
     sex: Attribute.Relation<'api::archive.archive', 'oneToOne', 'api::sex.sex'>;
@@ -971,6 +977,15 @@ export interface ApiArchiveArchive extends Schema.CollectionType {
         },
         number
       >;
+    grab_weight: Attribute.Float &
+      Attribute.SetMinMax<
+        {
+          min: 0;
+        },
+        number
+      >;
+    grab_date: Attribute.Date;
+    lot: Attribute.Relation<'api::archive.archive', 'oneToOne', 'api::lot.lot'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
@@ -1239,6 +1254,33 @@ export interface ApiLoanLoan extends Schema.CollectionType {
   };
 }
 
+export interface ApiLotLot extends Schema.CollectionType {
+  collectionName: 'lots';
+  info: {
+    singularName: 'lot';
+    pluralName: 'lots';
+    displayName: 'Lotto';
+    description: '';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    name: Attribute.String;
+    producer: Attribute.Relation<
+      'api::lot.lot',
+      'manyToOne',
+      'api::producer.producer'
+    >;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<'api::lot.lot', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<'api::lot.lot', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+  };
+}
+
 export interface ApiPlacePlace extends Schema.CollectionType {
   collectionName: 'places';
   info: {
@@ -1291,6 +1333,11 @@ export interface ApiProducerProducer extends Schema.CollectionType {
     email: Attribute.Email;
     phone: Attribute.String;
     vat_number: Attribute.String;
+    lots: Attribute.Relation<
+      'api::producer.producer',
+      'oneToMany',
+      'api::lot.lot'
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
@@ -1567,6 +1614,7 @@ declare module '@strapi/types' {
       'api::distributor.distributor': ApiDistributorDistributor;
       'api::folder.folder': ApiFolderFolder;
       'api::loan.loan': ApiLoanLoan;
+      'api::lot.lot': ApiLotLot;
       'api::place.place': ApiPlacePlace;
       'api::producer.producer': ApiProducerProducer;
       'api::race.race': ApiRaceRace;

@@ -39,6 +39,12 @@
     },
     "vat_number": {
       "type": "string"
+    },
+    "lots": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::lot.lot",
+      "mappedBy": "producer"
     }
   }
 }

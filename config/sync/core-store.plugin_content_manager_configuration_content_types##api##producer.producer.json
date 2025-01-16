@@ -145,6 +145,21 @@
           "sortable": true
         }
       },
+      "lots": {
+        "edit": {
+          "label": "lots",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "name"
+        },
+        "list": {
+          "label": "lots",
+          "searchable": false,
+          "sortable": false
+        }
+      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -255,6 +270,10 @@
         [
           {
             "name": "vat_number",
+            "size": 6
+          },
+          {
+            "name": "lots",
             "size": 6
           }
         ]

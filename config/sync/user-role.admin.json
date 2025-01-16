@@ -100,6 +100,12 @@
       "action": "api::loan.loan.update"
     },
     {
+      "action": "api::lot.lot.find"
+    },
+    {
+      "action": "api::lot.lot.findOne"
+    },
+    {
       "action": "api::place.place.find"
     },
     {

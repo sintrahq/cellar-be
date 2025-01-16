@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lots",
+  "info": {
+    "singularName": "lot",
+    "pluralName": "lots",
+    "displayName": "Lotto",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "producer": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::producer.producer",
+      "inversedBy": "lots"
+    }
+  }
+}
