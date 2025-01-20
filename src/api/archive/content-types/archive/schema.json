@@ -130,7 +130,8 @@
       "type": "integer"
     },
     "weight": {
-      "type": "float"
+      "type": "float",
+      "min": 0
     },
     "seasoning_date": {
       "type": "date"
@@ -184,6 +185,18 @@
     "n_pieces": {
       "type": "integer",
       "min": 0
+    },
+    "grab_weight": {
+      "type": "float",
+      "min": 0
+    },
+    "grab_date": {
+      "type": "date"
+    },
+    "lot": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::lot.lot"
     }
   }
 }

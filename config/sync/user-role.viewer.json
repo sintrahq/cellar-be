@@ -34,6 +34,12 @@
       "action": "api::box.box.findOne"
     },
     {
+      "action": "api::distributor.distributor.find"
+    },
+    {
+      "action": "api::distributor.distributor.findOne"
+    },
+    {
       "action": "api::folder.folder.find"
     },
     {
@@ -46,10 +52,28 @@
       "action": "api::loan.loan.findOne"
     },
     {
+      "action": "api::lot.lot.find"
+    },
+    {
+      "action": "api::lot.lot.findOne"
+    },
+    {
       "action": "api::place.place.find"
     },
     {
       "action": "api::place.place.findOne"
+    },
+    {
+      "action": "api::producer.producer.find"
+    },
+    {
+      "action": "api::producer.producer.findOne"
+    },
+    {
+      "action": "api::race.race.find"
+    },
+    {
+      "action": "api::race.race.findOne"
     },
     {
       "action": "api::sale.sale.find"
@@ -62,6 +86,12 @@
     },
     {
       "action": "api::sector.sector.findOne"
+    },
+    {
+      "action": "api::sex.sex.find"
+    },
+    {
+      "action": "api::sex.sex.findOne"
     },
     {
       "action": "api::shelf.shelf.find"

@@ -200,7 +200,10 @@
           "is_visible_to_ufficio_stile",
           "market_estimate",
           "market_estimate_date",
-          "n_pieces"
+          "n_pieces",
+          "grab_weight",
+          "grab_date",
+          "lot"
         ]
       },
       "conditions": []
@@ -256,7 +259,10 @@
           "is_visible_to_ufficio_stile",
           "market_estimate",
           "market_estimate_date",
-          "n_pieces"
+          "n_pieces",
+          "grab_weight",
+          "grab_date",
+          "lot"
         ]
       },
       "conditions": []
@@ -305,7 +311,10 @@
           "is_visible_to_ufficio_stile",
           "market_estimate",
           "market_estimate_date",
-          "n_pieces"
+          "n_pieces",
+          "grab_weight",
+          "grab_date",
+          "lot"
         ]
       },
       "conditions": []
@@ -560,6 +569,49 @@
     {
       "action": "plugin::content-manager.explorer.create",
       "actionParameters": {},
+      "subject": "api::lot.lot",
+      "properties": {
+        "fields": [
+          "name",
+          "producer"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
+      "subject": "api::lot.lot",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::lot.lot",
+      "properties": {
+        "fields": [
+          "name",
+          "producer"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::lot.lot",
+      "properties": {
+        "fields": [
+          "name",
+          "producer"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
       "subject": "api::place.place",
       "properties": {
         "fields": [
@@ -614,7 +666,8 @@
           "country",
           "email",
           "phone",
-          "vat_number"
+          "vat_number",
+          "lots"
         ]
       },
       "conditions": []
@@ -640,7 +693,8 @@
           "country",
           "email",
           "phone",
-          "vat_number"
+          "vat_number",
+          "lots"
         ]
       },
       "conditions": []
@@ -659,7 +713,8 @@
           "country",
           "email",
           "phone",
-          "vat_number"
+          "vat_number",
+          "lots"
         ]
       },
       "conditions": []
