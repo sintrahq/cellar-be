@@ -49,6 +49,49 @@
     {
       "action": "plugin::content-manager.explorer.create",
       "actionParameters": {},
+      "subject": "api::box.box",
+      "properties": {
+        "fields": [
+          "name",
+          "isPriorityItem"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
+      "subject": "api::box.box",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::box.box",
+      "properties": {
+        "fields": [
+          "name",
+          "isPriorityItem"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::box.box",
+      "properties": {
+        "fields": [
+          "name",
+          "isPriorityItem"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
       "subject": "api::distributor.distributor",
       "properties": {
         "fields": [
@@ -210,7 +253,8 @@
           "country",
           "email",
           "phone",
-          "vat_number"
+          "vat_number",
+          "lots"
         ]
       },
       "conditions": []
@@ -236,7 +280,8 @@
           "country",
           "email",
           "phone",
-          "vat_number"
+          "vat_number",
+          "lots"
         ]
       },
       "conditions": []
@@ -255,7 +300,8 @@
           "country",
           "email",
           "phone",
-          "vat_number"
+          "vat_number",
+          "lots"
         ]
       },
       "conditions": []
@@ -306,6 +352,49 @@
     {
       "action": "plugin::content-manager.explorer.create",
       "actionParameters": {},
+      "subject": "api::sector.sector",
+      "properties": {
+        "fields": [
+          "isPriorityItem",
+          "name"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
+      "subject": "api::sector.sector",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::sector.sector",
+      "properties": {
+        "fields": [
+          "isPriorityItem",
+          "name"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::sector.sector",
+      "properties": {
+        "fields": [
+          "isPriorityItem",
+          "name"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
       "subject": "api::sex.sex",
       "properties": {
         "fields": [
@@ -339,6 +428,49 @@
       "properties": {
         "fields": [
           "name"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
+      "subject": "api::shelf.shelf",
+      "properties": {
+        "fields": [
+          "name",
+          "isPriorityItem"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
+      "subject": "api::shelf.shelf",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::shelf.shelf",
+      "properties": {
+        "fields": [
+          "name",
+          "isPriorityItem"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::shelf.shelf",
+      "properties": {
+        "fields": [
+          "name",
+          "isPriorityItem"
         ]
       },
       "conditions": []
