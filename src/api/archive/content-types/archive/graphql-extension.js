@@ -83,6 +83,28 @@ module.exports = {
               return response.map((a) => a.quantity).reduce((a, c) => a + c, 0);
             },
           });
+          t.field("totalArchivesNPieces", {
+            type: "Int",
+            args: getContentTypeArgs(
+              strapi.contentTypes["api::archive.archive"]
+            ),
+            resolve: async (root, args, ctx) => {
+              const transformedArgs = transformArgs(args, {
+                contentType: strapi.contentTypes["api::archive.archive"],
+                usePagination: false,
+              });
+
+              const response = await strapi.entityService.findMany(
+                "api::archive.archive",
+                {
+                  fields: ["n_pieces"],
+                  filters: transformedArgs.filters,
+                }
+              );
+
+              return response.map((a) => a.n_pieces).reduce((a, c) => a + c, 0);
+            },
+          });
           t.list.field("neighbours", {
             type: "ArchiveEntity",
             args: getContentTypeArgs(
@@ -148,6 +170,11 @@ module.exports = {
       },
     },
     "Query.totalArchivesQuantity": {
+      auth: {
+        scope: ["api::archive.archive.find"],
+      },
+    },
+    "Query.totalArchivesNPieces": {
       auth: {
         scope: ["api::archive.archive.find"],
       },
