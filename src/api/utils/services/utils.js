@@ -27,7 +27,10 @@ module.exports = () => ({
     await Promise.all(
       parentsWithChildren.map((parentWithChild) => {
         // NOTE: Delete all children if present
-        if (parentWithChild[childrenRelationModel].length) {
+        if (
+          parentWithChild[childrenRelationModel] &&
+          parentWithChild[childrenRelationModel].length
+        ) {
           return strapi.db
             .query(`api::${childrenModel}.${childrenModel}`)
             .deleteMany({
