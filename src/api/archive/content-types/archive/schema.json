@@ -176,16 +176,6 @@
       "default": true,
       "required": false
     },
-    "market_estimate": {
-      "type": "integer"
-    },
-    "market_estimate_date": {
-      "type": "date"
-    },
-    "n_pieces": {
-      "type": "integer",
-      "min": 0
-    },
     "grab_weight": {
       "type": "float",
       "min": 0
@@ -197,6 +187,9 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::lot.lot"
+    },
+    "transfer_date": {
+      "type": "date"
     }
   }
 }

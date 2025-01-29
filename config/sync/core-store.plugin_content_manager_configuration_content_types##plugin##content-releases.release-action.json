@@ -76,20 +76,6 @@
           "sortable": true
         }
       },
-      "isEntryValid": {
-        "edit": {
-          "label": "isEntryValid",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "isEntryValid",
-          "searchable": true,
-          "sortable": true
-        }
-      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -175,12 +161,6 @@
           {
             "name": "release",
             "size": 6
-          }
-        ],
-        [
-          {
-            "name": "isEntryValid",
-            "size": 4
           }
         ]
       ]

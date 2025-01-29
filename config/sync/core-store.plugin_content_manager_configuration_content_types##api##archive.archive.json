@@ -542,48 +542,6 @@
           "sortable": true
         }
       },
-      "market_estimate": {
-        "edit": {
-          "label": "market_estimate",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "market_estimate",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "market_estimate_date": {
-        "edit": {
-          "label": "market_estimate_date",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "market_estimate_date",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "n_pieces": {
-        "edit": {
-          "label": "n_pieces",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "n_pieces",
-          "searchable": true,
-          "sortable": true
-        }
-      },
       "grab_weight": {
         "edit": {
           "label": "grab_weight",
@@ -623,6 +581,20 @@
         },
         "list": {
           "label": "lot",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "transfer_date": {
+        "edit": {
+          "label": "transfer_date",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "transfer_date",
           "searchable": true,
           "sortable": true
         }
@@ -874,20 +846,6 @@
         ],
         [
           {
-            "name": "market_estimate",
-            "size": 4
-          },
-          {
-            "name": "market_estimate_date",
-            "size": 4
-          },
-          {
-            "name": "n_pieces",
-            "size": 4
-          }
-        ],
-        [
-          {
             "name": "grab_weight",
             "size": 4
           },
@@ -900,6 +858,10 @@
           {
             "name": "lot",
             "size": 6
+          },
+          {
+            "name": "transfer_date",
+            "size": 4
           }
         ]
       ]

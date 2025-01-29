@@ -198,12 +198,10 @@
           "is_visible_to_collaborator",
           "is_visible_to_viewer",
           "is_visible_to_ufficio_stile",
-          "market_estimate",
-          "market_estimate_date",
-          "n_pieces",
           "grab_weight",
           "grab_date",
-          "lot"
+          "lot",
+          "transfer_date"
         ]
       },
       "conditions": []
@@ -257,12 +255,10 @@
           "is_visible_to_collaborator",
           "is_visible_to_viewer",
           "is_visible_to_ufficio_stile",
-          "market_estimate",
-          "market_estimate_date",
-          "n_pieces",
           "grab_weight",
           "grab_date",
-          "lot"
+          "lot",
+          "transfer_date"
         ]
       },
       "conditions": []
@@ -309,12 +305,10 @@
           "is_visible_to_collaborator",
           "is_visible_to_viewer",
           "is_visible_to_ufficio_stile",
-          "market_estimate",
-          "market_estimate_date",
-          "n_pieces",
           "grab_weight",
           "grab_date",
-          "lot"
+          "lot",
+          "transfer_date"
         ]
       },
       "conditions": []

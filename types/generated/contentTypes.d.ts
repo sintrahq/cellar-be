@@ -963,15 +963,6 @@ export interface ApiArchiveArchive extends Schema.CollectionType {
     is_visible_to_collaborator: Attribute.Boolean & Attribute.DefaultTo<true>;
     is_visible_to_viewer: Attribute.Boolean & Attribute.DefaultTo<true>;
     is_visible_to_ufficio_stile: Attribute.Boolean & Attribute.DefaultTo<true>;
-    market_estimate: Attribute.Integer;
-    market_estimate_date: Attribute.Date;
-    n_pieces: Attribute.Integer &
-      Attribute.SetMinMax<
-        {
-          min: 0;
-        },
-        number
-      >;
     grab_weight: Attribute.Float &
       Attribute.SetMinMax<
         {
@@ -981,6 +972,7 @@ export interface ApiArchiveArchive extends Schema.CollectionType {
       >;
     grab_date: Attribute.Date;
     lot: Attribute.Relation<'api::archive.archive', 'oneToOne', 'api::lot.lot'>;
+    transfer_date: Attribute.Date;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
