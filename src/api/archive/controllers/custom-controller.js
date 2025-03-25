@@ -16,7 +16,7 @@ const chainableArrayProps = [
 module.exports = createCoreController("api::archive.archive", ({ strapi }) => ({
   async bulkUpdate(ctx) {
     try {
-      const concatData = ctx.request.body.partialArchive;
+      const newPartialData = ctx.request.body.partialArchive;
       const archives = await strapi.entityService.findMany(
         "api::archive.archive",
         {
@@ -31,35 +31,38 @@ module.exports = createCoreController("api::archive.archive", ({ strapi }) => ({
       if (ctx.request.body.concatChanges) {
         for (let archive of archives) {
           chainableArrayProps.forEach((key) => {
-            if (Array.isArray(concatData[key]) && concatData[key].length) {
+            if (
+              Array.isArray(newPartialData[key]) &&
+              newPartialData[key].length
+            ) {
               archive[key] = archive[key] || [];
               archive[key] = [
-                ...new Set([...concatData[key], ...archive[key]]).values(),
+                ...new Set([...newPartialData[key], ...archive[key]]).values(),
               ];
             }
           });
           // concat notes
-          if (concatData.note) {
+          if (newPartialData.note) {
             archive.note = archive.note
-              ? `${concatData.note} | ${archive.note}`
-              : concatData.note;
+              ? `${newPartialData.note} | ${archive.note}`
+              : newPartialData.note;
           }
           //merge all other fields
-          for (const key in concatData) {
+          for (const key in newPartialData) {
             if (
-              concatData.hasOwnProperty(key) &&
+              newPartialData.hasOwnProperty(key) &&
               !chainableArrayProps.includes(key) &&
               key !== "note"
             ) {
-              archive[key] = concatData[key];
+              archive[key] = newPartialData[key];
             }
           }
         }
       } else {
         for (let archive of archives) {
-          for (const key in concatData) {
-            if (concatData.hasOwnProperty(key)) {
-              archive[key] = concatData[key];
+          for (const key in newPartialData) {
+            if (newPartialData.hasOwnProperty(key)) {
+              archive[key] = newPartialData[key];
             }
           }
         }
