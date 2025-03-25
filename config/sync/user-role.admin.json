@@ -55,6 +55,9 @@
       "action": "api::archive.archive.update"
     },
     {
+      "action": "api::archive.custom-controller.bulkUpdate"
+    },
+    {
       "action": "api::box.box.find"
     },
     {
