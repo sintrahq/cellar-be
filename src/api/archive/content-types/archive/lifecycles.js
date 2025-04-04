@@ -156,7 +156,7 @@ function getDescription({ producer, distributor, typology, race, weight }) {
     (distributor ? distributor.name + ", " : "") +
     (typology ? typology.name + ", " : "") +
     (race ? race.name + ", " : "") +
-    (weight ? (weight / 1000).toFixed(1) + "Kg, " : "")
+    (weight ? (weight / 1000).toFixed(1) + " Kg, " : "")
   ).slice(0, -2);
 }
 
