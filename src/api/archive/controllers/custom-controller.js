@@ -68,13 +68,20 @@ module.exports = createCoreController("api::archive.archive", ({ strapi }) => ({
         }
       }
 
+      const newArchives = [];
       for (let archive of archives) {
-        await strapi.entityService.update("api::archive.archive", archive.id, {
-          data: { ...archive },
-        });
+        newArchives.push(
+          await strapi.entityService.update(
+            "api::archive.archive",
+            archive.id,
+            {
+              data: { ...archive },
+            }
+          )
+        );
       }
 
-      ctx.body = archives.map((archive) => ({ content: archive }));
+      ctx.body = { content: newArchives };
     } catch (err) {
       ctx.status = 500;
       ctx.body = err;
