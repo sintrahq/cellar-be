@@ -74,10 +74,13 @@ async function doBeforeCreateAndUpdate(event) {
       params.where.id,
       {
         populate: {
-          brand: true,
-          season: true,
+          producer: true,
+          distributor: true,
+          race: true,
           t_1s: true,
           t_2s: true,
+          t_3s: true,
+          t_4s: true,
         },
       }
     );
@@ -93,32 +96,42 @@ async function doBeforeCreateAndUpdate(event) {
 
   Object.assign(archive, data);
 
-  /*let brand;
-  if (archive.brand) {
-    brand = await strapi.entityService.findOne(
-      "api::brand.brand",
-      (archive.brand && archive.brand.id) || archive.brand
+  let producer;
+  if (archive.producer) {
+    producer = await strapi.entityService.findOne(
+      "api::producer.producer",
+      (archive.producer && archive.producer.id) || archive.producer
     );
   }
-  let season;
-  if (archive.season) {
-    season = await strapi.entityService.findOne(
-      "api::season.season",
-      (archive.season.id && archive.season.id) || archive.season
+  let distributor;
+  if (archive.distributor) {
+    distributor = await strapi.entityService.findOne(
+      "api::distributor.distributor",
+      (archive.distributor.id && archive.distributor.id) || archive.distributor
+    );
+  }
+  let race;
+  if (archive.race) {
+    race = await strapi.entityService.findOne(
+      "api::race.race",
+      (archive.race.id && archive.race.id) || archive.race
     );
   }
 
   const t1 = await loadTypology("t1", archive.t_1s);
   const t2 = await loadTypology("t2", archive.t_2s);
+  const t3 = await loadTypology("t3", archive.t_3s);
+  const t4 = await loadTypology("t4", archive.t_4s);
 
-  const typology = t2 ? t2 : t1;
+  const typology = t4 || t3 || t2 || t1;
 
   data.description = getDescription({
-    year: archive.year,
-    brand,
-    season,
+    producer,
+    distributor,
     typology,
-  }); */
+    race,
+    weight: archive.weight,
+  });
 
   // event.params.data.label = getLabel({ ...params.data, t1, t2, t3, t4 });
 }
@@ -137,12 +150,13 @@ async function loadTypology(name, value) {
   return Promise.resolve(undefined);
 }
 
-function getDescription({ year, brand, season, typology }) {
+function getDescription({ producer, distributor, typology, race, weight }) {
   return (
-    (brand ? brand.name + ", " : "") +
+    (producer ? producer.name + ", " : "") +
+    (distributor ? distributor.name + ", " : "") +
     (typology ? typology.name + ", " : "") +
-    (year ? year + ", " : "") +
-    (season ? season.name + ", " : "")
+    (race ? race.name + ", " : "") +
+    (weight ? (weight / 1000).toFixed(1) + "Kg, " : "")
   ).slice(0, -2);
 }
 
