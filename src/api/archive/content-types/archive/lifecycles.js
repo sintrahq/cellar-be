@@ -86,6 +86,14 @@ async function doBeforeCreateAndUpdate(event) {
     );
   }
 
+  if (archive.value !== data.value) {
+    if (data.value) {
+      data.value_date = new Date();
+    } else {
+      data.value_date = null;
+    }
+  }
+
   if (archive.market_estimate !== data.market_estimate) {
     if (data.market_estimate) {
       data.market_estimate_date = new Date();

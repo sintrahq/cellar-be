@@ -937,7 +937,14 @@ export interface ApiArchiveArchive extends Schema.CollectionType {
     production_date: Attribute.Date;
     purchase_date: Attribute.Date;
     value: Attribute.Decimal;
-    quantity: Attribute.Integer;
+    quantity: Attribute.Integer &
+      Attribute.SetMinMax<
+        {
+          min: 0;
+        },
+        number
+      > &
+      Attribute.DefaultTo<1>;
     weight: Attribute.Float &
       Attribute.SetMinMax<
         {
@@ -973,6 +980,7 @@ export interface ApiArchiveArchive extends Schema.CollectionType {
     grab_date: Attribute.Date;
     lot: Attribute.Relation<'api::archive.archive', 'oneToOne', 'api::lot.lot'>;
     transfer_date: Attribute.Date;
+    value_date: Attribute.Date;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<

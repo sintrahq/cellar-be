@@ -2,6 +2,7 @@
 
 const { createCoreController } = require("@strapi/strapi").factories;
 
+const chainableStringProps = ["note", "object_description"];
 const chainableArrayProps = [
   "t_1s",
   "t_2s",
@@ -41,18 +42,19 @@ module.exports = createCoreController("api::archive.archive", ({ strapi }) => ({
               ];
             }
           });
-          // concat notes
-          if (newPartialData.note) {
-            archive.note = archive.note
-              ? `${newPartialData.note} | ${archive.note}`
-              : newPartialData.note;
-          }
+          chainableStringProps.forEach((key) => {
+            if (newPartialData[key]) {
+              archive[key] = archive[key]
+                ? `${newPartialData[key]} | ${archive[key]}`
+                : newPartialData[key];
+            }
+          });
           //merge all other fields
           for (const key in newPartialData) {
             if (
               newPartialData.hasOwnProperty(key) &&
               !chainableArrayProps.includes(key) &&
-              key !== "note"
+              !chainableStringProps.includes(key)
             ) {
               archive[key] = newPartialData[key];
             }

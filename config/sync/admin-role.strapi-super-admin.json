@@ -201,7 +201,8 @@
           "grab_weight",
           "grab_date",
           "lot",
-          "transfer_date"
+          "transfer_date",
+          "value_date"
         ]
       },
       "conditions": []
@@ -258,7 +259,8 @@
           "grab_weight",
           "grab_date",
           "lot",
-          "transfer_date"
+          "transfer_date",
+          "value_date"
         ]
       },
       "conditions": []
@@ -308,7 +310,8 @@
           "grab_weight",
           "grab_date",
           "lot",
-          "transfer_date"
+          "transfer_date",
+          "value_date"
         ]
       },
       "conditions": []

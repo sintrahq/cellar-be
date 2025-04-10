@@ -599,6 +599,20 @@
           "sortable": true
         }
       },
+      "value_date": {
+        "edit": {
+          "label": "value_date",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "value_date",
+          "searchable": true,
+          "sortable": true
+        }
+      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -861,6 +875,12 @@
           },
           {
             "name": "transfer_date",
+            "size": 4
+          }
+        ],
+        [
+          {
+            "name": "value_date",
             "size": 4
           }
         ]
