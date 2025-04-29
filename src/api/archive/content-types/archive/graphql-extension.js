@@ -113,9 +113,11 @@ module.exports = {
             resolve: async (root, args, ctx) => {
               const transformedArgs = transformArgs(args, {
                 contentType: strapi.contentTypes["api::archive.archive"],
-                usePagination: false,
+                usePagination:
+                  args.pagination && Object.keys(args.pagination).length > 0,
               });
 
+              const intervalLimit = transformedArgs.limit || 4;
               const searchFilter = transformedArgs.filters["$and"].splice(0, 1);
               const searchInput = JSON.stringify(searchFilter)
                 .split('"$eq":"')[1]
@@ -137,8 +139,8 @@ module.exports = {
               if (index > -1) {
                 const neighbourIds = archives
                   .slice(
-                    Math.max(0, index - 4),
-                    Math.min(index + 5, archives.length)
+                    Math.max(0, index - intervalLimit),
+                    Math.min(index + intervalLimit + 1, archives.length)
                   )
                   .map((a) => a.id);
 
