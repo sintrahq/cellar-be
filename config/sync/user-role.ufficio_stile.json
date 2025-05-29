@@ -16,6 +16,9 @@
       "action": "api::archive-loan.archive-loan.findOne"
     },
     {
+      "action": "api::archive-loan.archive-loan.update"
+    },
+    {
       "action": "api::archive-sale.archive-sale.find"
     },
     {
