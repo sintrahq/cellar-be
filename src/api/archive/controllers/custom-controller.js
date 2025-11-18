@@ -13,6 +13,17 @@ const chainableArrayProps = [
   "techniques",
   "details",
 ];
+// These are the properties that can be -1 and should be set to null
+const relationshipProps = [
+  "apartment",
+  "place",
+  "shelf",
+  "sector",
+  "box",
+  "season",
+  "fantasy",
+  "conservation_status",
+];
 
 module.exports = createCoreController("api::archive.archive", ({ strapi }) => ({
   async bulkUpdate(ctx) {
@@ -56,7 +67,12 @@ module.exports = createCoreController("api::archive.archive", ({ strapi }) => ({
               !chainableArrayProps.includes(key) &&
               !chainableStringProps.includes(key)
             ) {
-              archive[key] = newPartialData[key];
+              if (relationshipProps.includes(key)) {
+                archive[key] =
+                  newPartialData[key] === -1 ? null : newPartialData[key];
+              } else {
+                archive[key] = newPartialData[key];
+              }
             }
           }
         }
@@ -64,7 +80,12 @@ module.exports = createCoreController("api::archive.archive", ({ strapi }) => ({
         for (let archive of archives) {
           for (const key in newPartialData) {
             if (newPartialData.hasOwnProperty(key)) {
-              archive[key] = newPartialData[key];
+              if (relationshipProps.includes(key)) {
+                archive[key] =
+                  newPartialData[key] === -1 ? null : newPartialData[key];
+              } else {
+                archive[key] = newPartialData[key];
+              }
             }
           }
         }
@@ -78,6 +99,13 @@ module.exports = createCoreController("api::archive.archive", ({ strapi }) => ({
             archive.id,
             {
               data: { ...archive },
+              populate: [...relationshipProps, ...chainableArrayProps].reduce(
+                (acc, prop) => {
+                  acc[prop] = true;
+                  return acc;
+                },
+                {}
+              ),
             }
           )
         );
